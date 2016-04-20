@@ -1,0 +1,37 @@
+<div id="projects" ng-init="limit = 3; length = projectList.length">
+
+
+	<div id='loader'>
+		<div>
+			<div class='one'></div>
+			<div class='two'></div>
+			<div class='three'></div>
+		</div>
+	</div>
+
+
+	<div masonry preserve-order reload-on-show id="project-cards" item-selector=".card">
+
+		<div masonry-brick class="card project-card" ng-repeat="project in projectList.slice().reverse() | limitTo: limit">
+			
+			<div class='cover-image'>
+				<img ng-src='{{project.coverImage["large"]}}' alt='{{project.coverImageAlt}}' />
+			</div>
+
+			<a class='{{project.type[0]}}' ng-href='/work/project/{{project.name}}' title='{{project.title}}'>
+				<div class='info-container'>
+					<h2>{{project.title}}</h2>
+					<p>{{project.description}}</p>
+					<i class='icon-arrow-next'></i>
+				</div>
+			</a>
+
+		</div>
+
+	</div>
+
+	<div id="load-more" ng-hide="limit >= length" ng-click="limit = limit + 3">
+		Load More...
+	</div>
+
+</div>

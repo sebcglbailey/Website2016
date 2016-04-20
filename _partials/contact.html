@@ -1,0 +1,48 @@
+<div id="contact">
+
+	<div id='email'>
+		<div class='filter title'>
+			<a href='mailto:sebcglbailey@gmail.com' title="Email Me">
+				<h2>Email Me</h2>
+			</a>
+		</div>
+	</div>
+
+	<div id="social">
+		<div class='filter title'>
+			<h2>Social</h2>
+		</div>
+		<div id='links'>
+			<div ng-repeat="link in contactList" class='contact-link filter {{link.type}}'>
+				<a href="{{link.href}}" title="{{link.title}}" target="_blank">
+					{{link.name}}
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id='instagram'>
+		<div class='filter title'>
+			<h2>Instagram</h2>
+		</div>
+		<div id="insta-posts">
+			<div class='insta-post' ng-repeat="post in pics | limitTo: 15">
+				<img ng-click="setActive(post);" ng-src="{{post.images.thumbnail.url}}" alt="{{post.caption.text}}" />
+			</div>
+		</div>
+		<div id='insta-cards'>
+			<div ng-show="activeItem == post" class='insta-pic card' ng-repeat="post in pics | limitTo: 15">
+				<a ng-href="{{post.link}}">
+					<img ng-src="{{post.images.low_resolution.url}}" alt="{{post.caption.text}}" />
+				</a>
+				<div class='text'>
+					<div class="text-container">
+						<p>{{post.caption.text}}</p>
+						<span class='likes'>Likes: {{post.likes.count}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

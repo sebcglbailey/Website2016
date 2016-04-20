@@ -1,0 +1,66 @@
+<div id='project' ng-init="p = (projectList | filter: {name: params.projectName})[0]">
+
+	<div id="cover-image">
+		<img ng-src="{{p.coverImage['large']}}" />
+	</div>
+
+	<div id='project-type' class='{{p.type[0]}}'>
+		{{p.type[1]}}
+	</div>
+
+	<div id="intro">
+		<h1>{{p.title}}</h1>
+		<p>{{p.description}}</p>
+	</div>
+
+	<div id="project-images" class='{{p.type[0]}} {{p.layout}}'>
+		<div class='bg-colours'>
+			<div class='clear'></div>
+			<div class='colour'></div>
+			<div class='clear'></div>
+		</div>
+		<div class='images'>
+			<img ng-repeat="image in p.projectImages" ng-src="{{image}}" />
+		</div>
+		<div class='bg-colours'>
+			<div class='clear'></div>
+			<div class='colour'></div>
+			<div class='clear'></div>
+		</div>
+	</div>
+
+	<div id='projects-side' ng-init="pa = p.arNo; pLength = projectList.length; pp = projectList[pa*1+1]; pn = projectList[pa-1];">
+
+		<div ng-hide="pa > pLength-2" id="prev-project">
+			<div class='card'>
+				<div class='cover-image'>
+					<img ng-src="{{pp.coverImage['large']}}" alt="{{pp.title}}" />
+				</div>
+				<a class='{{pp.type[0]}}' ng-href='/work/project/{{pp.name}}' title='{{pp.title}}'>
+					<div class='info-container'>
+						<h2>{{pp.title}}</h2>
+						<p>{{pp.description}}</p>
+						<i class='icon-arrow-prev'></i>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<div ng-hide="pa <= 0" id="next-project">
+			<div class='card'>
+				<div class='cover-image'>
+					<img ng-src="{{pn.coverImage['large']}}" alt="{{pn.title}}" />
+				</div>
+				<a class='{{pn.type[0]}}' ng-href='/work/project/{{pn.name}}' title='{{pn.title}}'>
+					<div class='info-container'>
+						<h2>{{pn.title}}</h2>
+						<p>{{pn.description}}</p>
+						<i class='icon-arrow-next'></i>
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+</div>

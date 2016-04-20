@@ -1,0 +1,62 @@
+<div id="work" ng-init="limit = 6; length = workList.length">
+	
+	<div id='loader'>
+		<div>
+			<div class='one'></div>
+			<div class='two'></div>
+			<div class='three'></div>
+		</div>
+	</div>
+
+	<!-- FILTER THE WORKS -->
+		<div id="filter">
+			<div class="filter gd" ng-class="gdActive">
+				<div ng-click='gdActive="clicked"; phActive=""; wdActive=""; arActive=""; filter = "gd"; length = (workList | filter: {type: "gd"}).length'>GD</div>
+				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+					Graphic Design
+					<i class='icon-close'></i>
+				</div>
+			</div>
+			<div class="filter ph" ng-class="phActive">
+				<div ng-click='gdActive=""; phActive="clicked"; wdActive=""; arActive=""; filter = "ph"; length = (workList | filter: {type: "ph"}).length'>PH</div>
+				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+					Photography
+					<i class='icon-close'></i>
+				</div>
+			</div>
+			<div class="filter wd" ng-class="wdActive">
+				<div ng-click='gdActive=""; phActive=""; wdActive="clicked"; arActive=""; filter = "wd"; length = (workList | filter: {type: "wd"}).length'>WD</div>
+				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+					Web Design
+					<i class='icon-close'></i>
+				</div>
+			</div>
+			<div class="filter ar" ng-class="arActive">
+				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive="clicked"; filter = "ar"; length = (workList | filter: {type: "ar"}).length'>AR</div>
+				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+					Architecture
+					<i class='icon-close'></i>
+				</div>
+			</div>
+		</div>
+
+	<div masonry preserve-order reload-on-show id="work-cards" item-selector=".card">
+
+		<div masonry-brick ng-repeat="piece in workList | filter: { type: filter } | limitTo: limit" class="card work-card" >
+			<div class="cover-image">
+				<img ng-src="{{piece.image}}" alt="{{piece.title}}" />
+			</div>
+			<div class='info-container {{piece.type}}'>
+				<div class="work-title">
+					<h3>{{piece.title}}</h3>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="load-more" ng-hide="limit >= length" ng-click="limit = limit + 6">
+		Load More...
+	</div>
+
+</div>

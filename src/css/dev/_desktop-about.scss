@@ -1,0 +1,33 @@
+@media all and (min-width: 640px) {
+	#skill-list {
+		.skill {
+			.level {
+				transform: scaleX(0);
+				transform-origin: 0;
+				transition: transform 0.25s ease;
+			}
+		}
+		.skill:hover {
+			.level {
+				transform: scaleX(1);
+			}
+		}
+	}
+	#hobby-cards {
+		.hobby-card {
+			flex-direction: row;
+			max-width: 800px;
+			img {
+				width: 50%;
+				max-height: 360px;
+			}
+			.text {
+				padding: 25px 25px 25px 0;
+				.text-container {
+					padding: 25px 25px 25px 50px;
+					margin: 0 0 0 -25px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=$("#project-cards").masonry({itemSelector:".card",columnWidth:".card-sizer",percentPosition:!0});a.imagesLoaded(function(){a.masonry("layout"),$("#loader").hide(),$("#projects").css("overflow","auto")}),$("#load-more").click(function(){a.imagesLoaded().progress(function(){a.masonry("reloadItems"),a.masonry("layout")})})});

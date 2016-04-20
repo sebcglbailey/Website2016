@@ -1,0 +1,375 @@
+/* -- FONTS -- */
+@font-face {
+	font-family: 'century-gothic';
+	src: url('fonts/century-gothic.ttf');
+}
+@font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('fonts/MontserratAlternates-Regular.ttf');
+}
+
+@import 'colours.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f6f6f6;
+	font-size: 14pt;
+	font-weight: 700;
+	font-family: 'century-gothic', sans-serif;
+	font-weight: 100;
+}
+
+h1, h2, h3 {
+	font-family: 'century-gothic', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+#container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 75px;
+	width: 100%
+}
+
+#header {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	background: $black;
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 25px;
+	#logo {
+		height: 60px;
+		img {
+			height: 100%;
+		}
+	}
+	ul {
+		display: flex;
+		transition: width 0.25s ease;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0;
+		height: calc(100vh - 75px);
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin: 75px 0 0 0;
+		background: $black;
+		a {
+			color: $white;
+			font-size: 1.5em;
+			text-decoration: none;
+			padding: 10px 20px;
+			width: 80%;
+			height: 100%;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			position: relative;
+			transform: scale(0);
+			li {
+				display: inline-block;
+				margin: auto;
+			}
+		}
+		a::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			width: 100%;
+			transform: scaleX(0);
+			transform-origin: 50% 100%;
+			margin: auto;
+			background: $white;
+		}
+		a:last-child::after {
+			display: none;
+		}
+	}
+	.burger-menu {
+		height: 20px;
+		width: 25px;
+		position: relative;
+		cursor: pointer;
+		div {
+			width: 100%;
+			height: 2px;
+			background: $white;
+			position: absolute;
+			top: 9px;
+			opacity: 1;
+			transition: opacity 0.25s ease, transform 0.25s ease;
+			transition-delay: 0.25s;
+		}
+		&::before {
+			content: '';
+			width: 100%;
+			height: 2px;
+			background: $white;
+			position: absolute;
+			transform-origin: 0 1px;
+			transition: transform 0.25s ease;
+			transition-delay: 0.25s;
+		}
+		&::after {
+			content: '';
+			width: 100%;
+			height: 2px;
+			background: $white;
+			position: absolute;
+			bottom: 0;
+			transform-origin: 0 1px;
+			transition: transform 0.25s ease;
+			transition-delay: 0.25s;
+		}
+	}
+	&.clicked {
+		ul {
+			width: 100%;
+			transition: width 0.25s ease;
+			a {
+				animation: list-link-anim 0.25s ease;
+				animation-delay: 0.25s;
+				animation-fill-mode: forwards;
+			}
+			a::after {
+				animation: list-link-border-anim 0.25s ease;
+				animation-fill-mode: forwards;
+				animation-delay: 0.5s;
+			}
+		}
+		.burger-menu {
+			div {
+				transform: translateX(-25px);
+				opacity: 0;
+				transition: opacity 0.25s ease, transform 0.25s ease;
+			}
+			&::before {
+				transform: rotate(45deg);
+				transition: transform 0.25s ease;
+			}
+			&::after {
+				transform: rotate(-45deg);
+				transition: transform 0.25s ease;
+			}
+		}
+	}
+}
+@keyframes list-link-anim {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes list-link-border-anim {
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+#loader {
+	width: 100%;
+	height: 100%;
+	height: calc(100vh - 75px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+	background: $bg;
+	> div {
+		width: 100px;
+		height: 100px;
+		position: relative;
+		perspective: 780px;
+		div {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			border-radius: 50%;
+		}
+		div.one {
+			border-left: 3px solid $blue;
+			animation: loader-one 1.5s linear infinite;
+		}
+		div.two {
+			border-right: 3px solid $red;
+			animation: loader-two 1.5s linear infinite;
+			animation-delay: -1.75s;
+		}
+		div.three {
+			border-top: 3px solid $green;
+			animation: loader-three 1.5s linear infinite;
+			animation-delay: -1.75s;
+		}
+	}
+}
+@keyframes loader-one {
+	0% {
+		transform: rotateX(15deg) rotateY(45deg) rotateZ(0);
+	}
+	100% {
+		transform: rotateX(15deg) rotateY(45deg) rotateZ(360deg);
+	}
+}
+@keyframes loader-two {
+	0% {
+		transform: rotateX(-50deg) rotateY(45deg) rotateZ(0);
+	}
+	100% {
+		transform: rotateX(-50deg) rotateY(45deg) rotateZ(360deg);
+	}
+}
+@keyframes loader-three {
+	0% {
+		transform: rotateX(-35deg) rotateY(0deg) rotateZ(0);
+	}
+	100% {
+		transform: rotateX(-35deg) rotateY(0deg) rotateZ(360deg);
+	}
+}
+
+#filter, #links, #hobby-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 25px;
+	cursor: pointer;
+	.filter {
+		border: 3px solid $black;
+		color: $black;
+		margin: 25px;
+		min-width: 78px;
+		text-align: center;
+		div {
+			padding: 25px;
+			text-transform: uppercase;
+		}
+		div:last-child {
+			display: none;
+			position: relative;
+		}
+		i {
+			position: absolute;
+			top: 25px;
+			right: 25px;
+			margin-left: 10px;
+			font-size: 1.2em;
+		}
+		&.gd {
+			color: $blue;
+			border-color: $blue;
+		}
+		&.ph {
+			color: $grey;
+			border-color: $grey;
+		}
+		&.wd {
+			color: $orange;
+			border-color: $orange;
+		}
+		&.ar {
+			color: $red;
+			border-color: $red;
+		}
+	}
+	.filter.clicked {
+		color: $white;
+		background: $black;
+		div {
+			padding-right: 60px;
+		}
+		div:first-child {
+			display: none;
+		}
+		div:last-child {
+			display: block;
+		}
+		&.gd {
+			background: $blue;
+		}
+		&.ph {
+			background: $grey;
+		}
+		&.wd {
+			background: $orange;
+		}
+		&.ar {
+			background: $red;
+		}
+	}
+	.filter:hover {
+		color: $white;
+		background: $black;
+		transition: background 0.25s ease, color 0.25s ease;
+		&.gd {
+			background: $blue;
+		}
+		&.ph {
+			background: $grey;
+		}
+		&.wd {
+			background: $orange;
+		}
+		&.ar {
+			background: $red;
+		}
+	}
+}
+.filter.title {
+	padding: 25px;
+	border: 3px solid $black;
+	background: $black;
+	color: $white;
+	width: 90%;
+	max-width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	overflow: hidden;
+	h2 {
+		margin: 0;
+		text-transform: uppercase;
+	}
+}
+
+#load-more {
+	padding: 25px;
+	width: 90%;
+	margin: 50px auto;
+	max-width: 400px;
+	border: 3px solid;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#load-more:hover {
+	background: $black;
+	color: $white;
+	border-color: $black;
+}
+
+@import 'desktop-main.scss'

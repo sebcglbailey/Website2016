@@ -1,0 +1,127 @@
+<div id="about">
+
+	<div id='loader'>
+		<div>
+			<div class='one'></div>
+			<div class='two'></div>
+			<div class='three'></div>
+		</div>
+	</div>
+
+	<!-- FILTER ABOUT SECTION -->
+	<div id="filter" ng-init="filter=false; sk=false; ex=false; ed=false; ho=false;">
+		<div class='filter sk' ng-class="skActive">
+			<div ng-click="skActive='clicked';exActive='';edActive='';hoActive=''; sk=true; ex=false;ed=false;ho=false;filter=true;">SK</div>
+			<div ng-click="skActive='';exActive='';edActive='';hoActive=''; sk = false; filter = false">
+				Skills
+				<i class='icon-close'></i>
+			</div>
+		</div>
+		<div class='filter ex' ng-class="exActive">
+			<div ng-click="skActive='';exActive='clicked';edActive='';hoActive=''; ex=true; sk=false;ed=false;ho=false;filter=true;">EX</div>
+			<div ng-click="skActive='';exActive='';edActive='';hoActive=''; ex = false; filter = false">
+				Experience
+				<i class='icon-close'></i>
+			</div>
+		</div>
+		<div class='filter ed' ng-class="edActive">
+			<div ng-click="skActive='';exActive='';edActive='clicked';hoActive=''; ed=true; sk=false;ex=false;ho=false;filter=true;">ED</div>
+			<div ng-click="skActive='';exActive='';edActive='';hoActive=''; ed = false; filter = false">
+				Education
+				<i class='icon-close'></i>
+			</div>
+		</div>
+		<div class='filter ho' ng-class="hoActive">
+			<div ng-click="skActive='';exActive='';edActive='';hoActive='clicked'; ho=true; sk=false;ex=false;ed=false;filter=true;">HO</div>
+			<div ng-click="skActive='';exActive='';edActive='';hoActive=''; ho = false; filter = false">
+				Hobbies / Interests
+				<i class='icon-close'></i>
+			</div>
+		</div>
+	</div>
+
+	<div ng-show="filter" id='filter-seperator'></div>
+
+<!-- SKILL SECTION -->
+	<div id='skills' class='about-section' ng-hide="ex || ed || ho">
+		<div ng-hide="filter" class='filter title'>
+			<h2>Skills</h2>
+		</div>
+		<div id='skill-list'>
+			<div class='skill {{skill.skill}}' ng-repeat="skill in skillList">
+				{{skill.skill}}
+				<div class='level' style='width: {{skill.level}}'></div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- EXPERIENCE SECTION -->
+	<div id='experience' class='about-section' ng-hide="sk || ed || ho">
+		<div ng-hide="filter" class='filter title'>
+			<h2>Experience</h2>
+		</div>
+		<div masonry preserve-order reload-on-show id='experience-list' item-selector=".card">
+			<div masonry-brick class='card' ng-repeat="work in experienceList | filter: {company: ''}">
+				<div class='cover-image'>
+					<img ng-src="{{work.image}}" alt="{{work.company}}" />
+				</div>
+				<div class='info-container'>
+					<h3>{{work.company}}</h3>
+					<p>{{work.dates}}</p>
+					<p>{{work.title}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- EDUCATION SECTION -->
+	<div id='education' class='about-section' ng-hide="sk || ex || ho">
+		<div ng-hide="filter" class='filter title'>
+			<h2>Education</h2>
+		</div>
+		<div id='education-list'>
+			<div class='card' ng-repeat="school in educationList | filter: {name: ''}">
+				<div class='cover-image'>
+					<img ng-src="{{school.image}}" alt="{{school.name}}" />
+				</div>
+				<div class='info-container'>
+					<h3>{{school.name}}</h3>
+					<p>{{school.dates}}</p>
+					<p>{{school.cert}}</p>
+					<p>{{school.clubs}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- HOBBIES SECTION -->
+	<div id='hobbies' class='about-section' ng-hide="sk || ex || ed">
+		<div ng-hide="filter" class='filter title'>
+			<h2>Hobbies / Interests</h2>
+		</div>
+		<div id='hobby-list'>
+			<div class='filter' ng-repeat="hobby in hobbyList | filter: {hobby: ''}" ng-class="{'clicked': activeItem == hobby}">
+				<div ng-click="setActive(hobby);">{{hobby.hobby}}</div>
+				<div ng-click="setActive();">
+					{{hobby.hobby}}
+					<i class='icon-close'></i>
+				</div>
+			</div>
+		</div>
+		<div id='hobby-cards'>
+			<div class='hobby-card' ng-repeat="hobby in hobbyList" ng-show="activeItem == hobby">
+				<img id="{{hobby.hobby}}" ng-src="{{hobby.image}}" alt="{{hobby.hobby}}" />
+				<div class='text'>
+					<div class='text-container'>
+						{{hobby.text}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>

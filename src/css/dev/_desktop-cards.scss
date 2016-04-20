@@ -1,0 +1,11 @@
+@media all and (min-width: 640px) {
+	.card-sizer, .card {
+		width: 94 / 3 * 1%;
+		margin: 25px 1% 0 1%;
+	}
+	.card {
+		p {
+			display: block !important;
+		}
+	}
+}

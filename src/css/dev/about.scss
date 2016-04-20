@@ -1,0 +1,168 @@
+@import 'colours.scss';
+
+#about {
+	padding-bottom: 25px;
+}
+
+.about-section {
+	text-align: center;
+}
+
+// SEPERATOR ANIMATION
+#filter-seperator {
+	width: 90%;
+	height: 2px;
+	background: $black;
+	margin: 25px auto 50px auto;
+}
+#filter-seperator.ng-hide-remove {
+	animation: scaleUp 0.5s ease;
+}
+#filter-seperator.ng-hide-add {
+	animation: scaleDown 0.5s ease;
+}
+@keyframes scaleUp {
+	0% { 
+		transform: scaleX(0); 
+		margin: 25px auto;
+	}
+	100% { 
+		transform: scaleX(1);
+		margin: 25px auto 50px auto; 
+	}
+}
+@keyframes scaleDown {
+	0% { 
+		transform: scaleX(1); 
+		margin: 25px auto 50px auto;
+	}
+	100% { 
+		transform: scaleX(0);
+		margin: 25px auto -25px auto; 
+	}
+}
+
+#skill-list {
+	display: flex;
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	.skill:first-child {
+		display: none;
+	}
+	.skill {
+		padding: 25px;
+		position: relative;
+		top: 0;
+		left: 0;
+		border: 3px solid $black;
+		margin: 0 10px 20px 10px;
+		cursor: pointer;
+		.level {
+			position: absolute;
+			height: 5px;
+			bottom: 0;
+			left: 0;
+			background: $black;
+		}
+		&.Ps {
+			color: $ps;
+			border-color: $ps;
+			.level {
+				background: $ps;
+			}
+		}
+		&.Ai {
+			color: $ai;
+			border-color: $ai;
+			.level {
+				background: $ai;
+			}
+		}
+		&.Id {
+			color: $id;
+			border-color: $id;
+			.level {
+				background: $id;
+			}
+		}
+		&.Ae {
+			color: $ae;
+			border-color: $ae;
+			.level {
+				background: $ae;
+			}
+		}
+		&.Xd {
+			color: $xd;
+			border-color: $xd;
+			.level {
+				background: $xd;
+			}
+		}
+	}
+}
+
+.card {
+	.info-container {
+		margin: 25px;
+	}
+}
+
+#experience {
+	.card {
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+}
+
+#education-list {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	> div {
+		flex: 1 1 400px;
+		max-width: 400px;
+	}
+	.card {
+		margin-top: 0;	
+	}
+}
+
+#hobby-list {
+	.filter {
+		margin: 10px;
+	}
+}
+
+#hobby-cards {
+	margin-top: 25px;
+	.hobby-card {
+		width: 90%;
+		max-width: 320px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: $white;
+		box-shadow: 0 5px 10px $cardShadow;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+		.text {
+			padding: 0 25px 25px 25px;
+			.text-container {
+				background: $transparentWhite;
+				border: 3px solid $black;
+				padding: 25px;
+				padding-top: 50px;
+				margin-top: -25px;
+			}
+		}
+	}
+}
+
+@import 'desktop-about.scss'
