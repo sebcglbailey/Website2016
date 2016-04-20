@@ -1,5 +1,9 @@
 @import 'colours.scss';
 
+#contact {
+	padding-bottom: 50px;
+}
+
 #email {
 	.filter {
 		background: $white;
@@ -19,13 +23,13 @@
 	}
 }
 
-#insta-posts {
+#insta-posts, #lastfm-posts {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 5px;
 	width: 100%;
-	.insta-post {
+	.insta-post, .lastfm-post {
 		width: 60px;
 		margin: 5px;
 		box-shadow: 0 5px 10px $cardShadow;
@@ -36,9 +40,9 @@
 		}
 	}
 }
-#insta-cards {
-	.insta-pic {
-		margin-top: 25px;
+#insta-cards, #lastfm-cards {
+	margin-top: 25px;
+	.insta-pic, .lastfm-pic {
 		box-shadow: 0 5px 10px $cardShadow;
 		width: 90%;
 		max-width: 320px;
@@ -48,19 +52,32 @@
 		background: $white;
 		box-shadow: 0 5px 10px $cardShadow;
 		margin: 0 auto;
+		a{
+			width: 100%
+		}
 		img {
 			width: 100%;
+			float: left;
 		}
 		.text {
 			padding: 0 25px 25px 25px;
+			width: 100%;
 			.text-container {
+				width: 100%;
+				text-align: center;
 				background: $transparentWhite;
 				border: 3px solid $black;
 				padding: 25px;
 				padding-top: 50px;
 				margin-top: -25px;
+				p {
+					margin-top: 0;
+				}
 			}
 		}
+	}
+	h3 {
+		text-align: center;
 	}
 }
 

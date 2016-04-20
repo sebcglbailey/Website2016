@@ -27,11 +27,11 @@
 		</div>
 		<div id="insta-posts">
 			<div class='insta-post' ng-repeat="post in pics | limitTo: 15">
-				<img ng-click="setActive(post);" ng-src="{{post.images.thumbnail.url}}" alt="{{post.caption.text}}" />
+				<img ng-click="setActiveIn(post);" ng-src="{{post.images.thumbnail.url}}" alt="{{post.caption.text}}" />
 			</div>
 		</div>
 		<div id='insta-cards'>
-			<div ng-show="activeItem == post" class='insta-pic card' ng-repeat="post in pics | limitTo: 15">
+			<div ng-show="activeItemIn == post" class='insta-pic' ng-repeat="post in pics | limitTo: 15">
 				<a ng-href="{{post.link}}">
 					<img ng-src="{{post.images.low_resolution.url}}" alt="{{post.caption.text}}" />
 				</a>
@@ -39,6 +39,30 @@
 					<div class="text-container">
 						<p>{{post.caption.text}}</p>
 						<span class='likes'>Likes: {{post.likes.count}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id='last-fm'>
+		<div class='filter title'>
+			<h2>Last.fm</h2>
+		</div>
+		<div id="lastfm-posts">
+			<div class='lastfm-post' ng-repeat="artist in topArtists.topartists.artist | limitTo: 15">
+				<img ng-click="setActiveLf(artist);" ng-src="{{artist.image[1]['#text']}}" />
+			</div>
+		</div>
+		<div id='lastfm-cards'>
+			<div ng-show="activeItemLf == artist" class='lastfm-pic' ng-repeat="artist in topArtists.topartists.artist | limitTo: 15">
+				<a ng-href="{{artist.url}}">
+					<img ng-src="{{artist.image[3]['#text']}}" alt="{{artist.name}}" />
+				</a>
+				<div class='text'>
+					<div class="text-container">
+						{{artist.name}}<br/><br/>
+						{{artist.playcount}} plays
 					</div>
 				</div>
 			</div>

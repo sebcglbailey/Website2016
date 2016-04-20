@@ -1,3 +1,6 @@
+#contact {
+  padding-bottom: 50px; }
+
 #email .filter {
   background: #fff;
   transition: all 0.25s ease;
@@ -11,42 +14,53 @@
   #email .filter:hover a {
     color: #fff; }
 
-#insta-posts {
+#insta-posts, #lastfm-posts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 5px;
   width: 100%; }
-  #insta-posts .insta-post {
+  #insta-posts .insta-post, #insta-posts .lastfm-post, #lastfm-posts .insta-post, #lastfm-posts .lastfm-post {
     width: 60px;
     margin: 5px;
     box-shadow: 0 5px 10px rgba(191, 191, 191, 0.85);
     cursor: pointer; }
-    #insta-posts .insta-post img {
+    #insta-posts .insta-post img, #insta-posts .lastfm-post img, #lastfm-posts .insta-post img, #lastfm-posts .lastfm-post img {
       width: 100%;
       float: left; }
 
-#insta-cards .insta-pic {
-  margin-top: 25px;
-  box-shadow: 0 5px 10px rgba(191, 191, 191, 0.85);
-  width: 90%;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(191, 191, 191, 0.85);
-  margin: 0 auto; }
-  #insta-cards .insta-pic img {
-    width: 100%; }
-  #insta-cards .insta-pic .text {
-    padding: 0 25px 25px 25px; }
-    #insta-cards .insta-pic .text .text-container {
-      background: rgba(255, 255, 255, 0.5);
-      border: 3px solid rgba(0, 0, 0, 0.85);
-      padding: 25px;
-      padding-top: 50px;
-      margin-top: -25px; }
+#insta-cards, #lastfm-cards {
+  margin-top: 25px; }
+  #insta-cards .insta-pic, #insta-cards .lastfm-pic, #lastfm-cards .insta-pic, #lastfm-cards .lastfm-pic {
+    box-shadow: 0 5px 10px rgba(191, 191, 191, 0.85);
+    width: 90%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(191, 191, 191, 0.85);
+    margin: 0 auto; }
+    #insta-cards .insta-pic a, #insta-cards .lastfm-pic a, #lastfm-cards .insta-pic a, #lastfm-cards .lastfm-pic a {
+      width: 100%; }
+    #insta-cards .insta-pic img, #insta-cards .lastfm-pic img, #lastfm-cards .insta-pic img, #lastfm-cards .lastfm-pic img {
+      width: 100%;
+      float: left; }
+    #insta-cards .insta-pic .text, #insta-cards .lastfm-pic .text, #lastfm-cards .insta-pic .text, #lastfm-cards .lastfm-pic .text {
+      padding: 0 25px 25px 25px;
+      width: 100%; }
+      #insta-cards .insta-pic .text .text-container, #insta-cards .lastfm-pic .text .text-container, #lastfm-cards .insta-pic .text .text-container, #lastfm-cards .lastfm-pic .text .text-container {
+        width: 100%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        border: 3px solid rgba(0, 0, 0, 0.85);
+        padding: 25px;
+        padding-top: 50px;
+        margin-top: -25px; }
+        #insta-cards .insta-pic .text .text-container p, #insta-cards .lastfm-pic .text .text-container p, #lastfm-cards .insta-pic .text .text-container p, #lastfm-cards .lastfm-pic .text .text-container p {
+          margin-top: 0; }
+  #insta-cards h3, #lastfm-cards h3 {
+    text-align: center; }
 
 #links .contact-link {
   padding: 25px 0;
@@ -89,15 +103,17 @@
     background: #e3152b; }
 
 @media all and (min-width: 640px) {
-  #insta-cards .insta-pic {
+  #insta-cards .insta-pic, #insta-cards .lastfm-pic, #lastfm-cards .insta-pic, #lastfm-cards .lastfm-pic {
     flex-direction: row;
     max-width: 800px; }
-    #insta-cards .insta-pic img {
+    #insta-cards .insta-pic a, #insta-cards .lastfm-pic a, #lastfm-cards .insta-pic a, #lastfm-cards .lastfm-pic a {
+      width: auto; }
+    #insta-cards .insta-pic img, #insta-cards .lastfm-pic img, #lastfm-cards .insta-pic img, #lastfm-cards .lastfm-pic img {
       height: 320px; }
-    #insta-cards .insta-pic .text {
+    #insta-cards .insta-pic .text, #insta-cards .lastfm-pic .text, #lastfm-cards .insta-pic .text, #lastfm-cards .lastfm-pic .text {
       padding: 25px 25px 25px 0;
       flex: 1 1; }
-      #insta-cards .insta-pic .text .text-container {
+      #insta-cards .insta-pic .text .text-container, #insta-cards .lastfm-pic .text .text-container, #lastfm-cards .insta-pic .text .text-container, #lastfm-cards .lastfm-pic .text .text-container {
         padding: 25px 25px 25px 50px;
         margin: 0 0 0 -25px; } }
 

@@ -1,8 +1,11 @@
 @media all and (min-width: 640px) {
-	#insta-cards {
-		.insta-pic {
+	#insta-cards, #lastfm-cards {
+		.insta-pic, .lastfm-pic {
 			flex-direction: row;
 			max-width: 800px;
+			a {
+				width: auto;
+			}
 			img {
 				height: 320px;
 			}
