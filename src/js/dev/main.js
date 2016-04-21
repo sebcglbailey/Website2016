@@ -109,8 +109,8 @@ app.controller('contactController', ['$scope', 'instagram', 'lastfm', function (
 }]);
 
 angular.element(window).load(function(){
-	    $('#loader').hide();
-	});
+	$('#loader').hide();
+});
 
 @import 'projects-list.js';
 @import 'work-list.js';

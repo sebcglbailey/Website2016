@@ -2,7 +2,7 @@ var contact = [
 	{
 		href: "http://www.instagram.com/sebcglbailey",
 		title: "Instagram",
-		name: "Ig",
+		name: "In",
 		type: "ig"
 	},
 	{
