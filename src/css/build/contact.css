@@ -111,7 +111,7 @@
     #insta-cards .insta-pic img, #insta-cards .lastfm-pic img, #lastfm-cards .insta-pic img, #lastfm-cards .lastfm-pic img {
       height: 320px; }
     #insta-cards .insta-pic .text, #insta-cards .lastfm-pic .text, #lastfm-cards .insta-pic .text, #lastfm-cards .lastfm-pic .text {
-      padding: 25px 25px 25px 0;
+      padding: 25px 0;
       flex: 1 1; }
       #insta-cards .insta-pic .text .text-container, #insta-cards .lastfm-pic .text .text-container, #lastfm-cards .insta-pic .text .text-container, #lastfm-cards .lastfm-pic .text .text-container {
         padding: 25px 25px 25px 50px;
