@@ -1,5 +1,5 @@
 #about {
-  padding-bottom: 25px; }
+  padding: 0 20px 25px 20px; }
 
 .about-section {
   text-align: center; }
@@ -79,7 +79,7 @@
       #skill-list .skill.Xd .level {
         background: #FF43C9; }
 
-.card .info-container {
+#about .card .info-container {
   margin: 25px; }
 
 #experience .card {
@@ -91,11 +91,8 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap; }
-  #education-list > div {
-    flex: 1 1 400px;
-    max-width: 400px; }
-  #education-list .card {
-    margin-top: 0; }
+  #education-list .education-card {
+    width: 100%; }
 
 #hobby-list .filter {
   margin: 10px; }
@@ -104,7 +101,7 @@
   margin-top: 25px; }
   #hobby-cards .hobby-card {
     width: 90%;
-    max-width: 320px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,6 +126,10 @@
     transition: transform 0.25s ease; }
   #skill-list .skill:hover .level {
     transform: scaleX(1); }
+
+  #education-list .education-card {
+    flex: 1 1;
+    max-width: 400px; }
 
   #hobby-cards .hobby-card {
     flex-direction: row;

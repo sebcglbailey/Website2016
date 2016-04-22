@@ -33,7 +33,7 @@
 		<div id='insta-cards'>
 			<div ng-show="activeItemIn == post" class='insta-pic' ng-repeat="post in pics | limitTo: 15">
 				<a ng-href="{{post.link}}">
-					<img ng-src="{{post.images.low_resolution.url}}" alt="{{post.caption.text}}" />
+					<img ng-srcset="{{post.images.standard_resolution.url}} 640w, {{post.images.low_resolution}} 320w" ng-src="{{post.images.low_resolution.url}}" alt="{{post.caption.text}}" />
 				</a>
 				<div class='text'>
 					<div class="text-container">
@@ -70,3 +70,5 @@
 	</div>
 
 </div>
+
+<script type='src/javascript' src='/src/js/build/contact.js'></script>

@@ -5,25 +5,25 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       scripts: {
-        files: 'src/js/dev/main.js',
-        tasks: ['import'],
+        files: 'src/js/dev/*.js',
+        tasks: ['uglify'],
       },
       css: {
         files: 'src/css/dev/*.scss',
         tasks: ['sass']
       }
     },
-    import: {
-      options: {},
-      dist: {
-        src: 'src/js/dev/main.js',
-        dest:'main.js'
-      }
-    },
     uglify: {
       my_target: {
+        options: {
+          sourceMap: true
+        },
         files: {
-          'main.js': ['main.js']
+          'main.js': ['src/js/dev/main.js'],
+          'src/js/build/projects.js': ['src/js/dev/projects.js'],
+          'src/js/build/work.js': ['src/js/dev/work.js'],
+          'src/js/build/about.js': ['src/js/dev/about.js'],
+          'src/js/build/contact.js': ['src/js/dev/contact.js']
         }
       }
     },
@@ -61,9 +61,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-import');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'postcss', 'import', 'uglify', 'watch']);
+  grunt.registerTask('default', ['sass', 'postcss', 'uglify', 'watch']);
 
 };

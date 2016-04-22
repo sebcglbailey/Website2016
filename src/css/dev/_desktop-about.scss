@@ -13,6 +13,12 @@
 			}
 		}
 	}
+	#education-list {
+		.education-card {
+			flex: 1 1;
+			max-width: 400px;
+		}
+	}
 	#hobby-cards {
 		.hobby-card {
 			flex-direction: row;

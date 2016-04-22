@@ -64,7 +64,7 @@
 		<div masonry preserve-order reload-on-show id='experience-list' item-selector=".card">
 			<div masonry-brick class='card' ng-repeat="work in experienceList | filter: {company: ''}">
 				<div class='cover-image'>
-					<img ng-src="{{work.image}}" alt="{{work.company}}" />
+					<img ng-srcset="{{work.image.large}} 1280w, {{work.image.medium}} 720w, {{work.image.small}} 360w" sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" ng-src="{{work.image.medium}}" alt="{{work.company}}" />
 				</div>
 				<div class='info-container'>
 					<h3>{{work.company}}</h3>
@@ -82,14 +82,15 @@
 			<h2>Education</h2>
 		</div>
 		<div id='education-list'>
-			<div class='card' ng-repeat="school in educationList | filter: {name: ''}">
+			<div class='card education-card' ng-repeat="school in educationList | filter: {name: ''}">
 				<div class='cover-image'>
-					<img ng-src="{{school.image}}" alt="{{school.name}}" />
+					<img ng-srcset="{{school.image.large}} 1280w, {{school.image.medium}} 720w, {{school.image.small}} 360w" sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" ng-src="{{school.image.medium}}" alt="{{school.name}}" />
 				</div>
 				<div class='info-container'>
 					<h3>{{school.name}}</h3>
 					<p>{{school.dates}}</p>
 					<p>{{school.cert}}</p>
+					<p>{{school.grades}}</p>
 					<p>{{school.clubs}}</p>
 				</div>
 			</div>
@@ -113,7 +114,7 @@
 		</div>
 		<div id='hobby-cards'>
 			<div class='hobby-card' ng-repeat="hobby in hobbyList" ng-show="activeItem == hobby">
-				<img id="{{hobby.hobby}}" ng-src="{{hobby.image}}" alt="{{hobby.hobby}}" />
+				<img id="{{hobby.hobby}}" ng-srcset="{{hobby.image.medium}} 720w, {{hobby.image.small}} 360w" ng-src="{{hobby.image.medium}}" alt="{{hobby.hobby}}" />
 				<div class='text'>
 					<div class='text-container'>
 						{{hobby.text}}
@@ -125,3 +126,5 @@
 
 
 </div>
+
+<script type='src/javascript' src='/src/js/build/about.js'></script>

@@ -1,6 +1,6 @@
 var app = angular.module('myWebsite', ['ngRoute', 'wu.masonry', 'ngAnimate']);
-	
-app.config(function($routeProvider, $locationProvider){
+
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 	$routeProvider
 		.when('/', {
 			templateUrl: '_partials/home.html',
@@ -24,7 +24,7 @@ app.config(function($routeProvider, $locationProvider){
 		})
 		.otherwise({ redirectTo: '/' });
 	$locationProvider.html5Mode(true);
-});
+}]);
 
 app.factory('instagram', ['$http', function($http){
 	return {
@@ -47,23 +47,23 @@ app.factory('lastfm', ['$http', function($http) {
 	return topArtists;
 }]);
 
-app.controller('mainController', function($scope, $routeParams) {
+app.controller('mainController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
     $scope.name = "mainController";
     $scope.projectList = projects;
     $scope.params = $routeParams;
     $scope.$on('$viewContentLoaded', function(){
     	$('#header').removeClass('clicked');
     });
-});
-app.controller('workController', function($scope) {
+}]);
+app.controller('workController', ['$scope', function($scope) {
 	$scope.name = "workController";
 	$scope.workList = work;
 	$scope.workType = workType;
 	$scope.$on('$viewContentLoaded', function(){
      	$('#header').removeClass('clicked');
     });
-});
-app.controller('aboutController', function($scope, $routeParams) {
+}]);
+app.controller('aboutController', ['$scope', '$routeParams', function($scope, $routeParams) {
     $scope.name = "aboutController";
     $scope.skillList = skills;
     $scope.educationList = education;
@@ -79,7 +79,7 @@ app.controller('aboutController', function($scope, $routeParams) {
     $scope.$on('$viewContentLoaded', function(){
     	$('#header').removeClass('clicked');
     });
-});
+}]);
 app.controller('contactController', ['$scope', 'instagram', 'lastfm', function ($scope, instagram, lastfm) {
 	$scope.name = "contactController";
 	$scope.contactList = contact;
@@ -111,25 +111,6 @@ app.controller('contactController', ['$scope', 'instagram', 'lastfm', function (
 angular.element(window).load(function(){
 	$('#loader').hide();
 });
-
-@import 'projects-list.js';
-@import 'work-list.js';
-@import 'about-list.js';
-@import 'contact-list.js';
-
-var workType = [
-	['gd', 'Graphic Design'],
-	['ph', 'Photography'],
-	['wd', 'Web Design'],
-	['ar', 'architecture']
-];
-
-var aboutType = [
-	['sk', 'Skills'],
-	['ex', 'Experience'],
-	['ed', 'Education'],
-	['ho', 'Hobbies / Interests']	
-];
 
 $(document).ready(function(){
 

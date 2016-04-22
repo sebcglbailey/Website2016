@@ -28,7 +28,9 @@
 
 .project-card {
 	.cover-image {
-		margin-bottom: -25px;
+		img {
+			margin-bottom: -25px;
+		}
 	}
 	a {
 		text-decoration: none;
