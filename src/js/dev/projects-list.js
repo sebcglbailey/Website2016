@@ -7,7 +7,8 @@ var projects = [
 		filename: 'xgames.php', // MUST MATCH PHP FILENAME in work/projects !!!
 		title: 'ArchitectureOne',
 		coverImage: {
-			large: '/src/img/projects/xgames/X-01.jpg'
+			large: '/src/img/projects/xgames/cover@2x.jpg',
+			small: '/src/img/projects/xgames/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/xgames/X-01.jpg',
@@ -34,7 +35,8 @@ var projects = [
 		title: 'China Photographs',
 		description: 'A collection of photographs from a trip to Beijing and Chengdu, China in November 2014.',
 		coverImage: {
-			large: '/src/img/projects/china/CH_09.jpg'
+			large: '/src/img/projects/china/cover@2x.jpg',
+			small: '/src/img/projects/china/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/china/CH_01.jpg',
@@ -61,7 +63,8 @@ var projects = [
 		title: 'Landseer Snowboards',
 		description: 'A collection of snowboard designs for the fictional company "Landseer Snowboards."',
 		coverImage: {
-			large: '/src/img/projects/landseer-snowboards/LB_cover.jpg'
+			large: '/src/img/projects/landseer-snowboards/cover@2x.jpg',
+			small: '/src/img/projects/landseer-snowboards/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/landseer-snowboards/LB_01.jpg'
@@ -77,7 +80,8 @@ var projects = [
 		title: 'X-Games Mobile App Design',
 		description: 'iOS app design for X-Games Aspen 2016. Attendees and fans of the competition can keep up to date with all the latest news, videos, results and timings of the the event from one central, easy application.',
 		coverImage: {
-			large: '/src/img/projects/xgames/X-01.jpg'
+			large: '/src/img/projects/xgames/cover@2x.jpg',
+			small: '/src/img/projects/xgames/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/xgames/X-01.jpg',

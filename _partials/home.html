@@ -15,7 +15,7 @@
 		<div masonry-brick class="card project-card" ng-repeat="project in projectList.slice().reverse() | limitTo: limit">
 			
 			<div class='cover-image'>
-				<img ng-src='{{project.coverImage["large"]}}' alt='{{project.coverImageAlt}}' />
+				<img ng-src='{{project.coverImage["small"]}}' alt='{{project.coverImageAlt}}' />
 			</div>
 
 			<a class='{{project.type[0]}}' ng-href='/work/project/{{project.name}}' title='{{project.title}}'>

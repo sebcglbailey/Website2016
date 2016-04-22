@@ -27,18 +27,24 @@ app.config(function($routeProvider, $locationProvider){
 });
 
 app.factory('instagram', ['$http', function($http){
-
 	return {
-		fetchPopular: function(callback){
-            
+		fetchData: function(callback){
             var endPoint = "https://api.instagram.com/v1/users/230978815/media/recent/?access_token=230978815.467ede5.1e39f843afb441068cdeb30c8747c12b&callback=JSON_CALLBACK";
-            
             $http.jsonp(endPoint).success(function(response){
                 callback(response.data);
             });
 		}
 	}
-
+}]);
+app.factory('lastfm', ['$http', function($http) {
+	var topArtists = {};
+	topArtists.getArtists = function() {
+		return $http({
+			method: 'GET',
+			url: 'http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&limit=15&user=sebcglbailey&api_key=facf48415f1494c1a72a48ca0055093b&format=json'
+		});
+	}
+	return topArtists;
 }]);
 
 app.controller('mainController', function($scope, $routeParams) {
@@ -74,15 +80,28 @@ app.controller('aboutController', function($scope, $routeParams) {
     	$('#header').removeClass('clicked');
     });
 });
-app.controller('contactController', ['$scope', 'instagram' , function ($scope, instagram) {
+app.controller('contactController', ['$scope', 'instagram', 'lastfm', function ($scope, instagram, lastfm) {
 	$scope.name = "contactController";
 	$scope.contactList = contact;
 	$scope.pics = [];
-	instagram.fetchPopular(function(data){
+	instagram.fetchData(function(data){
 		$scope.pics = data;
+		$scope.activeItemIn = data[0];
 	});
-	$scope.setActive = function(item) {
-    	$scope.activeItem = item;
+	$scope.topArtists = [];
+	lastfm.getArtists().success(function(response) {
+		$scope.topArtists = response;
+		$scope.activeItemLf = response.topartists.artist[0];
+	});
+	$scope.setActiveIn = function(item) {
+    	$scope.activeItemIn = item;
+    	var instaCards = $('#insta-cards').offset().top - 95;
+    	$('html, body').animate({scrollTop: instaCards});
+    };
+    $scope.setActiveLf = function(item) {
+    	$scope.activeItemLf = item;
+    	var lastFmCards = $('#lastfm-cards').offset().top - 95;
+    	$('html, body').animate({scrollTop: lastFmCards});
     };
 	$scope.$on('$viewContentLoaded', function(){
     	$('#header').removeClass('clicked');
@@ -90,8 +109,8 @@ app.controller('contactController', ['$scope', 'instagram' , function ($scope, i
 }]);
 
 angular.element(window).load(function(){
-	    $('#loader').hide();
-	});
+	$('#loader').hide();
+});
 
 var projects = [
 
@@ -102,7 +121,8 @@ var projects = [
 		filename: 'xgames.php', // MUST MATCH PHP FILENAME in work/projects !!!
 		title: 'ArchitectureOne',
 		coverImage: {
-			large: '/src/img/projects/xgames/X-01.jpg'
+			large: '/src/img/projects/xgames/cover@2x.jpg',
+			small: '/src/img/projects/xgames/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/xgames/X-01.jpg',
@@ -129,7 +149,8 @@ var projects = [
 		title: 'China Photographs',
 		description: 'A collection of photographs from a trip to Beijing and Chengdu, China in November 2014.',
 		coverImage: {
-			large: '/src/img/projects/china/CH_09.jpg'
+			large: '/src/img/projects/china/cover@2x.jpg',
+			small: '/src/img/projects/china/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/china/CH_01.jpg',
@@ -156,7 +177,8 @@ var projects = [
 		title: 'Landseer Snowboards',
 		description: 'A collection of snowboard designs for the fictional company "Landseer Snowboards."',
 		coverImage: {
-			large: '/src/img/projects/landseer-snowboards/LB_cover.jpg'
+			large: '/src/img/projects/landseer-snowboards/cover@2x.jpg',
+			small: '/src/img/projects/landseer-snowboards/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/landseer-snowboards/LB_01.jpg'
@@ -172,7 +194,8 @@ var projects = [
 		title: 'X-Games Mobile App Design',
 		description: 'iOS app design for X-Games Aspen 2016. Attendees and fans of the competition can keep up to date with all the latest news, videos, results and timings of the the event from one central, easy application.',
 		coverImage: {
-			large: '/src/img/projects/xgames/X-01.jpg'
+			large: '/src/img/projects/xgames/cover@2x.jpg',
+			small: '/src/img/projects/xgames/cover.jpg'
 		},
 		projectImages: [
 			'/src/img/projects/xgames/X-01.jpg',
@@ -389,7 +412,7 @@ var contact = [
 	{
 		href: "http://www.instagram.com/sebcglbailey",
 		title: "Instagram",
-		name: "Ig",
+		name: "In",
 		type: "ig"
 	},
 	{
