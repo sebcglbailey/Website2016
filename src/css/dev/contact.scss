@@ -52,8 +52,9 @@
 		background: $white;
 		box-shadow: 0 5px 10px $cardShadow;
 		margin: 0 auto;
-		a{
-			width: 100%
+		a {
+			width: 100%;
+			max-width: 320px;
 		}
 		img {
 			width: 100%;

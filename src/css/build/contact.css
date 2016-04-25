@@ -42,7 +42,8 @@
     box-shadow: 0 5px 10px rgba(191, 191, 191, 0.85);
     margin: 0 auto; }
     #insta-cards .insta-pic a, #insta-cards .lastfm-pic a, #lastfm-cards .insta-pic a, #lastfm-cards .lastfm-pic a {
-      width: 100%; }
+      width: 100%;
+      max-width: 320px; }
     #insta-cards .insta-pic img, #insta-cards .lastfm-pic img, #lastfm-cards .insta-pic img, #lastfm-cards .lastfm-pic img {
       width: 100%;
       float: left; }
