@@ -163,6 +163,49 @@ var projects = [
 			}
 		],
 		layout: 'long-image'
+	},
+
+	{
+		arNo: 3,
+		name: 'LyricPosters',
+		type: ['gd', 'Graphic Design'],
+		title: 'Lyrical Posters',
+		description: 'An ongoing typography project with posters from various songs that are either important to me, or I have listened to on a regular basis.',
+		coverImage: {
+			xl: '/src/img/projects/lyric-posters/cover_xl.jpg',
+			large: '/src/img/projects/lyric-posters/cover_lg.jpg',
+			medium: '/src/img/projects/lyric-posters/cover_med.jpg',
+			small: '/src/img/projects/lyric-posters/cover_sm.jpg',
+			xs: '/src/img/projects/lyric-posters/cover_xs.jpg'
+		},
+		projectImages: [
+			{
+				large: '/src/img/projects/lyric-posters/01_lg.jpg',
+				medium: '/src/img/projects/lyric-posters/01_med.jpg',
+				small: '/src/img/projects/lyric-posters/01_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/lyric-posters/02_lg.jpg',
+				medium: '/src/img/projects/lyric-posters/02_med.jpg',
+				small: '/src/img/projects/lyric-posters/02_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/lyric-posters/03_lg.jpg',
+				medium: '/src/img/projects/lyric-posters/03_med.jpg',
+				small: '/src/img/projects/lyric-posters/03_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/lyric-posters/04_lg.jpg',
+				medium: '/src/img/projects/lyric-posters/04_med.jpg',
+				small: '/src/img/projects/lyric-posters/04_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/lyric-posters/05_lg.jpg',
+				medium: '/src/img/projects/lyric-posters/05_med.jpg',
+				small: '/src/img/projects/lyric-posters/05_sm.jpg'
+			}
+		],
+		layout: 'long-image'
 	}
 
 ];
