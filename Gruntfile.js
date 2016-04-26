@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         tasks: ['uglify'],
       },
       css: {
-        files: 'src/css/dev/*.scss',
+        files: ['src/css/dev/*.scss', 'blog/wp-content/themes/my_theme/css/style.scss'],
         tasks: ['sass']
       }
     },
@@ -51,7 +51,8 @@ module.exports = function(grunt) {
                 'src/css/build/cards.css': 'src/css/dev/cards.scss',
                 'src/css/build/work.css': 'src/css/dev/work.scss',
                 'src/css/build/about.css': 'src/css/dev/about.scss',
-                'src/css/build/contact.css': 'src/css/dev/contact.scss'
+                'src/css/build/contact.css': 'src/css/dev/contact.scss',
+                'blog/wp-content/themes/my_theme/style.css': 'src/css/dev/blog.scss'
             }
         }
     }
