@@ -9,9 +9,10 @@
         </div>
         <?php endif; ?>
 
-        <a href="%s">
+        <a href="<?php the_permalink(); ?>">
             <div class='info-container'>
                 <h2><?php the_title(); ?></h2>
+                <h6><?php the_date(); ?></h6>
                 <p><?php the_excerpt(); ?></p>
                 <i class='icon-arrow-next'></i>
             </div>
