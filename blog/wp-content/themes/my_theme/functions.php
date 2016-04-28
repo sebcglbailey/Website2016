@@ -225,17 +225,29 @@ function my_mce_before_init_insert_formats( $init_array ) {
 			'classes' => 'img-full',
 			'wrapper' => true,
 			
-		),  
+		),
 		array(  
-			'title' => 'Half-width Image',  
+			'title' => 'Small Image Container',  
 			'block' => 'div',  
-			'classes' => 'img-half',
+			'classes' => 'img-container',
+			'wrapper' => true,
+		),
+		array(  
+			'title' => 'Small Image',  
+			'block' => 'div',  
+			'classes' => 'img-small',
 			'wrapper' => true,
 		),
 		array(  
 			'title' => 'Image Caption',  
 			'block' => 'div',  
 			'classes' => 'img-caption',
+			'wrapper' => true,
+		),
+		array(  
+			'title' => 'Well',  
+			'block' => 'div',  
+			'classes' => 'well',
 			'wrapper' => true,
 		),
 	);  
