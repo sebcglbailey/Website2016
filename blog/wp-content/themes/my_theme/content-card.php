@@ -7,10 +7,17 @@
                 ?>
                 <img src='<?php echo $src[0]; ?>' />
         </div>
-        <?php endif; ?>
 
         <a href="<?php the_permalink(); ?>">
             <div class='info-container'>
+
+        <?php else : ?>
+
+        <a href="<?php the_permalink(); ?>">
+            <div class='info-container no-cover'>
+
+        <?php endif; ?>
+
                 <h2><?php the_title(); ?></h2>
                 <h6><?php the_date(); ?></h6>
                 <p><?php the_excerpt(); ?></p>

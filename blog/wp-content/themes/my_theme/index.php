@@ -23,8 +23,8 @@
 			<?php 
 				posts_nav_link(
 					" ",
-					"<div class='filter title'>Previous</div>",
-					"<div class='filter title'>Next</div>"
+					"<div>Newer</div>",
+					"<div>Older</div>"
 				);
 				
 			?>

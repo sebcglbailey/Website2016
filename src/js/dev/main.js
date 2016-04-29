@@ -41,7 +41,7 @@ app.factory('lastfm', ['$http', function($http) {
 	topArtists.getArtists = function() {
 		return $http({
 			method: 'GET',
-			url: 'http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&limit=15&user=sebcglbailey&api_key=facf48415f1494c1a72a48ca0055093b&format=json'
+			url: 'http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&limit=20&user=sebcglbailey&api_key=facf48415f1494c1a72a48ca0055093b&format=json'
 		});
 	}
 	return topArtists;
@@ -109,7 +109,12 @@ app.controller('contactController', ['$scope', 'instagram', 'lastfm', function (
 }]);
 
 angular.element(window).load(function(){
-	$('#loader').hide();
+	angular.element(window).imagesLoaded().always(function(){
+		$('#loader').hide();
+	});
+	$('#instagram').imagesLoaded().always(function(){
+		$('#loader').hide();
+	});
 });
 
 $(document).ready(function(){

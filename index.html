@@ -15,8 +15,8 @@
 <title>Sebastian Bailey</title>
 
 <link rel='stylesheet' href='/src/css/build/main.css' />
-<link rel='stylesheet' href='/src/css/build/cards.css' />
 <link rel='stylesheet' href='/src/css/build/home.css' />
+<link rel='stylesheet' href='/src/css/build/cards.css' />
 <link rel='stylesheet' href='/src/css/build/project.css' />
 <link rel='stylesheet' href='/src/css/build/work.css' />
 <link rel='stylesheet' href='/src/css/build/about.css' />
@@ -30,10 +30,12 @@
 <div id="container">
 	<div id="header">
 		<div id="logo">
-			<picture>
-				<source srcset='/src/img/logo-white.svg'>
-				<img src='/src/img/logo-white.png' alt='Sebastian Bailey Logo' />
-			</picture>
+			<a href='/'>
+				<picture>
+					<source srcset='/src/img/logo-white.svg'>
+					<img src='/src/img/logo-white.png' alt='Sebastian Bailey Logo' />
+				</picture>
+			</a>
 		</div>
 		<div class="burger-menu">
 			<div></div>
@@ -48,7 +50,7 @@
 			<a href="/about">
 				<li>about</li>
 			</a>
-			<a href="/blog/">
+			<a href="/blog/" target="_self">
 				<li>blog</li>
 			</a>
 			<a href="/contact">
@@ -57,7 +59,7 @@
 		</ul>
 	</div>
 
-	<div ng-view autoscroll="true" id="ngView"></div>
+	<div ng-view autoscroll="true" id="ngView" class='ng-cloak'></div>
 
 <!-- Close the #container -->
 </div>

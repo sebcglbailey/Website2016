@@ -28,6 +28,19 @@
     #insta-posts .insta-post img, #insta-posts .lastfm-post img, #lastfm-posts .insta-post img, #lastfm-posts .lastfm-post img {
       width: 100%;
       float: left; }
+  #insta-posts .more, #lastfm-posts .more {
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    transition: all 0.25s ease;
+    cursor: pointer; }
+  #insta-posts .more:hover, #lastfm-posts .more:hover {
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff; }
 
 #insta-cards, #lastfm-cards {
   margin-top: 25px; }

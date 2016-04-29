@@ -16,27 +16,40 @@
 	    </div>
 	    <?php endif; ?>
 
-	    <div class='post-navigation'>
-		    <?php
-
-				if ( is_singular( 'post' ) ) {
-					// Previous/next post navigation.
-					the_post_navigation( array(
-						'next_text' => '<div class="next"><span>Next</span><i class="icon-arrow-next"></i></div>',
-						'prev_text' => '<div class="previous"><i class="icon-arrow-prev"></i><span>Prev</span></div>',
-					) );
-				}
-
-			?>
-
-		</div>
-
 	    <div id="content">
 
 	    	<div id='post-content'>
+				
+				<div id='top-post-navigation'>
+					<?php
+
+						if ( is_singular( 'post' ) ) {
+							// Previous/next post navigation.
+							the_post_navigation( array(
+								'next_text' => '<div class="next"><span>Next</span><i class="icon-arrow-next"></i></div>',
+								'prev_text' => '<div class="previous"><i class="icon-arrow-prev"></i><span>Prev</span></div>',
+							) );
+						}
+
+					?>
+				</div>
 
 	    		<h1><?php the_title(); ?></h1>
 	    		<?php the_content(''); ?>
+
+	    		<div id='bottom-post-navigation'>
+					<?php
+
+						if ( is_singular( 'post' ) ) {
+							// Previous/next post navigation.
+							the_post_navigation( array(
+								'next_text' => '<div class="next"><span>Next Post</span><h3>%title</h3></div>',
+								'prev_text' => '<div class="previous"><span>Previous Post</span><h3>%title</h3></div>',
+							) );
+						}
+
+					?>
+				</div>
 
 	    <?php
 
