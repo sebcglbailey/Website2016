@@ -10,9 +10,10 @@
 		<?php if ( has_post_thumbnail() && ! post_password_required() && ! is_attachment() ) : ?>
 	    <div id='cover-image'>
 	        <?php
-	            $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
+	            $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 600, 400 ), false, '' );
+                $srcset = wp_get_attachment_image_srcset( get_post_thumbnail_id($post->ID) );
 	        ?>
-	        <img src='<?php echo $src[0]; ?>' />
+	        <img srcset="<?php echo $srcset; ?>" src='<?php echo $src[0]; ?>' />
 	    </div>
 	    <?php endif; ?>
 

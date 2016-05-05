@@ -167,42 +167,62 @@ var projects = [
 
 	{
 		arNo: 3,
-		name: 'LyricPosters',
+		name: 'BumpNGrind',
 		type: ['gd', 'Graphic Design'],
-		title: 'Lyrical Posters',
-		description: 'An ongoing typography project with posters from various songs that are either important to me, or I have listened to on a regular basis.',
+		title: 'Bump & Grind',
+		description: 'Bump & Grind is a boutique, self-established coffee business in Clapham. The project consisted of website design, brochure design, and packaging for a coffee martini. Working closely with the brand, I managed to capture the urban culture the business was trying to push, and continue to work with them on an ongoing basis.',
 		coverImage: {
-			xl: '/src/img/projects/lyric-posters/cover_xl.jpg',
-			large: '/src/img/projects/lyric-posters/cover_lg.jpg',
-			medium: '/src/img/projects/lyric-posters/cover_med.jpg',
-			small: '/src/img/projects/lyric-posters/cover_sm.jpg',
-			xs: '/src/img/projects/lyric-posters/cover_xs.jpg'
+			xl: '/src/img/projects/bump-and-grind/cover_xl.jpg',
+			large: '/src/img/projects/bump-and-grind/cover_lg.jpg',
+			medium: '/src/img/projects/bump-and-grind/cover_med.jpg',
+			small: '/src/img/projects/bump-and-grind/cover_sm.jpg',
+			xs: '/src/img/projects/bump-and-grind/cover_xs.jpg'
 		},
 		projectImages: [
 			{
-				large: '/src/img/projects/lyric-posters/01_lg.jpg',
-				medium: '/src/img/projects/lyric-posters/01_med.jpg',
-				small: '/src/img/projects/lyric-posters/01_sm.jpg'
+				large: '/src/img/projects/bump-and-grind/BG-01_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-01_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-01_sm.jpg'
 			},
 			{
-				large: '/src/img/projects/lyric-posters/02_lg.jpg',
-				medium: '/src/img/projects/lyric-posters/02_med.jpg',
-				small: '/src/img/projects/lyric-posters/02_sm.jpg'
+				large: '/src/img/projects/bump-and-grind/BG-02_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-02_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-02_sm.jpg'
 			},
 			{
-				large: '/src/img/projects/lyric-posters/03_lg.jpg',
-				medium: '/src/img/projects/lyric-posters/03_med.jpg',
-				small: '/src/img/projects/lyric-posters/03_sm.jpg'
+				large: '/src/img/projects/bump-and-grind/BG-03_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-03_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-03_sm.jpg'
 			},
 			{
-				large: '/src/img/projects/lyric-posters/04_lg.jpg',
-				medium: '/src/img/projects/lyric-posters/04_med.jpg',
-				small: '/src/img/projects/lyric-posters/04_sm.jpg'
+				large: '/src/img/projects/bump-and-grind/BG-04_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-04_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-04_sm.jpg'
 			},
 			{
-				large: '/src/img/projects/lyric-posters/05_lg.jpg',
-				medium: '/src/img/projects/lyric-posters/05_med.jpg',
-				small: '/src/img/projects/lyric-posters/05_sm.jpg'
+				large: '/src/img/projects/bump-and-grind/BG-05_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-05_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-05_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-06_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-06_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-06_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-07_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-07_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-07_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-08_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-08_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-08_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-09_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-09_med.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-09_sm.jpg'
 			}
 		],
 		layout: 'long-image'

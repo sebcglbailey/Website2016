@@ -3,9 +3,10 @@
         <?php if ( has_post_thumbnail() && ! post_password_required() && ! is_attachment() ) : ?>
         <div class='cover-image'>
                 <?php
-                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
+                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 600, 400 ), false, '' );
+                    $srcset = wp_get_attachment_image_srcset( get_post_thumbnail_id($post->ID) );
                 ?>
-                <img src='<?php echo $src[0]; ?>' />
+                <img srcset="<?php echo $srcset; ?>" src='<?php echo $src[0]; ?>' sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" />
         </div>
 
         <a href="<?php the_permalink(); ?>">
