@@ -9,46 +9,170 @@ var projects = [
 		coverImage: {
 			xl: '/src/img/projects/china/cover_lg.jpg',
 			large: '/src/img/projects/china/cover_lg.jpg',
-			medium: '/src/img/projects/china/cover_med.jpg',
-			small: '/src/img/projects/china/cover_med.jpg',
-			xs: '/src/img/projects/china/cover_med.jpg'
+			medium: '/src/img/projects/china/cover_md.jpg',
+			small: '/src/img/projects/china/cover_md.jpg',
+			xs: '/src/img/projects/china/cover_md.jpg'
 		},
 		projectImages: [
 			{
-				medium: '/src/img/projects/china/CH-01_med.jpg'
+				large: '/src/img/projects/china/CH-01_lg.jpg',
+				medium: '/src/img/projects/china/CH-01_md.jpg',
+				small: '/src/img/projects/china/CH-01_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-02_med.jpg'
+				large: '/src/img/projects/china/CH-02_lg.jpg',
+				medium: '/src/img/projects/china/CH-02_md.jpg',
+				small: '/src/img/projects/china/CH-02_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-03_med.jpg'
+				large: '/src/img/projects/china/CH-03_lg.jpg',
+				medium: '/src/img/projects/china/CH-03_md.jpg',
+				small: '/src/img/projects/china/CH-03_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-04_med.jpg'
+				large: '/src/img/projects/china/CH-04_lg.jpg',
+				medium: '/src/img/projects/china/CH-04_md.jpg',
+				small: '/src/img/projects/china/CH-04_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-05_med.jpg'
+				large: '/src/img/projects/china/CH-05_lg.jpg',
+				medium: '/src/img/projects/china/CH-05_md.jpg',
+				small: '/src/img/projects/china/CH-05_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-06_med.jpg'
+				large: '/src/img/projects/china/CH-06_lg.jpg',
+				medium: '/src/img/projects/china/CH-06_md.jpg',
+				small: '/src/img/projects/china/CH-06_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-07_med.jpg'
+				large: '/src/img/projects/china/CH-07_lg.jpg',
+				medium: '/src/img/projects/china/CH-07_md.jpg',
+				small: '/src/img/projects/china/CH-07_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-08_med.jpg'
+				large: '/src/img/projects/china/CH-08_lg.jpg',
+				medium: '/src/img/projects/china/CH-08_md.jpg',
+				small: '/src/img/projects/china/CH-08_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-09_med.jpg'
+				large: '/src/img/projects/china/CH-09_lg.jpg',
+				medium: '/src/img/projects/china/CH-09_md.jpg',
+				small: '/src/img/projects/china/CH-09_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-10_med.jpg'
+				large: '/src/img/projects/china/CH-10_lg.jpg',
+				medium: '/src/img/projects/china/CH-10_md.jpg',
+				small: '/src/img/projects/china/CH-10_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-11_med.jpg'
+				large: '/src/img/projects/china/CH-11_lg.jpg',
+				medium: '/src/img/projects/china/CH-11_md.jpg',
+				small: '/src/img/projects/china/CH-11_sm.jpg'
 			},
 			{
-				medium: '/src/img/projects/china/CH-12_med.jpg'
+				large: '/src/img/projects/china/CH-12_lg.jpg',
+				medium: '/src/img/projects/china/CH-12_md.jpg',
+				small: '/src/img/projects/china/CH-12_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-13_lg.jpg',
+				medium: '/src/img/projects/china/CH-13_md.jpg',
+				small: '/src/img/projects/china/CH-13_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-14_lg.jpg',
+				medium: '/src/img/projects/china/CH-14_md.jpg',
+				small: '/src/img/projects/china/CH-14_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-15_lg.jpg',
+				medium: '/src/img/projects/china/CH-15_md.jpg',
+				small: '/src/img/projects/china/CH-15_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-16_lg.jpg',
+				medium: '/src/img/projects/china/CH-16_md.jpg',
+				small: '/src/img/projects/china/CH-16_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-17_lg.jpg',
+				medium: '/src/img/projects/china/CH-17_md.jpg',
+				small: '/src/img/projects/china/CH-17_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-18_lg.jpg',
+				medium: '/src/img/projects/china/CH-18_md.jpg',
+				small: '/src/img/projects/china/CH-18_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-19_lg.jpg',
+				medium: '/src/img/projects/china/CH-19_md.jpg',
+				small: '/src/img/projects/china/CH-19_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-20_lg.jpg',
+				medium: '/src/img/projects/china/CH-20_md.jpg',
+				small: '/src/img/projects/china/CH-20_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-21_lg.jpg',
+				medium: '/src/img/projects/china/CH-21_md.jpg',
+				small: '/src/img/projects/china/CH-21_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-22_lg.jpg',
+				medium: '/src/img/projects/china/CH-22_md.jpg',
+				small: '/src/img/projects/china/CH-22_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-23_lg.jpg',
+				medium: '/src/img/projects/china/CH-23_md.jpg',
+				small: '/src/img/projects/china/CH-23_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-24_lg.jpg',
+				medium: '/src/img/projects/china/CH-24_md.jpg',
+				small: '/src/img/projects/china/CH-24_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-25_lg.jpg',
+				medium: '/src/img/projects/china/CH-25_md.jpg',
+				small: '/src/img/projects/china/CH-25_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-26_lg.jpg',
+				medium: '/src/img/projects/china/CH-26_md.jpg',
+				small: '/src/img/projects/china/CH-26_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-27_lg.jpg',
+				medium: '/src/img/projects/china/CH-27_md.jpg',
+				small: '/src/img/projects/china/CH-27_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-28_lg.jpg',
+				medium: '/src/img/projects/china/CH-28_md.jpg',
+				small: '/src/img/projects/china/CH-28_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-29_lg.jpg',
+				medium: '/src/img/projects/china/CH-29_md.jpg',
+				small: '/src/img/projects/china/CH-29_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-30_lg.jpg',
+				medium: '/src/img/projects/china/CH-30_md.jpg',
+				small: '/src/img/projects/china/CH-30_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-31_lg.jpg',
+				medium: '/src/img/projects/china/CH-31_md.jpg',
+				small: '/src/img/projects/china/CH-31_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/china/CH-32_lg.jpg',
+				medium: '/src/img/projects/china/CH-32_md.jpg',
+				small: '/src/img/projects/china/CH-32_sm.jpg'
 			},
 		],
 		layout: 'single-images'
@@ -63,24 +187,24 @@ var projects = [
 		coverImage: {
 			xl: '/src/img/projects/landseer-snowboards/cover_xl.jpg',
 			large: '/src/img/projects/landseer-snowboards/cover_lg.jpg',
-			medium: '/src/img/projects/landseer-snowboards/cover_med.jpg',
+			medium: '/src/img/projects/landseer-snowboards/cover_md.jpg',
 			small: '/src/img/projects/landseer-snowboards/cover_sm.jpg',
 			xs: '/src/img/projects/landseer-snowboards/cover_xs.jpg'
 		},
 		projectImages: [
 			{
 				large: '/src/img/projects/landseer-snowboards/LB-03_lg.jpg',
-				medium: '/src/img/projects/landseer-snowboards/LB-03_med.jpg',
+				medium: '/src/img/projects/landseer-snowboards/LB-03_md.jpg',
 				small: '/src/img/projects/landseer-snowboards/LB-03_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/landseer-snowboards/LB-02_lg.jpg',
-				medium: '/src/img/projects/landseer-snowboards/LB-02_med.jpg',
+				medium: '/src/img/projects/landseer-snowboards/LB-02_md.jpg',
 				small: '/src/img/projects/landseer-snowboards/LB-02_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/landseer-snowboards/LB-01_lg.jpg',
-				medium: '/src/img/projects/landseer-snowboards/LB-01_med.jpg',
+				medium: '/src/img/projects/landseer-snowboards/LB-01_md.jpg',
 				small: '/src/img/projects/landseer-snowboards/LB-01_sm.jpg'
 			},
 		],
@@ -96,69 +220,69 @@ var projects = [
 		coverImage: {
 			xl: '/src/img/projects/xgames/cover_xl.jpg',
 			large: '/src/img/projects/xgames/cover_lg.jpg',
-			medium: '/src/img/projects/xgames/cover_med.jpg',
+			medium: '/src/img/projects/xgames/cover_md.jpg',
 			small: '/src/img/projects/xgames/cover_sm.jpg',
 			xs: '/src/img/projects/xgames/cover_xs.jpg'
 		},
 		projectImages: [
 			{
 				large: '/src/img/projects/xgames/X-01_lg.jpg',
-				medium: '/src/img/projects/xgames/X-01_med.jpg',
+				medium: '/src/img/projects/xgames/X-01_md.jpg',
 				small: '/src/img/projects/xgames/X-01_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-02_lg.jpg',
-				medium: '/src/img/projects/xgames/X-02_med.jpg',
+				medium: '/src/img/projects/xgames/X-02_md.jpg',
 				small: '/src/img/projects/xgames/X-02_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-03_lg.jpg',
-				medium: '/src/img/projects/xgames/X-03_med.jpg',
+				medium: '/src/img/projects/xgames/X-03_md.jpg',
 				small: '/src/img/projects/xgames/X-03_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-04_lg.jpg',
-				medium: '/src/img/projects/xgames/X-04_med.jpg',
+				medium: '/src/img/projects/xgames/X-04_md.jpg',
 				small: '/src/img/projects/xgames/X-04_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-05_lg.jpg',
-				medium: '/src/img/projects/xgames/X-05_med.jpg',
+				medium: '/src/img/projects/xgames/X-05_md.jpg',
 				small: '/src/img/projects/xgames/X-05_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-06_lg.jpg',
-				medium: '/src/img/projects/xgames/X-06_med.jpg',
+				medium: '/src/img/projects/xgames/X-06_md.jpg',
 				small: '/src/img/projects/xgames/X-06_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-07_lg.jpg',
-				medium: '/src/img/projects/xgames/X-07_med.jpg',
+				medium: '/src/img/projects/xgames/X-07_md.jpg',
 				small: '/src/img/projects/xgames/X-07_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-08_lg.jpg',
-				medium: '/src/img/projects/xgames/X-08_med.jpg',
+				medium: '/src/img/projects/xgames/X-08_md.jpg',
 				small: '/src/img/projects/xgames/X-08_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-09_lg.jpg',
-				medium: '/src/img/projects/xgames/X-09_med.jpg',
+				medium: '/src/img/projects/xgames/X-09_md.jpg',
 				small: '/src/img/projects/xgames/X-09_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-10_lg.jpg',
-				medium: '/src/img/projects/xgames/X-10_med.jpg',
+				medium: '/src/img/projects/xgames/X-10_md.jpg',
 				small: '/src/img/projects/xgames/X-10_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-11_lg.jpg',
-				medium: '/src/img/projects/xgames/X-11_med.jpg',
+				medium: '/src/img/projects/xgames/X-11_md.jpg',
 				small: '/src/img/projects/xgames/X-11_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/xgames/X-12_lg.jpg',
-				medium: '/src/img/projects/xgames/X-12_med.jpg',
+				medium: '/src/img/projects/xgames/X-12_md.jpg',
 				small: '/src/img/projects/xgames/X-12_sm.jpg'
 			}
 		],
@@ -174,54 +298,54 @@ var projects = [
 		coverImage: {
 			xl: '/src/img/projects/bump-and-grind/cover_xl.jpg',
 			large: '/src/img/projects/bump-and-grind/cover_lg.jpg',
-			medium: '/src/img/projects/bump-and-grind/cover_med.jpg',
+			medium: '/src/img/projects/bump-and-grind/cover_md.jpg',
 			small: '/src/img/projects/bump-and-grind/cover_sm.jpg',
 			xs: '/src/img/projects/bump-and-grind/cover_xs.jpg'
 		},
 		projectImages: [
 			{
 				large: '/src/img/projects/bump-and-grind/BG-01_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-01_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-01_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-01_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-02_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-02_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-02_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-02_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-03_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-03_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-03_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-03_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-04_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-04_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-04_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-04_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-05_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-05_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-05_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-05_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-06_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-06_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-06_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-06_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-07_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-07_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-07_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-07_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-08_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-08_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-08_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-08_sm.jpg'
 			},
 			{
 				large: '/src/img/projects/bump-and-grind/BG-09_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-09_med.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-09_md.jpg',
 				small: '/src/img/projects/bump-and-grind/BG-09_sm.jpg'
 			}
 		],

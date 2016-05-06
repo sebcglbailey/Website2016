@@ -14,7 +14,8 @@
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-import": "^1.0.3",
-    "grunt-postcss": "^0.8.0"
+    "grunt-postcss": "^0.8.0",
+    "grunt-responsive-images": "^0.1.7"
   },
   "dependencies": {
     "angular-masonry": "^0.16.0"

@@ -1,0 +1,22 @@
+mogrify -path output/ -format "_lg.jpg" -resize 1800 *.jpg
+mogrify -path output/ -format "_md.jpg" -resize 900 *.jpg
+mogrify -path output/ -format "_sm.jpg" -resize 360 *.jpg
+mogrify -path output/ -format "_xl.jpg" -resize 1920 cover.jpg
+mogrify -path output/ -format "_lg.jpg" -resize 1536 cover.jpg
+mogrify -path output/ -format "_md.jpg" -resize 980 cover.jpg
+mogrify -path output/ -format "_sm.jpg" -resize 720 cover.jpg
+mogrify -path output/ -format "_xs.jpg" -resize 360 cover.jpg
+cd output
+filelist=$(ls)
+for file in $filelist; do
+mv "$file" "$(echo "$file" | sed 's/._/_/g' )"
+done
+
+mogrify -path output/ -format "_lg.jpg" -resize 100% *.jpg
+mogrify -path output/ -format "_md.jpg" -resize 640 *.jpg
+mogrify -path output/ -format "_sm.jpg" -resize 360 *.jpg
+cd output
+filelist=$(ls)
+for file in $filelist; do
+mv "$file" "$(echo "$file" | sed 's/._/_/g' )"
+done
