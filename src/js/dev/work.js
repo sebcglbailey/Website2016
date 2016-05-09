@@ -289,9 +289,9 @@ var work = [
 		type: 'gd',
 		title: 'Imprima – Graphic Identity',
 		image: {
-			large: '/src/img/work/gd/IMP-01_lg.jpg',
-			medium: '/src/img/work/gd/IMP-01_md.jpg',
-			small: '/src/img/work/gd/IMP-01_sm.jpg'
+			large: '/src/img/work/gd/IMP-01_lg.png',
+			medium: '/src/img/work/gd/IMP-01_md.png',
+			small: '/src/img/work/gd/IMP-01_sm.png'
 		}
 	},
 	{
