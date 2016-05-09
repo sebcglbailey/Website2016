@@ -134,7 +134,7 @@ var hobbies = [
 	},
 	{
 		hobby: 'Travelling',
-		text: 'I\'m not exactly a veteran traveller, but I do love to go to different places when I get the chance to. Experiencing a different culture can be particularly rewarding and you get to learn so much. Wherever I go, I always try and find some interesting places to take photos of, and to not just be a \'standard tourist.\'',
+		text: 'I\'m not exactly a veteran traveller, but I do love to go to different places when I get the chance to. Experiencing a different culture can be particularly rewarding and you get to learn so much. Wherever I go, I will always try and not travel the \'beaten track,\' and I try to show that with the photographs I take there, finding different angles to view the sights from – so I don\'t end up with a photo a million people have taken before me!' ,
 		image: {
 			medium: '/src/img/about/travel-med.jpg'
 		}

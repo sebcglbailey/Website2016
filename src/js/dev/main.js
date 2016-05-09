@@ -112,15 +112,20 @@ angular.element(window).load(function(){
 	angular.element(window).imagesLoaded().always(function(){
 		$('#loader').hide();
 	});
-	$('#instagram').imagesLoaded().always(function(){
-		$('#loader').hide();
-	});
 });
 
 $(document).ready(function(){
 
 	$('.burger-menu').click(function(){
 		$(this).parents('#header').toggleClass('clicked');
+	});
+
+	$(window).click(function(){
+		$('#splash-logo-container').fadeOut();
+	});
+
+	$(window).scroll(function(){
+		$('#splash-logo-container').fadeOut();
 	});
 
 });

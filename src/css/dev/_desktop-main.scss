@@ -6,7 +6,7 @@
 			top: auto;
 			left: auto;
 			width: auto;
-			height: auto;
+			height: 100%;
 			flex-direction: row;
 			padding: 0;
 			margin: 0;
@@ -18,9 +18,27 @@
 				border: 0;
 				animation: none;
 				transform: scale(1);
+				position: relative;
 			}
 			a::after {
 				animation: none;
+			}
+			a::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 0;
+				height: 0;
+				opacity: 0;
+				background: $white;
+				transition: all 0.25s ease;
+			}
+			a:hover::before {
+				width: 100%;
+				opacity: 1;
+				left: 0;
+				height: 3px;
 			}
 		}
 		.burger-menu {
