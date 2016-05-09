@@ -71,4 +71,6 @@
 
 </div>
 
+<div id='back-to-top'>Back To Top</div>
+
 <?php get_footer(); ?>

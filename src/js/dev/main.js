@@ -29,7 +29,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 app.factory('instagram', ['$http', function($http){
 	return {
 		fetchData: function(callback){
-            var endPoint = "https://api.instagram.com/v1/users/230978815/media/recent/?access_token=230978815.467ede5.1e39f843afb441068cdeb30c8747c12b&callback=JSON_CALLBACK";
+            var endPoint = "https://api.instagram.com/v1/users/3197786970/media/recent/?access_token=230978815.467ede5.1e39f843afb441068cdeb30c8747c12b&callback=JSON_CALLBACK";
             $http.jsonp(endPoint).success(function(response){
                 callback(response.data);
             });
@@ -96,12 +96,16 @@ app.controller('contactController', ['$scope', 'instagram', 'lastfm', function (
 	$scope.setActiveIn = function(item) {
     	$scope.activeItemIn = item;
     	var instaCards = $('#insta-cards').offset().top - 95;
-    	$('html, body').animate({scrollTop: instaCards});
+    	if ( $(window).width() < 640 ) {
+    		$('html, body').animate({scrollTop: instaCards});
+    	}
     };
     $scope.setActiveLf = function(item) {
     	$scope.activeItemLf = item;
     	var lastFmCards = $('#lastfm-cards').offset().top - 95;
-    	$('html, body').animate({scrollTop: lastFmCards});
+    	if ( $(window).width() < 640 ) {
+    		$('html, body').animate({scrollTop: lastFmCards});
+    	}
     };
 	$scope.$on('$viewContentLoaded', function(){
     	$('#header').removeClass('clicked');
@@ -126,6 +130,21 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		$('#splash-logo-container').fadeOut();
+		var $windowPos = $(window).scrollTop();
+		var $windowHeight = $(window).height();
+		console.log($windowPos);
+		console.log($windowHeight);
+		if ( $windowPos > $windowHeight ) {
+			$('#back-to-top').fadeIn();
+		}
+		else {
+			$('#back-to-top').fadeOut();
+		}
+	});
+
+	$('#back-to-top').click(function(){
+		var top = $('html, body').offset().top;
+		$('html, body').animate({scrollTop: top});
 	});
 
 });

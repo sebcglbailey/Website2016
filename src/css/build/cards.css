@@ -5,7 +5,7 @@
 .card-sizer, .card {
   width: 96%;
   float: left;
-  margin: 25px 2% 0 2%; }
+  margin: 0 2% 25px 2%; }
 
 .info-container {
   margin: 0 25px;
@@ -57,17 +57,17 @@
   .work-card .info-container.wd {
     color: #F8863C; }
 
-.project-card:hover h2 {
+.info-container:hover h2 {
   text-decoration: underline; }
 
 @media all and (min-width: 640px) {
   .card-sizer, .card {
     width: 46%;
-    margin: 25px 2% 0 2%; } }
+    margin: 0 2% 25px 2%; } }
 @media all and (min-width: 1080px) {
   .card-sizer, .card {
     width: 31.33333%;
-    margin: 25px 1% 0 1%; }
+    margin: 0 1% 25px 1%; }
 
   .card p {
     display: block !important; } }

@@ -1,6 +1,6 @@
 var contact = [
 	{
-		href: "http://www.instagram.com/sebcglbailey",
+		href: "http://www.instagram.com/_u/seb.bailey",
 		title: "Instagram",
 		name: "In",
 		type: "ig"
@@ -24,7 +24,7 @@ var contact = [
 		type: "be"
 	},
 	{
-		href: "http://www.last.fm",
+		href: "http://www.last.fm/user/sebcglbailey",
 		title: "LastFM",
 		name: "Lf",
 		type: "lf"

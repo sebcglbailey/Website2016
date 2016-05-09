@@ -1,3 +1,10 @@
+var workType = [
+	['gd', 'Graphic Design'],
+	['ph', 'Photography'],
+	['wd', 'Web Design'],
+	['ar', 'architecture']
+];
+
 var work = [
 	{
 		type: 'gd',
@@ -1052,11 +1059,4 @@ var work = [
 			small: '/src/img/work/ar/FP-01_sm.jpg'
 		}
 	}
-];
-
-var workType = [
-	['gd', 'Graphic Design'],
-	['ph', 'Photography'],
-	['wd', 'Web Design'],
-	['ar', 'architecture']
 ];

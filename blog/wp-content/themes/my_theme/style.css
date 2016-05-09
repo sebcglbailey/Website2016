@@ -167,6 +167,13 @@ a:hover {
     transform: scaleX(0); }
   100% {
     transform: scaleX(1); } }
+#title {
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+  #title h1 {
+    margin: 0;
+    font-size: 1.6em; }
+
 .filter.title {
   padding: 25px;
   border: 3px solid rgba(0, 0, 0, 0.85);
@@ -222,6 +229,8 @@ a:hover {
 
 .card {
   padding-bottom: 25px; }
+  .card h2 {
+    font-size: 1.2em; }
   .card .cover-image {
     margin-bottom: -50px; }
   .card a {
@@ -401,6 +410,18 @@ input#submit:hover {
   background: rgba(0, 0, 0, 0.85);
   color: #fff; }
 
+#back-to-top {
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.85);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 15px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  cursor: pointer; }
+
 @media all and (min-width: 640px) {
   #header ul {
     display: flex;
@@ -408,7 +429,7 @@ input#submit:hover {
     top: auto;
     left: auto;
     width: auto;
-    height: auto;
+    height: 100%;
     flex-direction: row;
     padding: 0;
     margin: 0;
@@ -419,11 +440,30 @@ input#submit:hover {
       width: auto;
       border: 0;
       animation: none;
-      transform: scale(1); }
+      transform: scale(1);
+      position: relative; }
     #header ul a::after {
       animation: none; }
+    #header ul a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      opacity: 0;
+      background: #fff;
+      transition: all 0.25s ease; }
+    #header ul a:hover::before {
+      width: 100%;
+      opacity: 1;
+      left: 0; }
   #header .burger-menu {
-    display: none; } }
+    display: none; }
+
+  #back-to-top {
+    font-size: 1em;
+    padding: 20px; } }
 .card {
   background: #fff;
   box-shadow: 0 5px 5px rgba(191, 191, 191, 0.85); }
@@ -431,7 +471,7 @@ input#submit:hover {
 .card-sizer, .card {
   width: 96%;
   float: left;
-  margin: 25px 2% 0 2%; }
+  margin: 0 2% 25px 2%; }
 
 .info-container {
   margin: 0 25px;
@@ -483,21 +523,24 @@ input#submit:hover {
   .work-card .info-container.wd {
     color: #F8863C; }
 
-.project-card:hover h2 {
+.info-container:hover h2 {
   text-decoration: underline; }
 
 @media all and (min-width: 640px) {
   .card-sizer, .card {
     width: 46%;
-    margin: 25px 2% 0 2%; } }
+    margin: 0 2% 25px 2%; } }
 @media all and (min-width: 1080px) {
   .card-sizer, .card {
     width: 31.33333%;
-    margin: 25px 1% 0 1%; }
+    margin: 0 1% 25px 1%; }
 
   .card p {
     display: block !important; } }
 @media all and (min-width: 640px) {
+  .card h2 {
+    font-size: 1.45em; }
+
   #post-content .img-full {
     width: 90%; }
   #post-content h1 {

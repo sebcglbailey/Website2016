@@ -8,7 +8,7 @@
 .card-sizer, .card {
 	width: 96%;
 	float: left;
-	margin: 25px 2% 0 2%;
+	margin: 0 2% 25px 2%;
 }
 
 .info-container {
@@ -87,10 +87,10 @@
 	}
 }
 
-.project-card:hover {
+.info-container:hover {
 	h2 {
 		text-decoration: underline;
-	 }
+	}
 }
 
 @import 'desktop-cards.scss';

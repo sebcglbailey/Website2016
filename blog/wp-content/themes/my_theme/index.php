@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+		<div id="title" class='filter title'>
+			<h1>Blog</h1>
+		</div>
+
 		<div id="blog-posts">
 
 			<?php if ( have_posts() ) : ?>
@@ -35,6 +39,8 @@
 				get_template_part( 'content', 'none' );
 
 			endif; ?>
+
+		<div id='back-to-top'>Back To Top</div>
 
 	</div>
 

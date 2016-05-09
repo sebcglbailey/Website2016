@@ -29,7 +29,7 @@
 				bottom: 0;
 				left: 50%;
 				width: 0;
-				height: 0;
+				height: 3px;
 				opacity: 0;
 				background: $white;
 				transition: all 0.25s ease;
@@ -38,11 +38,15 @@
 				width: 100%;
 				opacity: 1;
 				left: 0;
-				height: 3px;
 			}
 		}
 		.burger-menu {
 			display: none;
 		}
+	}
+
+	#back-to-top {
+		font-size: 1em;
+		padding: 20px;
 	}
 }

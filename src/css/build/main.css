@@ -166,11 +166,17 @@ h2 {
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 999; }
+  z-index: 999;
+  cursor: pointer; }
   #splash-logo-container #splash-logo {
-    flex: 1 1 400px;
-    max-width: 400px; }
+    flex: 1 1 500px;
+    max-width: 500px; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 #loader {
   width: 100%;
   height: 100%;
@@ -217,11 +223,17 @@ h2 {
     transform: rotateX(-35deg) rotateY(0deg) rotateZ(0); }
   100% {
     transform: rotateX(-35deg) rotateY(0deg) rotateZ(360deg); } }
+#title {
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+  #title h1 {
+    margin: 0;
+    font-size: 1.6em; }
+
 #filter, #links, #hobby-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 25px;
   cursor: pointer; }
   #filter .filter, #links .filter, #hobby-list .filter {
     border: 3px solid rgba(0, 0, 0, 0.85);
@@ -312,6 +324,18 @@ h2 {
   color: #fff;
   border-color: rgba(0, 0, 0, 0.85); }
 
+#back-to-top {
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.85);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 15px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  cursor: pointer; }
+
 @media all and (min-width: 640px) {
   #header ul {
     display: flex;
@@ -340,16 +364,19 @@ h2 {
       bottom: 0;
       left: 50%;
       width: 0;
-      height: 0;
+      height: 3px;
       opacity: 0;
       background: #fff;
       transition: all 0.25s ease; }
     #header ul a:hover::before {
       width: 100%;
       opacity: 1;
-      left: 0;
-      height: 3px; }
+      left: 0; }
   #header .burger-menu {
-    display: none; } }
+    display: none; }
+
+  #back-to-top {
+    font-size: 1em;
+    padding: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

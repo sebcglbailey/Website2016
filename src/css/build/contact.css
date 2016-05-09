@@ -1,17 +1,17 @@
 #contact {
   padding-bottom: 50px; }
 
-#email .filter {
+#email .filter, #instagram .filter, #last-fm .filter {
   background: #fff;
   transition: all 0.25s ease;
   padding: 0; }
-  #email .filter a {
+  #email .filter a, #instagram .filter a, #last-fm .filter a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.85);
     padding: 25px; }
-#email .filter:hover {
+#email .filter:hover, #instagram .filter:hover, #last-fm .filter:hover {
   background: rgba(0, 0, 0, 0.85); }
-  #email .filter:hover a {
+  #email .filter:hover a, #instagram .filter:hover a, #last-fm .filter:hover a {
     color: #fff; }
 
 #insta-posts, #lastfm-posts {

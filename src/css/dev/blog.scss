@@ -206,6 +206,15 @@ a:hover {
 	}
 }
 
+#title {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	h1 {
+		margin: 0;
+		font-size: 1.6em;
+	}
+}
+
 .filter.title {
 	padding: 25px;
 	border: 3px solid $black;
@@ -269,6 +278,9 @@ a:hover {
 
 .card {
 	padding-bottom: 25px;
+	h2 {
+		font-size: 1.2em;
+	}
 	.cover-image {
 		margin-bottom: -50px;
 	}
@@ -498,6 +510,19 @@ input#submit {
 input#submit:hover {
 	background: $black;
 	color: $white;
+}
+
+#back-to-top {
+	display: none;
+	background: $transparentWhite;
+	border: 2px solid $black;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	padding: 15px;
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	cursor: pointer;
 }
 
 @import 'desktop-main.scss';

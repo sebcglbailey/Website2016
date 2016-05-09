@@ -205,10 +205,15 @@ h2 {
 	left: 0;
 	bottom: 0;
 	z-index: 999;
+	cursor: pointer;
 	#splash-logo {
-		flex: 1 1 400px;
-		max-width: 400px;
+		flex: 1 1 500px;
+		max-width: 500px;
 	}
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 #loader {
@@ -272,11 +277,19 @@ h2 {
 	}
 }
 
+#title {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	h1 {
+		margin: 0;
+		font-size: 1.6em;
+	}
+}
+
 #filter, #links, #hobby-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 25px;
 	cursor: pointer;
 	.filter {
 		border: 3px solid $black;
@@ -389,6 +402,19 @@ h2 {
 	background: $black;
 	color: $white;
 	border-color: $black;
+}
+
+#back-to-top {
+	display: none;
+	background: $transparentWhite;
+	border: 2px solid $black;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	padding: 15px;
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	cursor: pointer;
 }
 
 @import 'desktop-main.scss'

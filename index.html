@@ -15,6 +15,7 @@
 <title>Sebastian Bailey</title>
 
 <link rel='stylesheet' href='/src/css/build/main.css' />
+<link rel="stylesheet" href="/src/css/build/outdatedbrowser.min.css">
 <link rel='stylesheet' href='/src/css/build/home.css' />
 <link rel='stylesheet' href='/src/css/build/cards.css' />
 <link rel='stylesheet' href='/src/css/build/project.css' />
@@ -86,16 +87,48 @@
 		// picks up the starting position before animating
 		path.getBoundingClientRect();
 		// Define our transition
-		path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2.5s ease-in-out';
+		path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 1.5s ease-in-out';
 		// Go!
 		path.style.strokeDashoffset = '0';
 	</script>
 
 	<div ng-view autoscroll="true" id="ngView" class='ng-cloak'></div>
 
+	<div id='back-to-top'>Back To Top</div>
+
 <!-- Close the #container -->
 </div>
 
+<!-- OUTDATED BROWSER -->
+<div id="outdated"></div>
+<script src="/src/js/build/outdatedbrowser.min.js"></script>
+<script type='text/javascript'>
+	//event listener: DOM ready
+	function addLoadEvent(func) {
+	    var oldonload = window.onload;
+	    if (typeof window.onload != 'function') {
+	        window.onload = func;
+	    } else {
+	        window.onload = function() {
+	            if (oldonload) {
+	                oldonload();
+	            }
+	            func();
+	        }
+	    }
+	}
+	//call plugin function after DOM ready
+	addLoadEvent(function(){
+	    outdatedBrowser({
+	        bgColor: '#f25648',
+	        color: '#ffffff',
+	        lowerThan: 'transform',
+	        languagePath: 'your_path/outdatedbrowser/lang/en.html'
+	    })
+	});
+</script>
+
+<!-- ALL SCRIPTS -->
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/jquery-bridget/jquery-bridget.js"></script>
   <script src="/bower_components/ev-emitter/ev-emitter.js"></script>

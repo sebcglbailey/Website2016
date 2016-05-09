@@ -10,6 +10,10 @@
 	</div>
 
 
+	<div id="title" class='filter title'>
+		<h1>Projects</h1>
+	</div>
+
 	<div masonry preserve-order reload-on-show id="project-cards" item-selector=".card">
 
 		<div masonry-brick class="card project-card" ng-repeat="project in projectList.slice().reverse() | limitTo: limit">

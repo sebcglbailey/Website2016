@@ -1,5 +1,9 @@
 <div id="contact" ng-init="instaLimit = 5; lastfmLimit = 5;">
 
+	<div id="title" class='filter title'>
+		<h1>Contact</h1>
+	</div>
+
 	<div id='email'>
 		<div class='filter title'>
 			<a href='mailto:sebcglbailey@gmail.com' title="Email Me">
@@ -23,17 +27,19 @@
 
 	<div id='instagram'>
 		<div class='filter title'>
-			<h2>Instagram</h2>
+			<a href="http://www.instagram.com/_u/seb.bailey" target="_blank" title="@seb.bailey">
+				<h2>Instagram</h2>
+			</a>
 		</div>
 		<div id="insta-posts">
 			<div class='insta-post' ng-repeat="post in pics | limitTo: instaLimit">
 				<img ng-click="setActiveIn(post);" ng-src="{{post.images.thumbnail.url}}" alt="{{post.caption.text}}" />
 			</div>
-			<div ng-click="instaLimit = instaLimit + 5" ng-hide="instaLimit == 20;" class='more'><span>...</span></div>
+			<div ng-click="instaLimit = instaLimit + 5" ng-hide="instaLimit == 10;" class='more'><span>...</span></div>
 		</div>
 		<div id='insta-cards'>
 			<div ng-show="activeItemIn == post" class='insta-pic' ng-repeat="post in pics | limitTo: instaLimit">
-				<a ng-href="{{post.link}}">
+				<a ng-href="{{post.link}}" target="_blank">
 					<img ng-srcset="{{post.images.standard_resolution.url}} 640w, {{post.images.low_resolution}} 320w" ng-src="{{post.images.low_resolution.url}}" alt="{{post.caption.text}}" />
 				</a>
 				<div class='text'>
@@ -48,7 +54,9 @@
 
 	<div id='last-fm'>
 		<div class='filter title'>
-			<h2>Last.fm</h2>
+			<a href="http://www.last.fm/user/sebcglbailey" target="_blank" title="@sebcglbailey">
+				<h2>Last.fm</h2>
+			</a>
 		</div>
 		<div id="lastfm-posts">
 			<div class='lastfm-post' ng-repeat="artist in topArtists.topartists.artist | limitTo: lastfmLimit">
@@ -58,7 +66,7 @@
 		</div>
 		<div id='lastfm-cards'>
 			<div ng-show="activeItemLf == artist" class='lastfm-pic' ng-repeat="artist in topArtists.topartists.artist | limitTo: lastfmLimit">
-				<a ng-href="{{artist.url}}">
+				<a ng-href="{{artist.url}}" target="_blank">
 					<img ng-src="{{artist.image[3]['#text']}}" alt="{{artist.name}}" />
 				</a>
 				<div class='text'>

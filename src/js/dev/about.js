@@ -113,7 +113,7 @@ var hobbies = [
 	['ho','hobbies / interests'],
 	{
 		hobby: 'Snowboarding',
-		text: 'Snowboarding is my real passion in life. there really is no better feeling than gliding over a fresh dump of powder with the sun beating down on your back, and not hearing a sound except the crunch of snow beneath the board. I\'ve been snowboarding since i was 10 years old, and try to go for at least one week a year.',
+		text: 'Snowboarding is my real passion in life. there really is no better feeling than gliding over a fresh dump of powder with the sun beating down on your back, and not hearing a sound except the crunch of snow beneath the board. I\'ve been snowboarding since I was 10 years old, and try to go for at least one week a year.',
 		image: {
 			medium: '/src/img/about/sbd-med.jpg'
 		}

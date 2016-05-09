@@ -8,32 +8,36 @@
 		</div>
 	</div>
 
+	<div id="title" class='filter title'>
+		<h1>Work</h1>
+	</div>
+
 	<!-- FILTER THE WORKS -->
 		<div id="filter">
 			<div class="filter gd" ng-class="gdActive">
 				<div ng-click='gdActive="clicked"; phActive=""; wdActive=""; arActive=""; filter = "gd"; length = (workList | filter: {type: "gd"}).length'>GD</div>
-				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+				<div ng-click='gdActive=""; filter =""; length = workList.length'>
 					Graphic Design
 					<i class='icon-close'></i>
 				</div>
 			</div>
 			<div class="filter ph" ng-class="phActive">
 				<div ng-click='gdActive=""; phActive="clicked"; wdActive=""; arActive=""; filter = "ph"; length = (workList | filter: {type: "ph"}).length'>PH</div>
-				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+				<div ng-click='phActive=""; filter =""; length = workList.length'>
 					Photography
 					<i class='icon-close'></i>
 				</div>
 			</div>
 			<div class="filter wd" ng-class="wdActive">
 				<div ng-click='gdActive=""; phActive=""; wdActive="clicked"; arActive=""; filter = "wd"; length = (workList | filter: {type: "wd"}).length'>WD</div>
-				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+				<div ng-click='wdActive=""; filter =""; length = workList.length'>
 					Web Design
 					<i class='icon-close'></i>
 				</div>
 			</div>
 			<div class="filter ar" ng-class="arActive">
 				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive="clicked"; filter = "ar"; length = (workList | filter: {type: "ar"}).length'>AR</div>
-				<div ng-click='gdActive=""; phActive=""; wdActive=""; arActive=""; filter =""; length = workList.length'>
+				<div ng-click='arActive=""; filter =""; length = workList.length'>
 					Architecture
 					<i class='icon-close'></i>
 				</div>

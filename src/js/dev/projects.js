@@ -5,7 +5,7 @@ var projects = [
 		name: 'China',
 		type: ['ph', 'Photography'],
 		title: 'China Photographs',
-		description: 'A collection of photographs from a trip to Beijing and Chengdu, China in November 2014.',
+		description: 'A collection of photographs from a trip to Beijing and Chengdu, China in November 2014. Photos include The Summer Palace, The Temple of Heaven, The Forbidden City, CCTV Tower, Chengdu Buddhist Temple, visiting the pandads in Chengdu, and the Great Wall of China.',
 		coverImage: {
 			xl: '/src/img/projects/china/cover_lg.jpg',
 			large: '/src/img/projects/china/cover_lg.jpg',
@@ -183,7 +183,7 @@ var projects = [
 		name: 'LandseerSnowboards',
 		type: ['gd', 'Graphic Design'],
 		title: 'Landseer Snowboards',
-		description: 'A collection of snowboard designs for the fictional company "Landseer Snowboards."',
+		description: 'A collection of snowboard designs for the prospective company "Landseer Snowboards."',
 		coverImage: {
 			xl: '/src/img/projects/landseer-snowboards/cover_xl.jpg',
 			large: '/src/img/projects/landseer-snowboards/cover_lg.jpg',
@@ -213,10 +213,73 @@ var projects = [
 
 	{
 		arNo: 2,
+		name: 'BumpNGrind',
+		type: ['gd', 'Graphic Design'],
+		title: 'Bump & Grind',
+		description: 'Bump & Grind is a boutique, self-established coffee business in Clapham. The project consisted of website design, brochure design, and packaging for a coffee martini. Working closely with the brand, I managed to capture the urban culture the business was trying to push, and continue to work with them on an ongoing basis.',
+		coverImage: {
+			xl: '/src/img/projects/bump-and-grind/cover_xl.jpg',
+			large: '/src/img/projects/bump-and-grind/cover_lg.jpg',
+			medium: '/src/img/projects/bump-and-grind/cover_md.jpg',
+			small: '/src/img/projects/bump-and-grind/cover_sm.jpg',
+			xs: '/src/img/projects/bump-and-grind/cover_xs.jpg'
+		},
+		projectImages: [
+			{
+				large: '/src/img/projects/bump-and-grind/BG-01_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-01_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-01_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-02_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-02_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-02_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-03_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-03_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-03_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-04_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-04_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-04_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-05_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-05_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-05_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-06_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-06_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-06_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-07_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-07_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-07_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-08_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-08_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-08_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/bump-and-grind/BG-09_lg.jpg',
+				medium: '/src/img/projects/bump-and-grind/BG-09_md.jpg',
+				small: '/src/img/projects/bump-and-grind/BG-09_sm.jpg'
+			}
+		],
+		layout: 'long-image'
+	},
+
+	{
+		arNo: 3,
 		name: 'XGames',
 		type: ['ux', 'User Experience'],
 		title: 'X-Games Mobile Application',
-		description: 'iOS app design for X-Games Aspen 2016. Attendees and fans of the competition can keep up to date with all the latest news, videos, results and timings of the the event from one central, easy application.',
+		description: 'iOS app design for X-Games Aspen 2016. Attendees and fans of the competition can keep up to date with all the latest news, videos, results and timings of the the event from one central, easy application. Listen to tracks from featured artists, check out athlete profiles, and organise your calendar of events making sure you don\'t miss a thing!' ,
 		coverImage: {
 			xl: '/src/img/projects/xgames/cover_xl.jpg',
 			large: '/src/img/projects/xgames/cover_lg.jpg',
@@ -284,69 +347,6 @@ var projects = [
 				large: '/src/img/projects/xgames/X-12_lg.jpg',
 				medium: '/src/img/projects/xgames/X-12_md.jpg',
 				small: '/src/img/projects/xgames/X-12_sm.jpg'
-			}
-		],
-		layout: 'long-image'
-	},
-
-	{
-		arNo: 3,
-		name: 'BumpNGrind',
-		type: ['gd', 'Graphic Design'],
-		title: 'Bump & Grind',
-		description: 'Bump & Grind is a boutique, self-established coffee business in Clapham. The project consisted of website design, brochure design, and packaging for a coffee martini. Working closely with the brand, I managed to capture the urban culture the business was trying to push, and continue to work with them on an ongoing basis.',
-		coverImage: {
-			xl: '/src/img/projects/bump-and-grind/cover_xl.jpg',
-			large: '/src/img/projects/bump-and-grind/cover_lg.jpg',
-			medium: '/src/img/projects/bump-and-grind/cover_md.jpg',
-			small: '/src/img/projects/bump-and-grind/cover_sm.jpg',
-			xs: '/src/img/projects/bump-and-grind/cover_xs.jpg'
-		},
-		projectImages: [
-			{
-				large: '/src/img/projects/bump-and-grind/BG-01_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-01_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-01_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-02_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-02_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-02_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-03_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-03_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-03_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-04_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-04_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-04_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-05_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-05_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-05_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-06_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-06_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-06_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-07_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-07_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-07_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-08_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-08_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-08_sm.jpg'
-			},
-			{
-				large: '/src/img/projects/bump-and-grind/BG-09_lg.jpg',
-				medium: '/src/img/projects/bump-and-grind/BG-09_md.jpg',
-				small: '/src/img/projects/bump-and-grind/BG-09_sm.jpg'
 			}
 		],
 		layout: 'long-image'

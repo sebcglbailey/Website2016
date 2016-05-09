@@ -18,4 +18,22 @@ $(document).ready(function(){
 		});
 	});
 
+	$(window).scroll(function(){
+		var $windowPos = $(window).scrollTop();
+		var $windowHeight = $(window).height();
+		console.log($windowPos);
+		console.log($windowHeight);
+		if ( $windowPos > $windowHeight ) {
+			$('#back-to-top').fadeIn();
+		}
+		else {
+			$('#back-to-top').fadeOut();
+		}
+	});
+
+	$('#back-to-top').click(function(){
+		var top = $('html, body').offset().top;
+		$('html, body').animate({scrollTop: top});
+	});
+
 });
