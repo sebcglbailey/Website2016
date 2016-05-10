@@ -1,5 +1,7 @@
 #contact {
-  padding-bottom: 50px; }
+  width: 98%;
+  margin: 0 auto;
+  padding-bottom: 25px; }
 
 #email .filter, #instagram .filter, #last-fm .filter {
   background: #fff;

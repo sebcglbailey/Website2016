@@ -1,35 +1,11 @@
 #about {
-  padding: 0 20px 25px 20px; }
+  width: 98%;
+  margin: 0 auto;
+  padding-bottom: 25px; }
 
 .about-section {
   text-align: center; }
 
-#filter-seperator {
-  width: 90%;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.85);
-  margin: 25px auto 50px auto; }
-
-#filter-seperator.ng-hide-remove {
-  animation: scaleUp 0.5s ease; }
-
-#filter-seperator.ng-hide-add {
-  animation: scaleDown 0.5s ease; }
-
-@keyframes scaleUp {
-  0% {
-    transform: scaleX(0);
-    margin: 25px auto; }
-  100% {
-    transform: scaleX(1);
-    margin: 25px auto 50px auto; } }
-@keyframes scaleDown {
-  0% {
-    transform: scaleX(1);
-    margin: 25px auto 50px auto; }
-  100% {
-    transform: scaleX(0);
-    margin: 25px auto -25px auto; } }
 #skill-list-desktop-header {
   display: none; }
 

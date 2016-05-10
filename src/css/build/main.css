@@ -28,7 +28,9 @@ h2 {
   top: 0;
   left: 0;
   padding-top: 75px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
 
 #header {
   position: fixed;
@@ -169,14 +171,41 @@ h2 {
   z-index: 999;
   cursor: pointer; }
   #splash-logo-container #splash-logo {
-    flex: 1 1 500px;
-    max-width: 500px; }
+    flex: 1 1 400px;
+    max-width: 400px; }
 
 @keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+#ng-view-container {
+  position: relative;
+  height: 100%; }
+  #ng-view-container .view-animate.ng-enter, #ng-view-container .view-animate.ng-leave {
+    transition: all 0.5s ease;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 0; }
+  #ng-view-container .view-animate.ng-enter {
+    left: 100%;
+    opacity: 0;
+    transition-delay: 0.51s; }
+  #ng-view-container .view-animate.ng-enter.ng-enter-active {
+    left: 0;
+    opacity: 1; }
+  #ng-view-container .view-animate.ng-leave.ng-leave-active {
+    transform: scale(0.8);
+    top: 50%;
+    opacity: 0; }
+
 #loader {
   width: 100%;
   height: 100%;
@@ -224,11 +253,13 @@ h2 {
   100% {
     transform: rotateX(-35deg) rotateY(0deg) rotateZ(360deg); } }
 #title {
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px; }
   #title h1 {
-    margin: 0;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.85);
+    padding: 15px; }
 
 #filter, #links, #hobby-list {
   display: flex;
@@ -309,7 +340,34 @@ h2 {
     margin: 0;
     text-transform: uppercase; }
 
+#filter-seperator {
+  width: 90%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.85);
+  margin: 25px auto 50px auto; }
+
+#filter-seperator.ng-hide-remove {
+  animation: scaleUp 0.5s ease; }
+
+#filter-seperator.ng-hide-add {
+  animation: scaleDown 0.5s ease; }
+
+@keyframes scaleUp {
+  0% {
+    transform: scaleX(0);
+    margin: 25px auto; }
+  100% {
+    transform: scaleX(1);
+    margin: 25px auto 50px auto; } }
+@keyframes scaleDown {
+  0% {
+    transform: scaleX(1);
+    margin: 25px auto 50px auto; }
+  100% {
+    transform: scaleX(0);
+    margin: 25px auto -25px auto; } }
 #load-more {
+  clear: both;
   padding: 25px;
   width: 90%;
   margin: 50px auto;
@@ -323,18 +381,6 @@ h2 {
   background: rgba(0, 0, 0, 0.85);
   color: #fff;
   border-color: rgba(0, 0, 0, 0.85); }
-
-#back-to-top {
-  display: none;
-  background: rgba(255, 255, 255, 0.5);
-  border: 2px solid rgba(0, 0, 0, 0.85);
-  font-size: 0.8em;
-  text-transform: uppercase;
-  padding: 15px;
-  position: fixed;
-  right: 20px;
-  bottom: 10px;
-  cursor: pointer; }
 
 @media all and (min-width: 640px) {
   #header ul {
