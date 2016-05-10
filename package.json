@@ -18,6 +18,8 @@
     "grunt-responsive-images": "^0.1.7"
   },
   "dependencies": {
-    "angular-masonry": "^0.16.0"
+    "angular-masonry": "^0.16.0",
+    "express": "^4.13.4",
+    "prerender-node": "^2.2.2"
   }
 }

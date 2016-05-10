@@ -18,7 +18,9 @@ body {
 h1, h2, h3 {
   font-family: 'century-gothic', sans-serif;
   letter-spacing: 2px;
-  font-weight: 100;
+  font-weight: 100; }
+
+#post h1, #post h2, #post h3 {
   margin-top: 50px; }
 
 h2, h3 {
@@ -167,12 +169,18 @@ a:hover {
     transform: scaleX(0); }
   100% {
     transform: scaleX(1); } }
+#content {
+  width: 98%;
+  margin: 0 auto; }
+
 #title {
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px; }
   #title h1 {
-    margin: 0;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.85);
+    padding: 15px; }
 
 .filter.title {
   padding: 25px;
@@ -224,9 +232,6 @@ a:hover {
     background: rgba(0, 0, 0, 0.85);
     color: #fff; }
 
-#blog-posts {
-  padding: 5px 15px; }
-
 .card {
   padding-bottom: 25px; }
   .card h2 {
@@ -251,9 +256,6 @@ a:hover {
   align-items: center; }
   #cover-image img {
     width: 100%; }
-
-#content {
-  width: 100%; }
 
 #top-post-navigation .nav-links {
   display: flex;
@@ -459,11 +461,7 @@ input#submit:hover {
       opacity: 1;
       left: 0; }
   #header .burger-menu {
-    display: none; }
-
-  #back-to-top {
-    font-size: 1em;
-    padding: 20px; } }
+    display: none; } }
 .card {
   background: #fff;
   box-shadow: 0 5px 5px rgba(191, 191, 191, 0.85); }

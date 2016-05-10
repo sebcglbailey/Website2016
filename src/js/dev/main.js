@@ -4,7 +4,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	$routeProvider
 		.when('/', {
 			templateUrl: '_partials/home.html',
-			controller: 'mainController'
+			controller: 'homeController'
 		})
 		.when('/work', {
 			templateUrl: '_partials/work.html',
@@ -12,7 +12,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		})
 		.when('/work/project/:projectName', {
 			templateUrl: '_partials/project.html',
-			controller: 'mainController'
+			controller: 'projectController'
 		})
 		.when('/about', {
 			templateUrl: '_partials/about.html',
@@ -24,7 +24,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		})
 		.otherwise({ redirectTo: '/' });
 	$locationProvider.html5Mode(true);
+	$locationProvider.hashPrefix('!');
 }]);
+
+app.factory('Page', function(){
+  var title = 'Portfolio Website';
+  return {
+    title: function() { return title; },
+    setTitle: function(newTitle) { title = newTitle; }
+  };
+});
 
 app.factory('instagram', ['$http', function($http){
 	return {
@@ -47,35 +56,50 @@ app.factory('lastfm', ['$http', function($http) {
 	return topArtists;
 }]);
 
-contentLoaded = function() {
+function contentLoaded() {
 	$('#header').removeClass('clicked');
 }
-contentLoadedDelay = function() {
+function contentLoadedDelay() {
 	$('html, body').scrollTop( $('html, body').offset().top );
 }
 
-app.controller('mainController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
-    $scope.name = "mainController";
+app.controller('mainController', ['$scope', 'Page', function($scope, Page){
+	$scope.Page = Page;
+}]);
+
+app.controller('homeController', ['$scope', '$routeParams', '$http', 'Page', function($scope, $routeParams, $http, Page) {
     $scope.projectList = projects;
     $scope.params = $routeParams;
+    Page.setTitle('Projects');
     $scope.$on('$viewContentLoaded', function(){
-    	contentLoaded().delay(500).contentLoadedDelay();
+    	contentLoaded();
+    	setTimeout(contentLoadedDelay, 510);
     });
 }]);
-app.controller('workController', ['$scope', function($scope) {
-	$scope.name = "workController";
+app.controller('projectController', ['$scope', '$routeParams', '$http', 'Page', function($scope, $routeParams, $http, Page) {
+    $scope.projectList = projects;
+    $scope.params = $routeParams;
+    Page.setTitle($scope.params.projectName);
+    $scope.$on('$viewContentLoaded', function(){
+    	contentLoaded();
+    	setTimeout(contentLoadedDelay, 510);
+    });
+}]);
+app.controller('workController', ['$scope', 'Page', function($scope, Page) {
 	$scope.workList = work;
 	$scope.workType = workType;
+	Page.setTitle('Work');
 	$scope.$on('$viewContentLoaded', function(){
-     	contentLoaded().delay(500).contentLoadedDelay();
+     	contentLoaded();
+     	setTimeout(contentLoadedDelay, 510);
     });
 }]);
-app.controller('aboutController', ['$scope', '$routeParams', function($scope, $routeParams) {
-    $scope.name = "aboutController";
+app.controller('aboutController', ['$scope', '$routeParams', 'Page', function($scope, $routeParams, Page) {
     $scope.skillList = skills;
     $scope.educationList = education;
     $scope.experienceList = experience;
     $scope.hobbyList = hobbies;
+    Page.setTitle('About');
     $scope.setActive = function(item) {
     	$scope.activeItem = item;
     	var hobbyCards = $('#hobby-cards').offset().top - 95;
@@ -84,13 +108,14 @@ app.controller('aboutController', ['$scope', '$routeParams', function($scope, $r
     $scope.aboutList = aboutType;
     $scope.params = $routeParams;
     $scope.$on('$viewContentLoaded', function(){
-    	contentLoaded().delay(500).contentLoadedDelay();
+    	contentLoaded();
+    	setTimeout(contentLoadedDelay, 510);
     });
 }]);
-app.controller('contactController', ['$scope', 'instagram', 'lastfm', function ($scope, instagram, lastfm) {
-	$scope.name = "contactController";
+app.controller('contactController', ['$scope', 'instagram', 'lastfm', 'Page', function ($scope, instagram, lastfm, Page) {
 	$scope.contactList = contact;
 	$scope.pics = [];
+	Page.setTitle('Contact');
 	instagram.fetchData(function(data){
 		$scope.pics = data;
 		$scope.activeItemIn = data[0];
@@ -115,7 +140,8 @@ app.controller('contactController', ['$scope', 'instagram', 'lastfm', function (
     	}
     };
 	$scope.$on('$viewContentLoaded', function(){
-    	contentLoaded().delay(500).contentLoadedDelay();
+    	contentLoaded();
+    	setTimeout(contentLoadedDelay, 510);
     });
 }]);
 

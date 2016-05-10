@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<div id="title" class='filter title'>
+		<div id="title">
 			<h1>Blog</h1>
 		</div>
 
