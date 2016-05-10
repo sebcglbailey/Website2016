@@ -428,6 +428,7 @@ a:hover {
 		flex-wrap: wrap;
 		.img-small {
 			flex: 1 1 180px;
+			max-width: 200px;
 			margin: 10px;
 			text-align: center;
 		}

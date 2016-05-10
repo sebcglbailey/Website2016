@@ -147,6 +147,11 @@ function new_srcset_max($max_width) {
 add_filter('max_srcset_image_width', 'new_srcset_max');
 add_filter('wp_make_content_images_responsive');
 
+function new_sizes($size) {
+	return 320;
+}
+add_filter('wp_get_content_image_sizes', 'new_sizes');
+
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
 

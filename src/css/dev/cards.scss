@@ -3,6 +3,10 @@
 .card {
 	background: $white;
 	box-shadow: 0 5px 5px $cardShadow;
+	font-size: 0.9em;
+	h2 {
+		font-size: 1.2em;
+	}
 }
 
 .card-sizer, .card {

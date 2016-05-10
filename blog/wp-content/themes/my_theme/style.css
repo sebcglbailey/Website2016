@@ -339,6 +339,7 @@ a:hover {
     flex-wrap: wrap; }
     #post-content .img-container .img-small {
       flex: 1 1 180px;
+      max-width: 200px;
       margin: 10px;
       text-align: center; }
 
@@ -464,7 +465,10 @@ input#submit:hover {
     display: none; } }
 .card {
   background: #fff;
-  box-shadow: 0 5px 5px rgba(191, 191, 191, 0.85); }
+  box-shadow: 0 5px 5px rgba(191, 191, 191, 0.85);
+  font-size: 0.9em; }
+  .card h2 {
+    font-size: 1.2em; }
 
 .card-sizer, .card {
   width: 96%;
@@ -524,7 +528,7 @@ input#submit:hover {
 .info-container:hover h2 {
   text-decoration: underline; }
 
-@media all and (min-width: 640px) {
+@media all and (min-width: 720px) {
   .card-sizer, .card {
     width: 46%;
     margin: 0 2% 25px 2%; } }
@@ -534,10 +538,12 @@ input#submit:hover {
     margin: 0 1% 25px 1%; }
 
   .card p {
-    display: block !important; } }
-@media all and (min-width: 640px) {
+    display: block !important; }
   .card h2 {
-    font-size: 1.45em; }
+    font-size: 1.4em; } }
+@media all and (min-width: 720px) {
+  .card h2 {
+    font-size: 1.2em; }
 
   #post-content .img-full {
     width: 90%; }
@@ -568,5 +574,8 @@ input#submit:hover {
     margin-right: 25px; }
   #top-post-navigation h2 {
     display: none; } }
+@media all and (min-width: 1080px) {
+  .card h2 {
+    font-size: 1.4em; } }
 
 /*# sourceMappingURL=style.css.map */

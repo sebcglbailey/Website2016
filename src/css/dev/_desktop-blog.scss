@@ -1,8 +1,8 @@
-@media all and (min-width: 640px) {
+@media all and (min-width: 720px) {
 
 	.card {
 		h2 {
-			font-size: 1.45em;
+			font-size: 1.2em;
 		}
 	}
 
@@ -53,4 +53,12 @@
 		}
 	}
 
+}
+
+@media all and (min-width: 1080px) {
+	.card {
+		h2 {
+			font-size: 1.4em;
+		}
+	}
 }
