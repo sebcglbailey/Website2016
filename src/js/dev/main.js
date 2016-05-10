@@ -47,12 +47,19 @@ app.factory('lastfm', ['$http', function($http) {
 	return topArtists;
 }]);
 
+contentLoaded = function() {
+	$('#header').removeClass('clicked');
+}
+contentLoadedDelay = function() {
+	$('html, body').scrollTop( $('html, body').offset().top );
+}
+
 app.controller('mainController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
     $scope.name = "mainController";
     $scope.projectList = projects;
     $scope.params = $routeParams;
     $scope.$on('$viewContentLoaded', function(){
-    	$('#header').removeClass('clicked');
+    	contentLoaded().delay(500).contentLoadedDelay();
     });
 }]);
 app.controller('workController', ['$scope', function($scope) {
@@ -60,7 +67,7 @@ app.controller('workController', ['$scope', function($scope) {
 	$scope.workList = work;
 	$scope.workType = workType;
 	$scope.$on('$viewContentLoaded', function(){
-     	$('#header').removeClass('clicked');
+     	contentLoaded().delay(500).contentLoadedDelay();
     });
 }]);
 app.controller('aboutController', ['$scope', '$routeParams', function($scope, $routeParams) {
@@ -77,7 +84,7 @@ app.controller('aboutController', ['$scope', '$routeParams', function($scope, $r
     $scope.aboutList = aboutType;
     $scope.params = $routeParams;
     $scope.$on('$viewContentLoaded', function(){
-    	$('#header').removeClass('clicked');
+    	contentLoaded().delay(500).contentLoadedDelay();
     });
 }]);
 app.controller('contactController', ['$scope', 'instagram', 'lastfm', function ($scope, instagram, lastfm) {
@@ -108,7 +115,7 @@ app.controller('contactController', ['$scope', 'instagram', 'lastfm', function (
     	}
     };
 	$scope.$on('$viewContentLoaded', function(){
-    	$('#header').removeClass('clicked');
+    	contentLoaded().delay(500).contentLoadedDelay();
     });
 }]);
 
@@ -130,21 +137,6 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		$('#splash-logo-container').fadeOut();
-		var $windowPos = $(window).scrollTop();
-		var $windowHeight = $(window).height();
-		console.log($windowPos);
-		console.log($windowHeight);
-		if ( $windowPos > $windowHeight ) {
-			$('#back-to-top').fadeIn();
-		}
-		else {
-			$('#back-to-top').fadeOut();
-		}
-	});
-
-	$('#back-to-top').click(function(){
-		var top = $('html, body').offset().top;
-		$('html, body').animate({scrollTop: top});
 	});
 
 });

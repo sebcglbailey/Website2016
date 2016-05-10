@@ -1,5 +1,6 @@
 <div id="work" ng-init="limit = 6; length = workList.length">
 	
+<!--
 	<div id='loader'>
 		<div>
 			<div class='one'></div>
@@ -7,8 +8,9 @@
 			<div class='three'></div>
 		</div>
 	</div>
+-->
 
-	<div id="title" class='filter title'>
+	<div id="title">
 		<h1>Work</h1>
 	</div>
 
@@ -43,6 +45,8 @@
 				</div>
 			</div>
 		</div>
+
+		<div ng-show="filter" id='filter-seperator'></div>
 
 	<div masonry preserve-order reload-on-show id="work-cards" item-selector=".card">
 

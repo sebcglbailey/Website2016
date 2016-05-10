@@ -40,8 +40,6 @@
 
 			endif; ?>
 
-		<div id='back-to-top'>Back To Top</div>
-
 	</div>
 
 
