@@ -19,7 +19,7 @@
 		<div masonry-brick class="card project-card" ng-repeat="project in projectList.slice().reverse() | limitTo: limit">
 			
 			<div class='cover-image'>
-				<img srcset='{{project.coverImage["large"]}} 1536w, {{project.coverImage["medium"]}} 980w, {{project.coverImage["small"]}} 720w, {{project.coverImage["xs"]}} 360w' sizes="(min-width: 640px) 48vw, (min-width: 1080px) 31vw, 98vw" src='{{project.coverImage["medium"]}}' alt='{{project.title}}' />
+				<img srcset='{{project.coverImage["large"]}} 1536w, {{project.coverImage["medium"]}} 980w, {{project.coverImage["small"]}} 720w, {{project.coverImage["xs"]}} 360w' sizes="(min-width: 640px) 48vw, (min-width: 1080px) 31vw, 98vw" src='{{project.coverImage["medium"]}}' ng-alt='{{project.title}}' />
 			</div>
 
 			<a class='{{project.type[0]}}' ng-href='/work/project/{{project.name}}' title='{{project.title}}'>

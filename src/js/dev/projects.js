@@ -1,3 +1,5 @@
+var projectKeywords = "PROJECT, KEYWORDS";
+
 var projects = [
 
 	{	
@@ -347,6 +349,64 @@ var projects = [
 				large: '/src/img/projects/xgames/X-12_lg.jpg',
 				medium: '/src/img/projects/xgames/X-12_md.jpg',
 				small: '/src/img/projects/xgames/X-12_sm.jpg'
+			}
+		],
+		layout: 'long-image'
+	},
+
+	{
+		arNo: 4,
+		name: 'Website2016',
+		type: ['wd', 'Web Design'],
+		title: 'Personal Website Design – 2016',
+		description: 'Redesigning my personal portfolio website after a year and a half of having my first website live. My first website was also my first web design project so feels dated, and slow. There were many improvements that could have been made, and so I decided to update the website, not just the code, but to give it a more professional look too. My new website focuses on the work, and gives precedence to fewer, more major projects. I used angularJS to build the main website, and Wordpress for the blog. The result is a much cleaner, faster, and more intuitive professional website.' ,
+		coverImage: {
+			xl: '/src/img/projects/website2016/cover_xl.jpg',
+			large: '/src/img/projects/website2016/cover_lg.jpg',
+			medium: '/src/img/projects/website2016/cover_md.jpg',
+			small: '/src/img/projects/website2016/cover_sm.jpg',
+			xs: '/src/img/projects/website2016/cover_xs.jpg'
+		},
+		projectImages: [
+			{
+				large: '/src/img/projects/website2016/W-01_lg.jpg',
+				medium: '/src/img/projects/website2016/W-01_md.jpg',
+				small: '/src/img/projects/website2016/W-01_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/website2016/W-02_lg.jpg',
+				medium: '/src/img/projects/website2016/W-02_md.jpg',
+				small: '/src/img/projects/website2016/W-02_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/website2016/W-03_lg.jpg',
+				medium: '/src/img/projects/website2016/W-03_md.jpg',
+				small: '/src/img/projects/website2016/W-03_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/website2016/W-04_lg.jpg',
+				medium: '/src/img/projects/website2016/W-04_md.jpg',
+				small: '/src/img/projects/website2016/W-04_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/website2016/W-06_lg.jpg',
+				medium: '/src/img/projects/website2016/W-06_md.jpg',
+				small: '/src/img/projects/website2016/W-06_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/website2016/W-07_lg.jpg',
+				medium: '/src/img/projects/website2016/W-07_md.jpg',
+				small: '/src/img/projects/website2016/W-07_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/website2016/W-08_lg.jpg',
+				medium: '/src/img/projects/website2016/W-08_md.jpg',
+				small: '/src/img/projects/website2016/W-08_sm.jpg'
+			},
+			{
+				large: '/src/img/projects/website2016/W-09_lg.jpg',
+				medium: '/src/img/projects/website2016/W-09_md.jpg',
+				small: '/src/img/projects/website2016/W-09_sm.jpg'
 			}
 		],
 		layout: 'long-image'

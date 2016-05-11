@@ -91,7 +91,7 @@
 		<div id='education-list'>
 			<div class='card education-card' ng-repeat="school in educationList | filter: {name: ''}">
 				<div class='cover-image'>
-					<img ng-srcset="{{school.image.large}} 1280w, {{school.image.medium}} 720w, {{school.image.small}} 360w" sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" ng-src="{{school.image.medium}}" alt="{{school.name}}" />
+					<img ng-srcset="{{school.image.large}} 1280w, {{school.image.medium}} 720w, {{school.image.small}} 360w" sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" ng-src="{{school.image.medium}}" ng-alt="{{school.name}}" />
 				</div>
 				<div class='info-container'>
 					<h3>{{school.name}}</h3>
@@ -121,7 +121,7 @@
 		</div>
 		<div id='hobby-cards'>
 			<div class='hobby-card' ng-repeat="hobby in hobbyList" ng-show="activeItem == hobby">
-				<img id="{{hobby.hobby}}" ng-srcset="{{hobby.image.medium}} 720w, {{hobby.image.small}} 360w" ng-src="{{hobby.image.medium}}" alt="{{hobby.hobby}}" />
+				<img id="{{hobby.hobby}}" ng-srcset="{{hobby.image.medium}} 720w, {{hobby.image.small}} 360w" ng-src="{{hobby.image.medium}}" alt="{{hobby.hobby}}" ng-alt="{[hobby.hobby}}" />
 				<div class='text'>
 					<div class='text-container'>
 						{{hobby.text}}
