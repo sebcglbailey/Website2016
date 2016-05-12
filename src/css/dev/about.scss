@@ -31,6 +31,9 @@
 	margin: auto;
 	flex-wrap: wrap;
 	justify-content: center;
+	#skill-list-desktop-header {
+		display: none;
+	}
 	.skill:first-child {
 		display: none;
 	}
