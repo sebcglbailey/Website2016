@@ -20,7 +20,7 @@
 /blog/xmlrpc.php
 /blog/wp-content/index.php
 /blog/wp-content/languages
-/blog/wp-content/upgrade
+/blog/wp-content/upgrade/*
 /blog/wp-content/uploads
 /blog/wp-content/themes/index.php
 /blog/wp-content/themes/pinpress
@@ -28,6 +28,7 @@
 /blog/wp-content/themes/twentyfourteen
 /blog/wp-content/themes/twentysixteen
 /blog/wp-content/themes/twentythirteen
+/blog/wp-content/
 /.sass-cache
 /src/img/**/*_lg.jpg
 /src/img/**/*_md.jpg
@@ -39,3 +40,7 @@
 /src/img/**/*_sm.png
 /src/img/**/*_xs.png
 src/img/about/karate.jpg
+
+blog/wp-content/upgrade/disqus-comment-system-nQvCLJ/disqus-comment-system/upgrade.php
+
+blog/wp-content/upgrade/disqus-comment-system-nQvCLJ/disqus-comment-system/scripts/import-comments.php

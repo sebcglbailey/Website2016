@@ -15,6 +15,10 @@
 }
 
 body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
 	background: #f6f6f6;
 	font-size: 14pt;
 	font-weight: 700;
@@ -79,6 +83,7 @@ h2 {
 		height: calc(100vh - 75px);
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		padding: 0;
 		margin: 75px 0 0 0;
 		background: $black;
@@ -89,6 +94,7 @@ h2 {
 			padding: 10px 20px;
 			width: 80%;
 			height: 100%;
+			max-height: 100px;
 			text-align: center;
 			display: flex;
 			align-items: center;
@@ -233,9 +239,13 @@ h2 {
 #ng-view-container {
 	position: relative;
 	height: 100%;
+	width: 100vw;
+	.view-animate > div {
+		width: 100vw;
+	}
 	.view-animate.ng-enter, .view-animate.ng-leave {
 		display: block;
-		width: 100%;
+		width: 100vw;
 		position: absolute;
 		top: 0;
 		left: 0;
