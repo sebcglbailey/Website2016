@@ -35,7 +35,7 @@
 			<div class='insta-post' ng-repeat="post in pics | limitTo: instaLimit">
 				<img ng-click="setActiveIn(post);" ng-src="{{post.images.thumbnail.url}}" ng-alt="{{post.caption.text}}" />
 			</div>
-			<div ng-click="instaLimit = instaLimit + 5" ng-hide="instaLimit == 10;" class='more'><span>...</span></div>
+			<div ng-click="instaLimit = instaLimit + 5" ng-hide="instaLimit == 15;" class='more'><span>...</span></div>
 		</div>
 		<div id='insta-cards'>
 			<div ng-show="activeItemIn == post" class='insta-pic' ng-repeat="post in pics | limitTo: instaLimit">

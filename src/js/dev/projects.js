@@ -1,5 +1,3 @@
-var projectKeywords = "PROJECT, KEYWORDS";
-
 var projects = [
 
 	{	

@@ -53,7 +53,7 @@
 		<div ng-hide="filter" class='filter title'>
 			<h2>Skills</h2>
 		</div>
-		<div id="skill-list-desktop-header"><h3>(hover for skill level)</h3></div>
+		<div id="skill-list-desktop-header"><h3>(hover/click for skill level)</h3></div>
 		<div id='skill-list'>
 			<div class='skill {{skill.skill}}' ng-repeat="skill in skillList">
 				{{skill.skill}}
@@ -71,7 +71,7 @@
 		<div masonry preserve-order reload-on-show id='experience-list' item-selector=".card">
 			<div masonry-brick class='card' ng-repeat="work in experienceList | filter: {company: ''}">
 				<div class='cover-image'>
-					<img ng-srcset="{{work.image.large}} 1280w, {{work.image.medium}} 720w, {{work.image.small}} 360w" sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" ng-src="{{work.image.medium}}" alt="{{work.company}}" />
+					<img ng-srcset="{{work.image.large}} 1280w, {{work.image.medium}} 720w, {{work.image.small}} 360w" sizes="(min-width: 720px) 46vw, (min-width: 1080px) 31vw, 96vw" ng-src="{{work.image.medium}}" alt="{{work.company}}" />
 				</div>
 				<div class='info-container'>
 					<h3>{{work.company}}</h3>
@@ -91,7 +91,7 @@
 		<div id='education-list'>
 			<div class='card education-card' ng-repeat="school in educationList | filter: {name: ''}">
 				<div class='cover-image'>
-					<img ng-srcset="{{school.image.large}} 1280w, {{school.image.medium}} 720w, {{school.image.small}} 360w" sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" ng-src="{{school.image.medium}}" ng-alt="{{school.name}}" />
+					<img ng-srcset="{{school.image.large}} 1280w, {{school.image.medium}} 720w, {{school.image.small}} 360w" sizes="(min-width: 720px) 400px, 96vw" ng-src="{{school.image.medium}}" ng-alt="{{school.name}}" />
 				</div>
 				<div class='info-container'>
 					<h3>{{school.name}}</h3>
