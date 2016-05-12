@@ -1,0 +1,32 @@
+{
+	"name": "respimage",
+	"repo": "afarkas/respimage",
+	"version": "1.4.2",
+	"main": "respimage.min.js",
+	"scripts": [
+		"respimage.min.js"
+	],
+	"license": "MIT",
+	"authors": [
+		"Alexander Farkas <info@corrupt-system.de>"
+	],
+	"moduleType": [
+		"globals"
+	],
+	"description": "The fast, lightweight and reliable polyfill for responsive images (i.e. picture element and the srcset, sizes and media attributes).",
+	"keywords": ["responsive", "image", "responsive images", "picture", "srcset", "polyfill", "respimg", "respimage", "picturefill", "performance", "bandwidth"],
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"cfg",
+		"test",
+		"tests",
+		"index.html",
+		"Gruntfile.js",
+		"how-respimg-works.md",
+		"component.json",
+		"package.json",
+		"Authors.txt"
+	]
+}

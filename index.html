@@ -17,6 +17,18 @@
 
 <meta name='theme-color' content="#222" />
 
+<!-- Responsive Images Polyfill -->
+<script src="/bower_components/respimage/respimage.min.js"></script>
+<!-- Script to not run on browsers that support RespImages -->
+<script>
+function loadJS(u){var r = document.getElementsByTagName( "script" )[ 0 ], s = document.createElement( "script" );s.src = u;r.parentNode.insertBefore( s, r );}
+
+if(!window.HTMLPictureElement){
+    document.createElement('picture');
+    loadJS("respimage.min.js");
+}
+</script>
+
 <link rel='shortcut icon' href='/src/img/' />
 
 <link rel='stylesheet' href='/src/css/build/fonts-styles.css' />
@@ -39,16 +51,18 @@
 <body>
 <div id="container">
 	<div id="header">
-		<div id="logo">
-			<a href='/'>
-				<picture>
-					<source srcset='/src/img/logo-white.svg'>
-					<img src='/src/img/logo-white.png' alt='Sebastian Bailey Logo' />
-				</picture>
-			</a>
-		</div>
-		<div class="burger-menu">
-			<div></div>
+		<div id="logo-burger-wrapper">
+			<div id="logo">
+				<a href='/'>
+					<picture>
+						<source srcset='/src/img/logo-white.svg'>
+						<img src='/src/img/logo-white.png' alt='Sebastian Bailey Logo' />
+					</picture>
+				</a>
+			</div>
+			<div class="burger-menu">
+				<div></div>
+			</div>
 		</div>
 		<ul>
 			<a href="/">
@@ -138,7 +152,7 @@
 </script>
 
 <!-- ALL SCRIPTS -->
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/jquery-bridget/jquery-bridget.js"></script>
   <script src="/bower_components/ev-emitter/ev-emitter.js"></script>
   <script src="/bower_components/desandro-matches-selector/matches-selector.js"></script>

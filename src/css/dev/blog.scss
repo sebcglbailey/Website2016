@@ -73,6 +73,12 @@ a:hover {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 25px;
+	#logo-burger-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	#logo {
 		height: 60px;
 		img {
@@ -94,7 +100,7 @@ a:hover {
 		background: $black;
 		a {
 			color: $white;
-			font-size: 1.5em;
+			font-size: 1em;
 			text-decoration: none;
 			padding: 10px 20px;
 			width: 80%;
@@ -298,6 +304,7 @@ a:hover {
 		position: relative;
 		.info-container {
 			padding-top: 50px;
+			z-index: 5;
 		}
 		.info-container.no-cover {
 			padding-top: 0;
@@ -428,7 +435,7 @@ a:hover {
 		flex-wrap: wrap;
 		.img-small {
 			flex: 1 1 180px;
-			max-width: 200px;
+			max-width: 400px;
 			margin: 10px;
 			text-align: center;
 		}

@@ -23,16 +23,18 @@
 <div id="container">
 
 	<div id="header">
-		<div id="logo">
-			<a href='/'>
-				<picture>
-					<source srcset='<?php bloginfo('template_url'); ?>/img/logo-white.svg'>
-					<img src='<?php bloginfo('template_url'); ?>/img/logo-white.png' alt='Sebastian Bailey Logo' />
-				</picture>
-			</a>
-		</div>
-		<div class="burger-menu">
-			<div></div>
+		<div id="logo-burger-wrapper">
+			<div id="logo">
+				<a href='/'>
+					<picture>
+						<source srcset='<?php bloginfo('template_url'); ?>/img/logo-white.svg'>
+						<img src='<?php bloginfo('template_url'); ?>/img/logo-white.png' alt='Sebastian Bailey Logo' />
+					</picture>
+				</a>
+			</div>
+			<div class="burger-menu">
+				<div></div>
+			</div>
 		</div>
 		<ul>
 			<a href="/">

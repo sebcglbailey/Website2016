@@ -33,14 +33,14 @@
 		</div>
 		<div id="insta-posts">
 			<div class='insta-post' ng-repeat="post in pics | limitTo: instaLimit">
-				<img ng-click="setActiveIn(post);" ng-src="{{post.images.thumbnail.url}}" ng-alt="{{post.caption.text}}" />
+				<img ng-click="setActiveIn(post);" src="{{post.images.thumbnail.url}}" />
 			</div>
 			<div ng-click="instaLimit = instaLimit + 5" ng-hide="instaLimit == 15;" class='more'><span>...</span></div>
 		</div>
 		<div id='insta-cards'>
 			<div ng-show="activeItemIn == post" class='insta-pic' ng-repeat="post in pics | limitTo: instaLimit">
 				<a ng-href="{{post.link}}" target="_blank">
-					<img ng-srcset="{{post.images.standard_resolution.url}} 640w, {{post.images.low_resolution}} 320w" ng-src="{{post.images.low_resolution.url}}" ng-alt="{{post.caption.text}}" />
+					<img srcset="{{post.images.standard_resolution.url}} 640w, {{post.images.low_resolution}} 320w" src="{{post.images.low_resolution.url}}" alt="{{post.caption.text}}" />
 				</a>
 				<div class='text'>
 					<div class="text-container">
@@ -60,14 +60,14 @@
 		</div>
 		<div id="lastfm-posts">
 			<div class='lastfm-post' ng-repeat="artist in topArtists.topartists.artist | limitTo: lastfmLimit">
-				<img ng-click="setActiveLf(artist);" ng-src="{{artist.image[1]['#text']}}" ng-alt="{{artist.name}}" />
+				<img ng-click="setActiveLf(artist);" src="{{artist.image[1]['#text']}}" />
 			</div>
 			<div ng-click="lastfmLimit = lastfmLimit + 5" ng-hide="lastfmLimit == 20;" class='more'><span>...</span></div>
 		</div>
 		<div id='lastfm-cards'>
 			<div ng-show="activeItemLf == artist" class='lastfm-pic' ng-repeat="artist in topArtists.topartists.artist | limitTo: lastfmLimit">
 				<a ng-href="{{artist.url}}" target="_blank">
-					<img ng-src="{{artist.image[3]['#text']}}" alt="{{artist.name}}" ng-alt="{[artist.name}}" />
+					<img src="{{artist.image[3]['#text']}}" alt="{{artist.name}}" />
 				</a>
 				<div class='text'>
 					<div class="text-container">

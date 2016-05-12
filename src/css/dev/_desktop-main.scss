@@ -1,5 +1,8 @@
-@media all and (min-width: 640px) {
+@media all and (min-width: 720px) {
 	#header {
+		#logo-burger-wrapper {
+			width: auto;
+		}
 		ul {
 			display: flex;
 			position: relative;
@@ -13,7 +16,6 @@
 			background: transparent;
 			animation: none;
 			a {
-				font-size: inherit;
 				width: auto;
 				border: 0;
 				animation: none;

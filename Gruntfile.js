@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: 'src/css/build/*.css'
+        src: ['src/css/build/*.css', 'blog/wp-content/themes/my_theme/style.css']
       }
     },
     sass: {

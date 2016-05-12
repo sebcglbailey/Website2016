@@ -178,5 +178,8 @@
         }
       }
     };
+    $element.imagesLoaded(function(){
+      $element.scheduleMasonryOnce('layout');
+    });
   });
 }());

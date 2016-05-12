@@ -74,6 +74,7 @@ var experience = [
 	},
 	{
 		image: {
+			large: '/src/img/about.burton_md.jpg',
 			medium: '/src/img/about/burton_md.jpg',
 			small: '/src/img/about/burton_sm.jpg'
 		},

@@ -4,20 +4,6 @@
 	padding-bottom: 25px;
 }
 
-.card.ng-enter, .card.ng-leave {
-	transition: all 0.4s ease;
-	opacity: 1;
-}
-.card.ng-enter {
-	opacity: 0;
-}
-.card.ng-enter.ng-enter-active {
-	opacity: 1;
-}
-.card.ng-leave.ng-leave-active {
-	opacity: 0;
-}
-
 #filter {
 	margin-bottom: 25px;
 }
