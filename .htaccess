@@ -1,3 +1,4 @@
+RequestHeader set X-Prerender-Token "HvZt57Vg4WphusednSzB"
 RewriteEngine	On
 RewriteBase		/
 RewriteCond		%{REQUEST_URI}	!^(/index\.php|/img|/js|/css|/robots\.txt|/favicon\.ico)

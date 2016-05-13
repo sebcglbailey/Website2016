@@ -1,21 +1,4 @@
 @media all and (min-width: 720px) {
-	#skill-list {
-		#skill-list-desktop-header {
-			display: block;
-		}
-		.skill {
-			.level {
-				transform: scaleX(0);
-				transform-origin: 0;
-				transition: transform 0.25s ease;
-			}
-		}
-		.skill:hover {
-			.level {
-				transform: scaleX(1);
-			}
-		}
-	}
 	#education-list {
 		.education-card {
 			flex: 1 1;

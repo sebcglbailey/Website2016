@@ -5,7 +5,7 @@
 	<meta name="author" content="Palringo">
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	
-	<link rel='shortcut icon' type="image/x-icon" href="<?php bloginfo('template_url'); ?>/img/favicon.png" />
+	<link rel='shortcut icon' type="image/x-icon" href="/src/img/logo-black-256.png" />
 	<meta name="theme-color" content="#000">
 
 	<title><?php wp_title( '|', true, 'right' ); ?> <?php bloginfo('name'); ?></title>
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<ul>
-			<a href="/">
+			<a href="/projects">
 				<li>projects</li>
 			</a>
 			<a href="/work">
@@ -55,4 +55,4 @@
 		</ul>
 	</div>
 
-	<div id='content'>
+	<div id='blog-content'>

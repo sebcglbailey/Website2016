@@ -51,6 +51,11 @@
 			bottom: 0;
 			left: 0;
 			background: $black;
+			transform: scaleX(0);
+			transform-origin: 0;
+			-ms-transform: scaleX(0);
+			-ms-transform-origin: 0;
+			transition: transform 0.25s ease;
 		}
 		&.Ps {
 			color: $ps;
@@ -88,6 +93,18 @@
 			}
 		}
 	}
+	.skill:hover {
+		.level {
+			transform: scaleX(1);
+			-ms-transform: scaleX(1);
+		}
+	}
+	.skill, .level {
+		z-index: 5;
+	}
+	.skill span {
+		z-index: 0;
+	}
 }
 
 #about {
@@ -106,6 +123,7 @@
 }
 
 #education-list {
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
