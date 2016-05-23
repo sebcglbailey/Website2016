@@ -1,3 +1,5 @@
+var workDescription = "A mixture of work from Graphic Designer Sebastian Bailey. Single pieces include Graphic Design, Web Design, UX / UI, Photography and Architecture. Work here spans from the age of 17 all the way up to the present.";
+
 var workType = [
 	['gd', 'Graphic Design'],
 	['ph', 'Photography'],

@@ -1,3 +1,5 @@
+var contactDescription = "Find the best way to contact Sebastian Bailey. Email for work enquiries, check out social media pages including Twitter, Instagram, LinkedIn and LastFM. See the latest posts from Seb's professional Instagram account, and see what he has been listnening to!";
+
 var contact = [
 	{
 		href: "http://www.instagram.com/_u/seb.bailey",

@@ -20,3 +20,21 @@ RewriteCond		%{REQUEST_URI}	!^(/index\.php|/img|/js|/css|/robots\.txt|/favicon\.
 RewriteCond		%{REQUEST_FILENAME}	!-f
 RewriteCond		%{REQUEST_FILENAME}	!-d
 RewriteRule		^(.*)	./index.html	[NC]
+
+Redirect 301 /graphic-design http://sebastianbailey.co.uk/work
+Redirect 301 /web-design http://sebastianbailey.co.uk/work
+Redirect 301 /photography http://sebastianbailey.co.uk/work
+Redirect 301 /architecture http://sebastianbailey.co.uk/work
+
+Redirect 301 /blog/2015/welcome-to-my-blog.php http://sebastianbailey.co.uk/blog/2015/04/01/welcome-to-my-blog/
+Redirect 301 /blog/2015/why-i-taught-myself-to-code.php http://sebastianbailey.co.uk/blog/2015/04/02/why-i-taught-myself-to-code/
+Redirect 301 /blog/2015/why-i-wont-be-using-uber-again.php http://sebastianbailey.co.uk/blog/2015/04/30/why-i-wont-be-using-uber-again/
+Redirect 301 /blog/2015/building-my-own-website-part-1.php http://sebastianbailey.co.uk/blog/2015/05/01/building-my-own-website-part-1-of-2/
+Redirect 301 /blog/2015/why-snowboarding-better-skiing.php http://sebastianbailey.co.uk/blog/2015/05/14/why-snowboarding-is-better-than-skiing-and-why-it-doesnt-matter/
+Redirect 301 /blog/2015/architecture-why-i-stopped.php http://sebastianbailey.co.uk/blog/2015/05/28/architecture-why-i-stopped/
+Redirect 301 /blog/2015/building-my-own-website-part-2.php http://sebastianbailey.co.uk/blog/2015/06/23/building-my-own-website-part-2-of-2/
+Redirect 301 /blog/2015/graphic-designer-doesnt-want-hear-vs-perfect-client.php http://sebastianbailey.co.uk/blog/2015/08/24/what-a-graphic-designer-doesnt-want-to-hear-vs-the-perfect-client/
+Redirect 301 /blog/2015/how-architecture-helped.php http://sebastianbailey.co.uk/blog/2015/10/26/how-architecture-helped-me-get-to-where-i-am-now/
+Redirect 301 /blog/2015/snowboarding-great-platform-designers.php http://sebastianbailey.co.uk/blog/2015/11/13/snowboarding-a-great-platform-for-designers/
+Redirect 301 /blog/2016/always-judge-book-cover.php http://sebastianbailey.co.uk/blog/2016/03/15/always-judge-a-book-by-its-cover/
+Redirect 301 /blog/2016/adobe-xd-review.php http://sebastianbailey.co.uk/blog/2016/04/24/adobe-xd-review/

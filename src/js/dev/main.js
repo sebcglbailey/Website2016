@@ -10,7 +10,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 			templateUrl: '_partials/work.html',
 			controller: 'workController'
 		})
-		.when('/work/project/:projectName', {
+		.when('/project/:projectName', {
 			templateUrl: '_partials/project.html',
 			controller: 'projectController'
 		})
@@ -76,10 +76,11 @@ app.controller('homeController', ['$scope', '$routeParams', '$http', 'Page', fun
     	setTimeout(contentLoadedDelay, 510);
     });
 }]);
-app.controller('projectController', ['$scope', '$routeParams', '$http', 'Page', function($scope, $routeParams, $http, Page) {
-    $scope.projectList = projects;
+app.controller('projectController', ['$scope', '$routeParams', '$http', 'Page', 'filterFilter', function($scope, $routeParams, $http, Page, filterFilter) {
     $scope.params = $routeParams;
-    Page.setTitle($scope.params.projectName);
+    $scope.p = filterFilter(projects, {name: $scope.params.projectName})[0];
+    Page.setTitle($scope.p.title);
+    $('meta[name="description"]').attr('content', $scope.p.description);
     $scope.$on('$viewContentLoaded', function(){
     	contentLoaded();
     	setTimeout(contentLoadedDelay, 510);
@@ -89,6 +90,7 @@ app.controller('workController', ['$scope', 'Page', function($scope, Page) {
 	$scope.workList = work;
 	$scope.workType = workType;
 	Page.setTitle('Work');
+	$('meta[name="description"]').attr('content', workDescription);
 	$scope.$on('$viewContentLoaded', function(){
      	contentLoaded();
      	setTimeout(contentLoadedDelay, 510);
@@ -100,6 +102,7 @@ app.controller('aboutController', ['$scope', '$routeParams', 'Page', function($s
     $scope.experienceList = experience;
     $scope.hobbyList = hobbies;
     Page.setTitle('About');
+    $('meta[name="description"]').attr('content', aboutDescription);
     $scope.setActive = function(item) {
     	$scope.activeItem = item;
     	var hobbyCards = $('#hobby-cards').offset().top - 95;
@@ -116,6 +119,7 @@ app.controller('contactController', ['$scope', 'instagram', 'lastfm', 'Page', fu
 	$scope.contactList = contact;
 	$scope.pics = [];
 	Page.setTitle('Contact');
+	$('meta[name="description"]').attr('content', contactDescription);
 	instagram.fetchData(function(data){
 		$scope.pics = data;
 		$scope.activeItemIn = data[0];
@@ -170,8 +174,6 @@ $(document).ready(function(){
 		if (windowPos > 0) {
 			var link = $(this).attr('href').toString();
 			var $location = window.location.href;
-			console.log(link);
-			console.log($location);
 			if (($location.indexOf(link) > -1) || ($location == 'http://sebastianbailey.co.uk/' && link == '/projects')) {
 				event.preventDefault();
 				$('html, body').animate({scrollTop: 0});

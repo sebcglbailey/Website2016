@@ -1,4 +1,4 @@
-<div id='project' ng-init="p = (projectList | filter: {name: params.projectName})[0]">
+<div id='project'>
 
 	<div id="cover-image">
 		<img srcset='{{p.coverImage["xl"]}} 1920w, {{p.coverImage["large"]}} 1536w, {{p.coverImage["medium"]}} 768w, {{p.coverImage["small"]}} 720w, {{p.coverImage["xs"]}} 360w' src='{{p.coverImage["large"]}}' alt='{{p.title}}' />
@@ -36,7 +36,7 @@
 				<div class='cover-image'>
 					<img srcset="{{pn.coverImage['large']}} 1536w, {{pn.coverImage['medium']}} 980w, {{pn.coverImage['small']}} 720w, {{pn.coverImage['xs']}} 360w" sizes="(min-width: 400px) 400px, 100vw" src="{{pn.coverImage['medium']}}" alt="{{pn.title}}" />
 				</div>
-				<a class='{{pn.type[0]}}' ng-href='/work/project/{{pn.name}}' title='{{pn.title}}'>
+				<a class='{{pn.type[0]}}' ng-href='/project/{{pn.name}}' title='{{pn.title}}'>
 					<div class='info-container'>
 						<h2>{{pn.title}}</h2>
 						<p>{{pn.description}}</p>
@@ -51,7 +51,7 @@
 				<div class='cover-image'>
 					<img srcset='{{pp.coverImage["large"]}} 1536w, {{pp.coverImage["medium"]}} 980w, {{pp.coverImage["small"]}} 720w, {{pp.coverImage["xs"]}} 360w' sizes="(min-width: 400px) 400px, 100vw" src='{{pp.coverImage["medium"]}}' alt='{{pp.title}}' />
 				</div>
-				<a class='{{pp.type[0]}}' ng-href='/work/project/{{pp.name}}' title='{{pp.title}}'>
+				<a class='{{pp.type[0]}}' ng-href='/project/{{pp.name}}' title='{{pp.title}}'>
 					<div class='info-container'>
 						<h2>{{pp.title}}</h2>
 						<p>{{pp.description}}</p>

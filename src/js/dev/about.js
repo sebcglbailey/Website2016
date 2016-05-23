@@ -1,3 +1,5 @@
+var aboutDescription = "Skills include the full Adobe Creative Suite, and multiple web development languages including HTML, CSS, Javascript and PHP. Experience and education are listed here, along with hobbies and interests.";
+
 var skills = [
 	['sk','skills'],
 	{
