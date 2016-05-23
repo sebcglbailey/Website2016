@@ -436,11 +436,11 @@ h2 {
 	color: $white;
 	width: 90%;
 	max-width: 400px;
-	margin: 50px auto;
+	margin: 50px auto !important;
 	text-align: center;
 	overflow: hidden;
 	h2 {
-		margin: 0;
+		margin: 0 auto;
 		text-transform: uppercase;
 	}
 }
