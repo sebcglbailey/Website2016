@@ -77,6 +77,7 @@ app.controller('homeController', ['$scope', '$routeParams', '$http', 'Page', fun
     });
 }]);
 app.controller('projectController', ['$scope', '$routeParams', '$http', 'Page', 'filterFilter', function($scope, $routeParams, $http, Page, filterFilter) {
+    $scope.projectList = projects;
     $scope.params = $routeParams;
     $scope.p = filterFilter(projects, {name: $scope.params.projectName})[0];
     Page.setTitle($scope.p.title);

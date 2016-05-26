@@ -1,9 +1,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>http://sebastianbailey.co.uk/projects</loc>
+	</url>
+	<url>
+		<loc>http://sebastianbailey.co.uk/about</loc>
+	</url>
+	<url>
+		<loc>http://sebastianbailey.co.uk/contact</loc>
+	</url>
+	<url>
+		<loc>http://sebastianbailey.co.uk/</loc>
+	</url>
+	<url>
+		<loc>http://sebastianbailey.co.uk/index.html</loc>
+	</url>
+	<url>
 		<loc>http://www.sebastianbailey.co.uk</loc>
 	</url>
 	<url>
-		<loc>http://www.sebastianbailey.co.uk/work/project/BumpNGrind</loc>
+		<loc>http://sebastianbailey.co.uk/work</loc>
 	</url>
 	<url>
 		<loc>http://www.sebastianbailey.co.uk/work</loc>
@@ -12,18 +27,39 @@
 		<loc>http://www.sebastianbailey.co.uk/about</loc>
 	</url>
 	<url>
-		<loc>http://www.sebastianbailey.co.uk/work/project/Website2016</loc>
-	</url>
-	<url>
 		<loc>http://www.sebastianbailey.co.uk/contact</loc>
 	</url>
 	<url>
-		<loc>http://www.sebastianbailey.co.uk/work/project/XGames</loc>
+		<loc>http://sebastianbailey.co.uk/work/</loc>
 	</url>
 	<url>
-		<loc>http://www.sebastianbailey.co.uk/work/project/China</loc>
+		<loc>http://sebastianbailey.co.uk/project/China</loc>
 	</url>
 	<url>
-		<loc>http://www.sebastianbailey.co.uk/work/project/LandseerSnowboards</loc>
+		<loc>http://sebastianbailey.co.uk/project/XGames</loc>
+	</url>
+	<url>
+		<loc>http://sebastianbailey.co.uk/project/LandseerSnowboards</loc>
+	</url>
+	<url>
+		<loc>http://www.sebastianbailey.co.uk/project/XGames</loc>
+	</url>
+	<url>
+		<loc>http://www.sebastianbailey.co.uk/project/BumpNGrind</loc>
+	</url>
+	<url>
+		<loc>http://www.sebastianbailey.co.uk/project/Website2016</loc>
+	</url>
+	<url>
+		<loc>http://www.sebastianbailey.co.uk/project/China</loc>
+	</url>
+	<url>
+		<loc>http://www.sebastianbailey.co.uk/project/LandseerSnowboards</loc>
+	</url>
+	<url>
+		<loc>http://sebastianbailey.co.uk/project/BumpNGrind</loc>
+	</url>
+	<url>
+		<loc>http://sebastianbailey.co.uk/project/Website2016</loc>
 	</url>
 </urlset>
