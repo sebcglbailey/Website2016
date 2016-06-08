@@ -92,6 +92,13 @@
 				background: $xd;
 			}
 		}
+		&.Sk {
+			color: $sk;
+			border-color: $sk;
+			.level {
+				background: $sk;
+			}
+		}
 	}
 	.skill:hover {
 		.level {

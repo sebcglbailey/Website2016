@@ -23,6 +23,10 @@ var skills = [
 		level: '95%'
 	},
 	{
+		skill: 'Sketch',
+		level: '75%'
+	},
+	{
 		skill: 'HTML5',
 		level: '85%'
 	},
@@ -49,6 +53,10 @@ var skills = [
 	{
 		skill: 'AngularJS',
 		level: '60%'
+	},
+	{
+		skill: 'Framer.js',
+		level: '50%'
 	}
 ];
 
