@@ -38,7 +38,7 @@ app.factory('Page', function(){
 app.factory('instagram', ['$http', function($http){
 	return {
 		fetchData: function(callback){
-            var endPoint = "https://api.instagram.com/v1/users/3197786970/media/recent/?access_token=230978815.467ede5.1e39f843afb441068cdeb30c8747c12b&callback=JSON_CALLBACK";
+            var endPoint = "https://api.instagram.com/v1/users/3197786970/media/recent/?access_token=3197786970.da8a7fe.74849f11e08a4e34944d956de321cd53&callback=JSON_CALLBACK";
             $http.jsonp(endPoint).success(function(response){
                 callback(response.data);
             });
