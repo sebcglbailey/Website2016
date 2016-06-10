@@ -320,6 +320,78 @@ var projects = [
 
 	{
 		arNo: 3,
+		name: 'PalringoWebUI',
+		type: ['ux', 'User Experience'],
+		title: 'Palringo WebUI Client',
+		description: 'Designing the web-client for the Palringo social gaming app. As part of the creative team, myself and one other designer helped shape the overall look and feel, and User Experience of the new web-client for the app. Not being a native app, we were not constricted to best practice standards, and could experiment with changing the UX from the current application. The chat became much more fluid, allowing new users to get straight into the core functionality of the platform, and also allowing users to flick between different groups with ease.',
+		coverImage: {
+			xl: '/src/img/projects/palringo-webui/cover_xl.jpg',
+			large: '/src/img/projects/palringo-webui/cover_lg.jpg',
+			medium: '/src/img/projects/palringo-webui/cover_md.jpg',
+			small: '/src/img/projects/palringo-webui/cover_sm.jpg',
+			xs: '/src/img/projects/palringo-webui/cover_xs.jpg'
+		},
+		projectImages: [
+			{
+				large: '/src/img/projects/palringo-webui/PW-01_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-01_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-01_sm.jpg',
+				alt: 'Palringo Logo for the WebUI'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-02_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-02_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-02_sm.jpg',
+				alt: 'Design of the Palringo iOS client – chat view'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-03_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-03_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-03_sm.jpg',
+				alt: 'First iteration of designs for the new Palringo WebUI'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-04_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-04_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-04_sm.jpg',
+				alt: 'Second iteration – \'light\' and \'dark\' themes'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-05_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-05_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-05_sm.jpg',
+				alt: 'Semi-final structure and design of the chat view of both groups and users, and also the first design of user profiles'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-06_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-06_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-06_sm.jpg',
+				alt: 'Simple sign-up and account verifaction'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-07_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-07_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-07_sm.jpg',
+				alt: 'Main menu, message tray, and group profiles'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-08_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-08_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-08_sm.jpg',
+				alt: 'Edit group, and edit profile'
+			},
+			{
+				large: '/src/img/projects/palringo-webui/PW-09_lg.jpg',
+				medium: '/src/img/projects/palringo-webui/PW-09_md.jpg',
+				small: '/src/img/projects/palringo-webui/PW-09_sm.jpg',
+				alt: 'Group discovery'
+			}
+		],
+		layout: 'long-image'
+	},
+
+	{
+		arNo: 4,
 		name: 'XGames',
 		type: ['ux', 'User Experience'],
 		title: 'X-Games Mobile Application',
@@ -409,7 +481,7 @@ var projects = [
 	},
 
 	{
-		arNo: 4,
+		arNo: 5,
 		name: 'Website2016',
 		type: ['wd', 'Web Design'],
 		title: 'Personal Website Design – 2016',

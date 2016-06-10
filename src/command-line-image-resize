@@ -12,8 +12,8 @@ for file in $filelist; do
 mv "$file" "$(echo "$file" | sed 's/._/_/g' )"
 done
 
-mogrify -path output/ -format "_lg.jpg" -resize 1200 *.jpg
-mogrify -path output/ -format "_md.jpg" -resize 720 *.jpg
+mogrify -path output/ -format "_lg.jpg" -resize 100% *.jpg
+mogrify -path output/ -format "_md.jpg" -resize 900 *.jpg
 mogrify -path output/ -format "_sm.jpg" -resize 360 *.jpg
 cd output
 filelist=$(ls)
