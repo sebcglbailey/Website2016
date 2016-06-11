@@ -30,11 +30,13 @@
 /blog/wp-content/themes/twentythirteen
 /blog/wp-content/
 /.sass-cache
+/src/img/**/*_xl.jpg
 /src/img/**/*_lg.jpg
 /src/img/**/*_md.jpg
-/src/img/**/*_med.jpg
+/src/img/**/*_md.jpg
 /src/img/**/*_sm.jpg
 /src/img/**/*_xs.jpg
+/src/img/**/*_xl.png
 /src/img/**/*_lg.png
 /src/img/**/*_md.png
 /src/img/**/*_sm.png

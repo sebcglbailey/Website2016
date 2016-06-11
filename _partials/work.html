@@ -52,7 +52,7 @@
 
 		<div masonry-brick ng-repeat="piece in workList | filter: { type: filter } | limitTo: limit" class="card work-card" >
 			<div class="cover-image">
-				<img srcset="{{piece.image.large}} 1280w, {{piece.image.medium}} 640w, {{piece.image.small}} 360w" sizes="(min-width: 720px) 46vw, (min-width: 1080px) 31vw, 96vw" src="{{piece.image.medium}}" alt="{{piece.title}}" />
+				<img srcset="{{piece.image.xl}} 1280w, {{piece.image.large}} 900w, {{piece.image.medium}} 640w, {{piece.image.small}} 360w" sizes="(min-width: 720px) 46vw, (min-width: 1080px) 31vw, 96vw" src="{{piece.image.medium}}" alt="{{piece.title}}" />
 			</div>
 			<div class='info-container {{piece.type}}'>
 				<div class="work-title">
