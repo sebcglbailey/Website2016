@@ -342,19 +342,19 @@ var projects = [
 				large: '/src/img/projects/palringo-webui/PW-02_lg.jpg',
 				medium: '/src/img/projects/palringo-webui/PW-02_md.jpg',
 				small: '/src/img/projects/palringo-webui/PW-02_sm.jpg',
-				alt: 'Design of the Palringo iOS client – chat view'
+				alt: 'Design of the Palringo iOS client – chat view. Palringo is a social media app for chatting and gaming. Being part of the design team, I was tasked with designing the new WebUI client along with one other designer. The native app has been downloaded over 5 million times, so the user base is strong. The decision to create a web-based client was an obvious one – we wanted our users to be able to login from wherever they wanted, and also to create a seamless experience for new users without the need for them to download the app.'
 			},
 			{
 				large: '/src/img/projects/palringo-webui/PW-03_lg.jpg',
 				medium: '/src/img/projects/palringo-webui/PW-03_md.jpg',
 				small: '/src/img/projects/palringo-webui/PW-03_sm.jpg',
-				alt: 'First iteration of designs for the new Palringo WebUI'
+				alt: 'First iteration of designs for the new Palringo WebUI. The first task was to design the standard chat view, as the chat is the core of the app. At first, the idea for the web-app was to have it as part of the overal website, so you can see various other options in the menu bar at this point. However this soon changed, and the web client soon became a product in itself.'
 			},
 			{
 				large: '/src/img/projects/palringo-webui/PW-04_lg.jpg',
 				medium: '/src/img/projects/palringo-webui/PW-04_md.jpg',
 				small: '/src/img/projects/palringo-webui/PW-04_sm.jpg',
-				alt: 'Second iteration – \'light\' and \'dark\' themes'
+				alt: 'Second iteration – \'light\' and \'dark\' themes. For the second stage of design, the project managers wanted to incorporate a “peek” into the group chats, before entering the group. This is to give the users an idea of the sort of chat going on before commiting to join. So here, we focused on the “Discover” page, and brought in the popup quotes from users within the group, overlaying the group avatars. I also experimented with ‘light’ and ‘dark’ themes.'
 			},
 			{
 				large: '/src/img/projects/palringo-webui/PW-05_lg.jpg',
@@ -366,13 +366,13 @@ var projects = [
 				large: '/src/img/projects/palringo-webui/PW-06_lg.jpg',
 				medium: '/src/img/projects/palringo-webui/PW-06_md.jpg',
 				small: '/src/img/projects/palringo-webui/PW-06_sm.jpg',
-				alt: 'Simple sign-up and account verifaction'
+				alt: 'Simple sign-up and account verifaction. Once we decided that the web-client would be a standalone product, the semi-final layout and structure came about fairly quickly. Mainly the menu design took a big leap in that we took inspiration from the old mobile client, and consolidated the chats into the menu, meaning that the user could quickly switch between groups. I also personally experimented with the simple signup and account verifaction popup. although this was later simplified into just a nickname input, to get the user into the chat as quickly as possible.'
 			},
 			{
 				large: '/src/img/projects/palringo-webui/PW-07_lg.jpg',
 				medium: '/src/img/projects/palringo-webui/PW-07_md.jpg',
 				small: '/src/img/projects/palringo-webui/PW-07_sm.jpg',
-				alt: 'Main menu, message tray, and group profiles'
+				alt: 'Main menu, message tray, and group profiles. Once we had settled on the main structure of the desktop design, we quickly moved on to designing the mobile design of the web-app. and refining all the smaller details, such as the different menus, and user and group profiles.'
 			},
 			{
 				large: '/src/img/projects/palringo-webui/PW-08_lg.jpg',
@@ -384,7 +384,7 @@ var projects = [
 				large: '/src/img/projects/palringo-webui/PW-09_lg.jpg',
 				medium: '/src/img/projects/palringo-webui/PW-09_md.jpg',
 				small: '/src/img/projects/palringo-webui/PW-09_sm.jpg',
-				alt: 'Group discovery'
+				alt: 'Group discovery. Palringo WebUI client can be found at: chat.palringo.com'
 			}
 		],
 		layout: 'long-image'
@@ -414,13 +414,13 @@ var projects = [
 				large: '/src/img/projects/xgames/X-02_lg.jpg',
 				medium: '/src/img/projects/xgames/X-02_md.jpg',
 				small: '/src/img/projects/xgames/X-02_sm.jpg',
-				alt: 'Introduction and Mobile Mockup'
+				alt: 'Introduction and Mobile Mockup. The X-Games is an extreme sports competition and by far the most sought after medals in the respective sports. The events either take place in summer with sports such as Skateboarding, Moto-X, and BMX, or in the winter with Snowboarding and Skiing taking centre stage. X-Games Aspen took place from January 28th to 31st. While there existed an App that would help people both attending the event and not, it was not being used to its full potential. The redesign of the iOS app also gave rise to the opportunity to rethink the overall branding of the X-Games, and to bring it to the masses, and not just the fans of extreme sports.'
 			},
 			{
 				large: '/src/img/projects/xgames/X-03_lg.jpg',
 				medium: '/src/img/projects/xgames/X-03_md.jpg',
 				small: '/src/img/projects/xgames/X-03_sm.jpg',
-				alt: 'Icon Set'
+				alt: 'Icon Set. The larger icons represent the different disciplines covered in the competition – each has also been given its own colour. These colours are then used in the event iconography, each different type of event represented by various icons, with the colours of the sport transferred over.'
 			},
 			{
 				large: '/src/img/projects/xgames/X-04_lg.jpg',
@@ -450,7 +450,7 @@ var projects = [
 				large: '/src/img/projects/xgames/X-08_lg.jpg',
 				medium: '/src/img/projects/xgames/X-08_md.jpg',
 				small: '/src/img/projects/xgames/X-08_sm.jpg',
-				alt: 'Profile Mockups'
+				alt: 'Profile Mockups. Profiles include all the info a user will need for the events that the athelete is taking place in, including their X-Games history. There is also the option to ‘Watch’ an artist so the user does not miss a performance.'
 			},
 			{
 				large: '/src/img/projects/xgames/X-09_lg.jpg',
