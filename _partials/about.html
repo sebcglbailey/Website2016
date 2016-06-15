@@ -73,11 +73,13 @@
 				<div class='cover-image'>
 					<img srcset="{{work.image.large}} 1280w, {{work.image.medium}} 720w, {{work.image.small}} 360w" sizes="(min-width: 720px) 46vw, (min-width: 1080px) 31vw, 96vw" src="{{work.image.medium}}" alt="{{work.company}}" />
 				</div>
-				<div class='info-container'>
-					<h3>{{work.company}}</h3>
-					<p>{{work.dates}}</p>
-					<p>{{work.title}}</p>
-				</div>
+				<a href={{work.link}} title="{{work.company}}" target="_blank">
+					<div class='info-container'>
+						<h3>{{work.company}}</h3>
+						<p>{{work.dates}}</p>
+						<p>{{work.title}}</p>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

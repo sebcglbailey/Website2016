@@ -220,7 +220,7 @@ var work = [
 	},
 	{
 		type: 'wd',
-		title: 'Balloony Land Microsite – Palringo',
+		title: '<a href="http://www.balloonylandgame.com" title="Balloony Land Microsite" target="_blank">Balloony Land Microsite – Palringo</a>',
 		image: {
 			xl: '/src/img/work/wd/BL-01_xl.jpg',
 			large: '/src/img/work/wd/BL-01_lg.jpg',
@@ -310,7 +310,7 @@ var work = [
 	},
 	{
 		type: 'wd',
-		title: 'Imprima – Website Redesign',
+		title: '<a href="http://www.imprima.com" title="Imprima" target="_blank">Imprima – Website Redesign</a>',
 		image: {
 			xl: '/src/img/work/wd/IMP-03_xl.jpg',
 			large: '/src/img/work/wd/IMP-03_lg.jpg',
@@ -320,7 +320,7 @@ var work = [
 	},
 	{
 		type: 'wd',
-		title: 'Imprima – Website Redesign',
+		title: '<a href="http://www.imprima.com" title="Imprima" target="_blank">Imprima – Website Redesign</a>',
 		image: {
 			xl: '/src/img/work/wd/IMP-02_xl.jpg',
 			large: '/src/img/work/wd/IMP-02_lg.jpg',
@@ -330,7 +330,7 @@ var work = [
 	},
 	{
 		type: 'wd',
-		title: 'Imprima – Website Redesign',
+		title: '<a href="http://www.imprima.com" title="Imprima" target="_blank">Imprima – Website Redesign</a>',
 		image: {
 			xl: '/src/img/work/wd/IMP-01_xl.jpg',
 			large: '/src/img/work/wd/IMP-01_lg.jpg',
@@ -380,7 +380,7 @@ var work = [
 	},
 	{
 		type: 'wd',
-		title: 'HS2 Online Repository',
+		title: '<a href="http://hs2.irooms.net/" title="iRooms HS2 Online Repository" target="_blank">HS2 Online Repository</a>',
 		image: {
 			xl: '/src/img/work/wd/HS2-03_xl.jpg',
 			large: '/src/img/work/wd/HS2-03_lg.jpg',
@@ -390,7 +390,7 @@ var work = [
 	},
 	{
 		type: 'wd',
-		title: 'HS2 Online Repository',
+		title: '<a href="http://hs2.irooms.net/" title="iRooms HS2 Online Repository" target="_blank">HS2 Online Repository</a>',
 		image: {
 			xl: '/src/img/work/wd/HS2-02_xl.jpg',
 			large: '/src/img/work/wd/HS2-02_lg.jpg',
@@ -400,7 +400,7 @@ var work = [
 	},
 	{
 		type: 'wd',
-		title: 'HS2 Online Repository',
+		title: '<a href="http://hs2.irooms.net/" title="iRooms HS2 Online Repository" target="_blank">HS2 Online Repository</a>',
 		image: {
 			xl: '/src/img/work/wd/HS2-01_xl.jpg',
 			large: '/src/img/work/wd/HS2-01_lg.jpg',

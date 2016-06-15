@@ -70,7 +70,8 @@ var experience = [
 		},
 		company: 'Palringo Ltd',
 		dates: 'March 2015 - Present',
-		title: 'Graphic Designer, Web Designer'
+		title: 'Graphic Designer, Web Designer',
+		link: 'http://www.palringo.com'
 	},
 	{
 		image: {
@@ -80,7 +81,8 @@ var experience = [
 		},
 		company: 'Imprima',
 		dates: 'May 2013 - February 2015',
-		title: 'Head of Design, Graphic Designer'
+		title: 'Head of Design, Graphic Designer',
+		link: 'http://www.imprima.com'
 	},
 	{
 		image: {
@@ -90,7 +92,8 @@ var experience = [
 		},
 		company: 'Burton Menswear – Arcadia Group Ltd',
 		dates: 'June 2012 - May 2013',
-		title: 'Sales Assistant'
+		title: 'Sales Assistant',
+		link: 'http://www.burton.co.uk'
 	},
 	{
 		image: {
@@ -100,7 +103,8 @@ var experience = [
 		},
 		company: 'Foster + Partners',
 		dates: 'June 2008, June 2009',
-		title: 'Work Experience, Architectural Assistant'
+		title: 'Work Experience, Architectural Assistant',
+		link: 'http://www.fosterandpartners.com'
 	}
 ];
 
