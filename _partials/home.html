@@ -25,7 +25,7 @@
 			<a class='{{project.type[0]}}' ng-href='/project/{{project.name}}' title='{{project.title}}'>
 				<div class='info-container'>
 					<h2>{{project.title}}</h2>
-					<p>{{project.description}}</p>
+					<p ng-repeat="p in project.description" ng-bind-html="p"></p>
 					<i class='icon-arrow-next'></i>
 				</div>
 			</a>

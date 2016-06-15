@@ -35,6 +35,14 @@
 	border: 3px solid;
 	background: $transparentWhite;
 	padding: 25px;
+	a {
+		color: inherit;
+		text-decoration: underline !important;
+		opacity: 0.5;
+	}
+	a:hover {
+		opacity: 1;
+	}
 }
 
 .cover-image {

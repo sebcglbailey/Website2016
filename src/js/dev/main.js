@@ -1,4 +1,4 @@
-var app = angular.module('myWebsite', ['ngRoute', 'wu.masonry', 'ngAnimate']);
+var app = angular.module('myWebsite', ['ngRoute', 'wu.masonry', 'ngAnimate', 'ngSanitize']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 	$routeProvider

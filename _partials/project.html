@@ -10,7 +10,7 @@
 
 	<div id="intro">
 		<h1>{{p.title}}</h1>
-		<p>{{p.description}}</p>
+		<p ng-repeat="para in p.description" ng-bind-html="para"></p>
 	</div>
 
 	<div id="project-images" class='{{p.type[0]}} {{p.layout}}'>
@@ -39,7 +39,7 @@
 				<a class='{{pn.type[0]}}' ng-href='/project/{{pn.name}}' title='{{pn.title}}'>
 					<div class='info-container'>
 						<h2>{{pn.title}}</h2>
-						<p>{{pn.description}}</p>
+						<p ng-repeat="para in pn.description" ng-bind-html="para"></p>
 						<i class='icon-arrow-prev'></i>
 					</div>
 				</a>
@@ -54,7 +54,7 @@
 				<a class='{{pp.type[0]}}' ng-href='/project/{{pp.name}}' title='{{pp.title}}'>
 					<div class='info-container'>
 						<h2>{{pp.title}}</h2>
-						<p>{{pp.description}}</p>
+						<p ng-repeat="para in pp.description" ng-bind-html="para"></p>
 						<i class='icon-arrow-next'></i>
 					</div>
 				</a>
