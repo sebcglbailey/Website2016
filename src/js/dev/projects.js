@@ -404,7 +404,7 @@ var projects = [
 	{
 		arNo: 4,
 		name: 'XGames',
-		type: ['ux', 'User Experience'],
+		type: ['ui', 'User Interface'],
 		title: 'X-Games Mobile Application',
 		description: [
 			'My iOS app design for X-Games Aspen 2016 has been featured by AdobeXD on their <a href="http://www.adobe.com/uk/products/experience-design.html" title="Adobe XD Homepage" target="_blank">website</a> and newsletter, and has gained considerable attention on <a href="https://www.behance.net/gallery/35444151/X-Games-Aspen-App" title="X Games Aspen App Design – Sebastian Bailey Behance" target="_blank">Behance.</a>',
