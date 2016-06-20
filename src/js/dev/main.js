@@ -96,6 +96,10 @@ app.controller('workController', ['$scope', 'Page', function($scope, Page) {
      	contentLoaded();
      	setTimeout(contentLoadedDelay, 510);
     });
+    $scope.search = '';
+    $scope.searchWork = function(f){
+    	return (f.title + f.keywords).indexOf($scope.search) >= 0;
+    };
 }]);
 app.controller('aboutController', ['$scope', '$routeParams', 'Page', function($scope, $routeParams, Page) {
     $scope.skillList = skills;

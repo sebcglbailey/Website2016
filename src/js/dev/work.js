@@ -16,7 +16,8 @@ var work = [
 			large: '/src/img/work/gd/GA-09_lg.jpg',
 			medium: '/src/img/work/gd/GA-09_md.jpg',
 			small: '/src/img/work/gd/GA-09_sm.jpg'
-		}
+		},
+		keywords: 'vector art illustrator'
 	},
 	{
 		type: 'gd',
@@ -26,7 +27,8 @@ var work = [
 			large: '/src/img/work/gd/SN-06_lg.jpg',
 			medium: '/src/img/work/gd/SN-06_md.jpg',
 			small: '/src/img/work/gd/SN-06_sm.jpg'
-		}
+		},
+		keywords: 'vector art design illustrator photoshop'
 	},
 	{
 		type: 'gd',
@@ -36,7 +38,8 @@ var work = [
 			large: '/src/img/work/gd/SN-05_lg.jpg',
 			medium: '/src/img/work/gd/SN-05_md.jpg',
 			small: '/src/img/work/gd/SN-05_sm.jpg'
-		}
+		},
+		keywords: 'vector art design illustrator'
 	},
 	{
 		type: 'gd',
@@ -46,7 +49,8 @@ var work = [
 			large: '/src/img/work/gd/GA-08_lg.jpg',
 			medium: '/src/img/work/gd/GA-08_md.jpg',
 			small: '/src/img/work/gd/GA-08_sm.jpg'
-		}
+		},
+		keywords: 'china photoshop'
 	},
 	{
 		type: 'wd',
@@ -56,7 +60,8 @@ var work = [
 			large: '/src/img/work/wd/EE-01_lg.jpg',
 			medium: '/src/img/work/wd/EE-01_md.jpg',
 			small: '/src/img/work/wd/EE-01_sm.jpg'
-		}
+		},
+		keywords: 'game gaming photoshop web code coding'
 	},
 	{
 		type: 'gd',
@@ -66,7 +71,8 @@ var work = [
 			large: '/src/img/work/gd/GA-07_lg.jpg',
 			medium: '/src/img/work/gd/GA-07_md.jpg',
 			small: '/src/img/work/gd/GA-07_sm.jpg'
-		}
+		},
+		keywords: 'vector art'
 	},
 	{
 		type: 'gd',
@@ -76,7 +82,8 @@ var work = [
 			large: '/src/img/work/gd/GA-06_lg.jpg',
 			medium: '/src/img/work/gd/GA-06_md.jpg',
 			small: '/src/img/work/gd/GA-06_sm.jpg'
-		}
+		},
+		keywords: 'vector art'
 	},
 	{
 		type: 'wd',
@@ -86,7 +93,8 @@ var work = [
 			large: '/src/img/work/wd/CL-01_lg.jpg',
 			medium: '/src/img/work/wd/CL-01_md.jpg',
 			small: '/src/img/work/wd/CL-01_sm.jpg'
-		}
+		},
+		keywords: 'game gaming photoshop web code coding'
 	},
 	{
 		type: 'ph',
@@ -226,7 +234,8 @@ var work = [
 			large: '/src/img/work/wd/BL-01_lg.jpg',
 			medium: '/src/img/work/wd/BL-01_md.jpg',
 			small: '/src/img/work/wd/BL-01_sm.jpg'
-		}
+		},
+		keywords: 'web design game gaming code photoshop balloons'
 	},
 	{
 		type: 'wd',
@@ -236,7 +245,8 @@ var work = [
 			large: '/src/img/work/wd/PW-01_lg.jpg',
 			medium: '/src/img/work/wd/PW-01_md.jpg',
 			small: '/src/img/work/wd/PW-01_sm.jpg'
-		}
+		},
+		keywords: ' web design game gaming code photoshop illustrator icons old'
 	},
 	{
 		type: 'gd',
@@ -246,7 +256,8 @@ var work = [
 			large: '/src/img/work/gd/CR-02_lg.jpg',
 			medium: '/src/img/work/gd/CR-02_md.jpg',
 			small: '/src/img/work/gd/CR-02_sm.jpg'
-		}
+		},
+		keywords: 'print magazine'
 	},
 	{
 		type: 'gd',
@@ -256,7 +267,8 @@ var work = [
 			large: '/src/img/work/gd/CR-01_lg.jpg',
 			medium: '/src/img/work/gd/CR-01_md.jpg',
 			small: '/src/img/work/gd/CR-01_sm.jpg'
-		}
+		},
+		keywords: 'print magazine'
 	},
 	{
 		type: 'gd',
@@ -266,7 +278,8 @@ var work = [
 			large: '/src/img/work/gd/IMP-06_lg.jpg',
 			medium: '/src/img/work/gd/IMP-06_md.jpg',
 			small: '/src/img/work/gd/IMP-06_sm.jpg'
-		}
+		},
+		keywords: 'print illustrator'
 	},
 	{
 		type: 'gd',
@@ -276,7 +289,8 @@ var work = [
 			large: '/src/img/work/gd/IMP-05_lg.jpg',
 			medium: '/src/img/work/gd/IMP-05_md.jpg',
 			small: '/src/img/work/gd/IMP-05_sm.jpg'
-		}
+		},
+		keywords: 'print illustrator'
 	},
 	{
 		type: 'gd',
@@ -286,7 +300,8 @@ var work = [
 			large: '/src/img/work/gd/IMP-04_lg.jpg',
 			medium: '/src/img/work/gd/IMP-04_md.jpg',
 			small: '/src/img/work/gd/IMP-04_sm.jpg'
-		}
+		},
+		keywords: 'illustrator'
 	},
 	{
 		type: 'gd',
@@ -296,7 +311,8 @@ var work = [
 			large: '/src/img/work/gd/IMP-03_lg.jpg',
 			medium: '/src/img/work/gd/IMP-03_md.jpg',
 			small: '/src/img/work/gd/IMP-03_sm.jpg'
-		}
+		},
+		keywords: 'illustrator'
 	},
 	{
 		type: 'wd',
@@ -306,7 +322,8 @@ var work = [
 			large: '/src/img/work/wd/IR-01_lg.jpg',
 			medium: '/src/img/work/wd/IR-01_md.jpg',
 			small: '/src/img/work/wd/IR-01_sm.jpg'
-		}
+		},
+		keywords: 'web coding'
 	},
 	{
 		type: 'wd',
@@ -416,7 +433,8 @@ var work = [
 			large: '/src/img/work/gd/SN-04_lg.jpg',
 			medium: '/src/img/work/gd/SN-04_md.jpg',
 			small: '/src/img/work/gd/SN-04_sm.jpg'
-		}
+		},
+		keywords: 'vector illustrator'
 	},
 	{
 		type: 'gd',
@@ -426,7 +444,8 @@ var work = [
 			large: '/src/img/work/gd/SN-03_lg.jpg',
 			medium: '/src/img/work/gd/SN-03_md.jpg',
 			small: '/src/img/work/gd/SN-03_sm.jpg'
-		}
+		},
+		keywords: 'vector illustrator'
 	},
 	{
 		type: 'gd',
@@ -436,7 +455,8 @@ var work = [
 			large: '/src/img/work/gd/SN-02_lg.jpg',
 			medium: '/src/img/work/gd/SN-02_md.jpg',
 			small: '/src/img/work/gd/SN-02_sm.jpg'
-		}
+		},
+		keywords: 'vector illustrator photoshop cutout photography'
 	},
 	{
 		type: 'gd',
@@ -446,7 +466,8 @@ var work = [
 			large: '/src/img/work/gd/SN-01_lg.jpg',
 			medium: '/src/img/work/gd/SN-01_md.jpg',
 			small: '/src/img/work/gd/SN-01_sm.jpg'
-		}
+		},
+		keywords: 'vector illustrator'
 	},
 	{
 		type: 'gd',
@@ -456,7 +477,8 @@ var work = [
 			large: '/src/img/work/gd/GA-05_lg.jpg',
 			medium: '/src/img/work/gd/GA-05_md.jpg',
 			small: '/src/img/work/gd/GA-05_sm.jpg'
-		}
+		},
+		keywords: 'vector illustrator'
 	},
 	{
 		type: 'gd',
@@ -466,7 +488,8 @@ var work = [
 			large: '/src/img/work/gd/GA-04_lg.jpg',
 			medium: '/src/img/work/gd/GA-04_md.jpg',
 			small: '/src/img/work/gd/GA-04_sm.jpg'
-		}
+		},
+		keywords: 'vector illustrator'
 	},
 	{
 		type: 'gd',
@@ -476,7 +499,8 @@ var work = [
 			large: '/src/img/work/gd/GA-03_lg.jpg',
 			medium: '/src/img/work/gd/GA-03_md.jpg',
 			small: '/src/img/work/gd/GA-03_sm.jpg'
-		}
+		},
+		keywords: 'vector illustrator'
 	},
 	{
 		type: 'ar',
@@ -906,7 +930,8 @@ var work = [
 			large: '/src/img/work/gd/GA-01_lg.jpg',
 			medium: '/src/img/work/gd/GA-01_md.jpg',
 			small: '/src/img/work/gd/GA-01_sm.jpg'
-		}
+		},
+		keywords: 'illustrator'
 	},
 	{
 		type: 'ph',
@@ -1196,7 +1221,8 @@ var work = [
 			large: '/src/img/work/ar/FP-02_lg.jpg',
 			medium: '/src/img/work/ar/FP-02_md.jpg',
 			small: '/src/img/work/ar/FP-02_sm.jpg'
-		}
+		},
+		keywords: 'photoshop'
 	},
 	{
 		type: 'ar',
@@ -1206,6 +1232,7 @@ var work = [
 			large: '/src/img/work/ar/FP-01_lg.jpg',
 			medium: '/src/img/work/ar/FP-01_md.jpg',
 			small: '/src/img/work/ar/FP-01_sm.jpg'
-		}
+		},
+		keywords: 'photoshop'
 	}
 ];

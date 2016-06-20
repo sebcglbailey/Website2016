@@ -12,9 +12,10 @@ for file in $filelist; do
 mv "$file" "$(echo "$file" | sed 's/._/_/g' )"
 done
 
-mogrify -path output/ -format "_lg.jpg" -resize 100% *.jpg
-mogrify -path output/ -format "_md.jpg" -resize 900 *.jpg
-mogrify -path output/ -format "_sm.jpg" -resize 360 *.jpg
+mogrify -path output/ -format "_xl.jpg" -resize 1280 EE-01.png
+mogrify -path output/ -format "_lg.jpg" -resize 900 EE-01.png
+mogrify -path output/ -format "_md.jpg" -resize 640 EE-01.png
+mogrify -path output/ -format "_sm.jpg" -resize 360 EE-01.png
 cd output
 filelist=$(ls)
 for file in $filelist; do

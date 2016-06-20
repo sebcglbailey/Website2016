@@ -46,11 +46,17 @@
 			</div>
 		</div>
 
-		<div ng-show="filter" id='filter-seperator'></div>
+	<div id="search">
+		<label><input ng-model="search" ng-change="length = (workList | filter: searchWork).length" placeholder="Know what you're looking for?"></label>
+	</div>
+
+	<div ng-show="filter; search" id='filter-seperator'></div>
 
 	<div class='masonry-container' masonry preserve-order reload-on-show id="work-cards" item-selector=".card">
 
-		<div masonry-brick ng-repeat="piece in workList | filter: { type: filter } | limitTo: limit" class="card work-card" >
+		<h2 ng-show="length == 0">Oops! Looks like I haven't done anything to do with that! Try reducing your search...</h2>
+
+		<div masonry-brick ng-repeat="piece in workList | filter: { type: filter } | filter: searchWork | limitTo: limit" class="card work-card">
 			<div class="cover-image">
 				<img srcset="{{piece.image.xl}} 1280w, {{piece.image.large}} 900w, {{piece.image.medium}} 640w, {{piece.image.small}} 360w" sizes="(min-width: 720px) 46vw, (min-width: 1080px) 31vw, 96vw" src="{{piece.image.medium}}" alt="{{piece.title}}" />
 			</div>

@@ -1,2 +1,159 @@
-#about{width:98%;margin:0 auto;padding-bottom:25px}.about-section{text-align:center}.about-section.ng-enter,.about-section.ng-leave{transition:all .4s ease;opacity:1}.about-section.ng-enter{opacity:0}.about-section.ng-enter.ng-enter-active{opacity:1}.about-section.ng-leave.ng-leave-active{opacity:0}#skill-list{display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;max-width:900px;margin:auto;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}#skill-list #skill-list-desktop-header,#skill-list .skill:first-child{display:none}#skill-list .skill{padding:25px;position:relative;top:0;left:0;border:3px solid rgba(0,0,0,.85);margin:0 10px 20px;cursor:pointer}#skill-list .skill .level{position:absolute;height:5px;bottom:0;left:0;background:rgba(0,0,0,.85);-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0;transform-origin:0;-ms-transform:scaleX(0);-ms-transform-origin:0;transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease}#skill-list .skill.Ps{color:#00acc9;border-color:#00acc9}#skill-list .skill.Ps .level{background:#00acc9}#skill-list .skill.Ai{color:#f8863c;border-color:#f8863c}#skill-list .skill.Ai .level{background:#f8863c}#skill-list .skill.Id{color:#fe80a8;border-color:#fe80a8}#skill-list .skill.Id .level{background:#fe80a8}#skill-list .skill.Ae{color:#b6aeec;border-color:#b6aeec}#skill-list .skill.Ae .level{background:#b6aeec}#skill-list .skill.Xd{color:#ff43c9;border-color:#ff43c9}#skill-list .skill.Xd .level{background:#ff43c9}#skill-list .skill.Sketch{color:#f7c752;border-color:#f7c752}#skill-list .skill.Sketch .level{background:#f7c752}#skill-list .skill:hover .level{-webkit-transform:scaleX(1);transform:scaleX(1);-ms-transform:scaleX(1)}#skill-list .level,#skill-list .skill{z-index:1}#skill-list .skill span{z-index:0}#about .card .info-container{margin:25px}#experience .card{margin-top:0;margin-bottom:25px}#experience a{color:inherit;text-decoration:none}#education-list{width:100vw;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}#education-list .education-card{width:100%}#hobby-list .filter{margin:10px}#hobby-cards{margin-top:25px}#hobby-cards .hobby-card{width:90%;max-width:360px;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:#fff;box-shadow:0 5px 10px hsla(0,0%,75%,.85);margin:0 auto}#hobby-cards .hobby-card img{width:100%}#hobby-cards .hobby-card .text{padding:0 25px 25px}#hobby-cards .hobby-card .text .text-container{background:hsla(0,0%,100%,.5);border:3px solid rgba(0,0,0,.85);padding:25px;padding-top:50px;margin-top:-25px}@media all and (min-width:720px){#education-list .education-card{-webkit-flex:1 1;-ms-flex:1 1;flex:1 1;width:100%;max-width:600px}#hobby-cards .hobby-card{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;max-width:800px;margin:auto}#hobby-cards .hobby-card .cover-image{-webkit-flex:1 1 360px;-ms-flex:1 1 360px;flex:1 1 360px;text-align:center}#hobby-cards .hobby-card .cover-image img{width:auto;max-width:100%;max-height:360px;float:left}#hobby-cards .hobby-card .text{padding:25px 25px 25px 0;-webkit-flex:1 1 440px;-ms-flex:1 1 440px;flex:1 1 440px}#hobby-cards .hobby-card .text .text-container{padding:25px 25px 25px 50px;margin:0 0 0 -25px}}
-/*# sourceMappingURL=../maps/about.css.map */
+#about {
+  width: 98%;
+  margin: 0 auto;
+  padding-bottom: 25px; }
+
+.about-section {
+  text-align: center; }
+
+.about-section.ng-enter, .about-section.ng-leave {
+  transition: all 0.4s ease;
+  opacity: 1; }
+
+.about-section.ng-enter {
+  opacity: 0; }
+
+.about-section.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.about-section.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+#skill-list {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #skill-list #skill-list-desktop-header {
+    display: none; }
+  #skill-list .skill:first-child {
+    display: none; }
+  #skill-list .skill {
+    padding: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 3px solid rgba(0, 0, 0, 0.85);
+    margin: 0 10px 20px 10px;
+    cursor: pointer; }
+    #skill-list .skill .level {
+      position: absolute;
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.85);
+      transform: scaleX(0);
+      transform-origin: 0;
+      -ms-transform: scaleX(0);
+      -ms-transform-origin: 0;
+      transition: transform 0.25s ease; }
+    #skill-list .skill.Ps {
+      color: #00ACC9;
+      border-color: #00ACC9; }
+      #skill-list .skill.Ps .level {
+        background: #00ACC9; }
+    #skill-list .skill.Ai {
+      color: #F8863C;
+      border-color: #F8863C; }
+      #skill-list .skill.Ai .level {
+        background: #F8863C; }
+    #skill-list .skill.Id {
+      color: #FE80A8;
+      border-color: #FE80A8; }
+      #skill-list .skill.Id .level {
+        background: #FE80A8; }
+    #skill-list .skill.Ae {
+      color: #B6AEEC;
+      border-color: #B6AEEC; }
+      #skill-list .skill.Ae .level {
+        background: #B6AEEC; }
+    #skill-list .skill.Xd {
+      color: #FF43C9;
+      border-color: #FF43C9; }
+      #skill-list .skill.Xd .level {
+        background: #FF43C9; }
+    #skill-list .skill.Sketch {
+      color: #f7c752;
+      border-color: #f7c752; }
+      #skill-list .skill.Sketch .level {
+        background: #f7c752; }
+  #skill-list .skill:hover .level {
+    transform: scaleX(1);
+    -ms-transform: scaleX(1); }
+  #skill-list .skill, #skill-list .level {
+    z-index: 5; }
+  #skill-list .skill span {
+    z-index: 0; }
+
+#about .card .info-container {
+  margin: 25px; }
+
+#experience .card {
+  margin-top: 0;
+  margin-bottom: 25px; }
+#experience a {
+  color: inherit;
+  text-decoration: none; }
+
+#education-list {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  #education-list .education-card {
+    width: 100%; }
+
+#hobby-list .filter {
+  margin: 10px; }
+
+#hobby-cards {
+  margin-top: 25px; }
+  #hobby-cards .hobby-card {
+    width: 90%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(191, 191, 191, 0.85);
+    margin: 0 auto; }
+    #hobby-cards .hobby-card img {
+      width: 100%; }
+    #hobby-cards .hobby-card .text {
+      padding: 0 25px 25px 25px; }
+      #hobby-cards .hobby-card .text .text-container {
+        background: rgba(255, 255, 255, 0.5);
+        border: 3px solid rgba(0, 0, 0, 0.85);
+        padding: 25px;
+        padding-top: 50px;
+        margin-top: -25px; }
+
+@media all and (min-width: 720px) {
+  #education-list .education-card {
+    flex: 1 1;
+    width: 100%;
+    max-width: 600px; }
+
+  #hobby-cards .hobby-card {
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto; }
+    #hobby-cards .hobby-card .cover-image {
+      flex: 1 1 360px;
+      text-align: center; }
+      #hobby-cards .hobby-card .cover-image img {
+        width: auto;
+        max-width: 100%;
+        max-height: 360px;
+        float: left; }
+    #hobby-cards .hobby-card .text {
+      padding: 25px 25px 25px 0;
+      flex: 1 1 440px; }
+      #hobby-cards .hobby-card .text .text-container {
+        padding: 25px 25px 25px 50px;
+        margin: 0 0 0 -25px; } }
+
+/*# sourceMappingURL=about.css.map */
