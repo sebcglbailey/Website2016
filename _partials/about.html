@@ -14,7 +14,7 @@
 		<h1>About</h1>
 	</div>
 
-	<!-- FILTER ABOUT SECTION -->
+	<!-- FILTER ABOUT SECTION 
 	<div id="filter" ng-init="filter=false; sk=false; ex=false; ed=false; ho=false;">
 		<div class='filter sk' ng-class="skActive">
 			<div ng-click="skActive='clicked';exActive='';edActive='';hoActive=''; sk=true; ex=false;ed=false;ho=false;filter=true;">SK</div>
@@ -47,6 +47,20 @@
 	</div>
 
 	<div ng-show="filter" id='filter-seperator'></div>
+
+	-->
+
+<!-- FIELDS OF DESIGN -->
+	<div id='fields' class='about-section'>
+		<div class='filter title'>
+			<h2>Fields of Design</h2>
+		</div>
+		<div id='field-list'>
+			<a ng-repeat="field in fieldList" ng-href='/project/{{field.project}}' title='{{field.project}}'>
+				<div class='field {{field.sh}}'>{{field.field}}</div>
+			</a>
+		</div>
+	</div>
 
 <!-- SKILL SECTION -->
 	<div id='skills' class='about-section' ng-hide="ex || ed || ho">

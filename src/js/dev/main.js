@@ -103,6 +103,7 @@ app.controller('workController', ['$scope', 'Page', function($scope, Page) {
 }]);
 app.controller('aboutController', ['$scope', '$routeParams', 'Page', function($scope, $routeParams, Page) {
     $scope.skillList = skills;
+    $scope.fieldList = fields;
     $scope.educationList = education;
     $scope.experienceList = experience;
     $scope.hobbyList = hobbies;

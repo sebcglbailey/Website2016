@@ -1,5 +1,38 @@
 var aboutDescription = "Skills include the full Adobe Creative Suite, and multiple web development languages including HTML, CSS, Javascript and PHP. Experience and education are listed here, along with hobbies and interests.";
 
+var fields = [
+	{
+		field: 'User Experience',
+		sh: 'ux',
+		project: 'PalringoWebUI'
+	},
+	{
+		field: 'User Interface',
+		sh: 'ui',
+		project: 'XGames'
+	},
+	{
+		field: 'Graphic Design',
+		sh: 'gd',
+		project: 'LandseerSnowboards'
+	},
+	{
+		field: 'Web Design',
+		sh: 'wd',
+		project: 'Website2016'
+	},
+	{
+		field: 'Prototyping',
+		sh: 'pr',
+		project: 'XGames'
+	},
+	{
+		field: 'Photography',
+		sh: 'ph',
+		project: 'China'
+	}
+];
+
 var skills = [
 	['sk','skills'],
 	{

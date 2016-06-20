@@ -114,6 +114,78 @@
 	}
 }
 
+#field-list {
+	display: flex;
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	a {
+		color: inherit;
+		text-decoration: none;
+		> div {
+			transition: all 0.25s ease;
+		}
+		.field {
+			padding: 25px;
+			position: relative;
+			top: 0;
+			left: 0;
+			border: 3px solid $black;
+			margin: 0 10px 20px 10px;
+			cursor: pointer;
+			&.ux {
+				color: $green;
+				border-color: $green;
+			}
+			&.ui {
+				color: $purple;
+				border-color: $purple;
+			}
+			&.gd {
+				color: $blue;
+				border-color: $blue;
+			}
+			&.wd {
+				color: $orange;
+				border-color: $orange;
+			}
+			&.pr {
+				color: $turquoise;
+				border-color: $turquoise;
+			}
+			&.ph {
+				color: $grey;
+				border-color: $grey;
+			}
+		}
+	}
+	a:hover {
+		> div {
+			color: $white !important;
+		}
+		.ux {
+			background: $green;
+		}
+		.ui {
+			background: $purple;
+		}
+		.gd {
+			background: $blue;
+		}
+		.wd {
+			background: $orange;
+		}
+		.pr {
+			background: $turquoise;
+		}
+		.ph {
+			background: $grey;
+		}
+	}
+}
+
 #about {
 	.card {
 		.info-container {

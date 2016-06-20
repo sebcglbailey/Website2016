@@ -87,6 +87,59 @@
   #skill-list .skill span {
     z-index: 0; }
 
+#field-list {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #field-list a {
+    color: inherit;
+    text-decoration: none; }
+    #field-list a > div {
+      transition: all 0.25s ease; }
+    #field-list a .field {
+      padding: 25px;
+      position: relative;
+      top: 0;
+      left: 0;
+      border: 3px solid rgba(0, 0, 0, 0.85);
+      margin: 0 10px 20px 10px;
+      cursor: pointer; }
+      #field-list a .field.ux {
+        color: #3EDB6A;
+        border-color: #3EDB6A; }
+      #field-list a .field.ui {
+        color: #CF70E5;
+        border-color: #CF70E5; }
+      #field-list a .field.gd {
+        color: #5C89E3;
+        border-color: #5C89E3; }
+      #field-list a .field.wd {
+        color: #F8863C;
+        border-color: #F8863C; }
+      #field-list a .field.pr {
+        color: #24E2BE;
+        border-color: #24E2BE; }
+      #field-list a .field.ph {
+        color: gray;
+        border-color: gray; }
+  #field-list a:hover > div {
+    color: #fff !important; }
+  #field-list a:hover .ux {
+    background: #3EDB6A; }
+  #field-list a:hover .ui {
+    background: #CF70E5; }
+  #field-list a:hover .gd {
+    background: #5C89E3; }
+  #field-list a:hover .wd {
+    background: #F8863C; }
+  #field-list a:hover .pr {
+    background: #24E2BE; }
+  #field-list a:hover .ph {
+    background: gray; }
+
 #about .card .info-container {
   margin: 25px; }
 
