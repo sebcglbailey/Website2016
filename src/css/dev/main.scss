@@ -401,6 +401,15 @@ h2 {
 		&.gd {
 			background: $blue;
 		}
+		&.ux {
+			background: $green;
+		}
+		&.ui {
+			background: $purple;
+		}
+		&.pr {
+			background: $turquoise;
+		}
 		&.ph {
 			background: $grey;
 		}
@@ -417,6 +426,15 @@ h2 {
 		transition: background 0.25s ease, color 0.25s ease;
 		&.gd {
 			background: $blue;
+		}
+		&.ux {
+			background: $green;
+		}
+		&.ui {
+			background: $purple;
+		}
+		&.pr {
+			background: $turquoise;
 		}
 		&.ph {
 			background: $grey;

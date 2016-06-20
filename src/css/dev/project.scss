@@ -23,6 +23,12 @@
 	&.ux {
 		color: $green;
 	}
+	&.ui {
+		color: $purple;
+	}
+	&.pr {
+		color: $turquoise;
+	}
 	&.gd {
 		color: $blue;
 	}
@@ -41,6 +47,14 @@
 			background: $green;
 			border-color: $green;
 		}
+		&.ui {
+			background: $purple;
+			border-color: $purple;
+		}
+		&.pr {
+			background: $turquoise;
+			border-color: $turquoise;
+		}
 		&.gd {
 			background: $blue;
 			border-color: $blue;
@@ -48,6 +62,10 @@
 		&.ph {
 			background: $grey;
 			border-color: $grey;
+		}
+		&.wd {
+			background: $orange;
+			border-color: $orange;
 		}
 	}
 }
@@ -119,6 +137,16 @@
 			background: $green;
 		}
 	}
+	&.ui {
+		.colour {
+			background: $purple;
+		}
+	}
+	&.pr {
+		.colour {
+			background: $turquoise;
+		}
+	}
 	&.gd {
 		.colour {
 			background: $blue;
@@ -161,6 +189,12 @@
 				color: inherit;
 				&.ux {
 					color: $green;
+				}
+				&.ui {
+					color: $purple;
+				}
+				&.pr {
+					color: $turquoise;
 				}
 				&.gd {
 					color: $blue;
