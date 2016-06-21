@@ -76,12 +76,24 @@ var skills = [
 		level: '75%'
 	},
 	{
+		skill: 'Coffescript',
+		level: '40%'
+	},
+	{
 		skill: 'PHP',
 		level: '45%'
 	},
 	{
+		skill: 'Wordpress',
+		level: '40%'
+	},
+	{
 		skill: 'SASS',
 		level: '80%'
+	},
+	{
+		skill: 'Git',
+		level: '90%'
 	},
 	{
 		skill: 'AngularJS',
