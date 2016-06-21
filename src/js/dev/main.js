@@ -98,7 +98,10 @@ app.controller('workController', ['$scope', 'Page', function($scope, Page) {
     });
     $scope.search = '';
     $scope.searchWork = function(f){
-    	return (f.title + f.keywords).indexOf($scope.search) >= 0;
+    	var title = f.title;
+    	var keywords = f.keywords;
+    	var search = ($scope.search).toLowerCase();
+    	return (title + keywords).toLowerCase().indexOf(search) >= 0;
     };
 }]);
 app.controller('aboutController', ['$scope', '$routeParams', 'Page', function($scope, $routeParams, Page) {
