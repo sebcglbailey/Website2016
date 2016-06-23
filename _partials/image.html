@@ -1,0 +1,44 @@
+<div id="image">
+	
+	<div id='image-type' class='{{i.type}}'>
+		{{(workType | filter: {sh: i.type})[0].lh}}
+	</div>
+
+	<div id="intro">
+		<h1 ng-bind-html="i.title"></h1>
+	</div>
+
+	<div id="work-image" class='{{i.type}}'>
+		<div class='bg-colours'>
+			<div class='clear'></div>
+			<div class='colour'></div>
+			<div class='clear'></div>
+		</div>
+		<div class='images'>
+			<img srcset="/src/img/work/{{i.image.xl}} 1280w, /src/img/work/{{i.image.large}} 900w, /src/img/work/{{i.image.medium}} 640w, /src/img/work/{{i.image.small}} 360w" sizes="(min-width: 900px) 900px, 98vw" src="/src/img/work/{{i.image.medium}}" alt="{{i.title}}" />
+		</div>
+		<div class='bg-colours'>
+			<div class='clear'></div>
+			<div class='colour'></div>
+			<div class='clear'></div>
+		</div>
+	</div>
+
+	<div id="nav" ng-init="imagePrev = (workList | filter: {type: i.type})[ar+1]; imageNext = (workList | filter: {type: i.type})[ar-1]">
+		<a ng-href="/image/{{imagePrev.name}}" ng-hide="ar > (workList | filter: {type: i.type}).length-2">
+			<div class="previous">
+				<i class="icon-arrow-prev"></i>
+				<span>Prev</span>
+			</div>
+		</a>
+		<a ng-href="/image/{{imageNext.name}}" ng-hide="ar == 0">
+			<div class="next">
+				<span>Next</span>
+				<i class="icon-arrow-next"></i>
+			</div>
+		</a>
+	</div>
+
+</div>
+
+<script type='src/javascript' src='/src/js/build/work.js'></script>

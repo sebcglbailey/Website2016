@@ -305,6 +305,7 @@ a:hover {
 	}
 	.cover-image {
 		margin-bottom: -50px;
+		z-index: 0;
 	}
 	a {
 		text-decoration: none;
@@ -312,7 +313,7 @@ a:hover {
 		position: relative;
 		.info-container {
 			padding-top: 50px;
-			z-index: 5;
+			z-index: 15;
 		}
 		.info-container.no-cover {
 			padding-top: 0;

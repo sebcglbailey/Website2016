@@ -1,0 +1,29 @@
+@media all and (min-width: 720px) {
+	#nav {
+		a {
+			transition: all 0.25s ease;
+			margin: 10px;
+			min-width: 200px;
+			> div {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+			i {
+				display: block;
+				position: relative;
+				top: 2px;
+			}
+		}
+		a:hover {
+			background: $black;
+			color: $white;
+		}
+		.next i {
+			margin-left: 25px;
+		}
+		.previous i {
+			margin-right: 25px;
+		}
+	}
+}

@@ -1,4 +1,4 @@
-@import '_colours.scss';
+@import 'colours.scss';
 
 #work {
 	width: 98%;
@@ -21,6 +21,40 @@
 	}
 }
 
+#image {
+	text-align: center;
+}
+
+#intro {
+	max-width: 900px;
+	margin: auto;
+	padding: 25px;
+}
+
 h2 {
 	text-align: center;
 }
+
+#nav {
+	display: flex;
+	width: 90vw;
+	max-width: 900px;
+	margin: 50px auto;
+	justify-content: space-between;
+	a {
+		color: inherit;
+		text-decoration: none;
+		display: flex;
+		border: 3px solid $black;
+		justify-content: center;
+		i {
+			display: none;
+		}
+		> div {
+			text-align: center;
+			padding: 25px 25px;
+		}
+	}
+}
+
+@import 'desktop-work.scss'

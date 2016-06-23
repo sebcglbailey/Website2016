@@ -1,2 +1,115 @@
-.card{background:#fff;box-shadow:0 5px 5px hsla(0,0%,75%,.85);font-size:.9em}.card h2{font-size:1.2em}.card.ng-enter,.card.ng-leave{transition:all .4s ease;opacity:1}.card.ng-enter{opacity:0}.card.ng-enter.ng-enter-active{opacity:1}.card.ng-leave.ng-leave-active{opacity:0}.card,.card-sizer{width:96%;float:left;margin:0 2% 25px}.info-container{margin:0 25px;text-align:center;border:3px solid;background:hsla(0,0%,100%,.5);padding:25px}.info-container a{color:inherit;text-decoration:underline!important;opacity:.5}.info-container a:hover{opacity:1}.cover-image,.cover-image img{width:100%}.project-card .cover-image img{margin-bottom:-25px}.project-card a{text-decoration:none}.project-card a.ux{color:#3edb6a}.project-card a.ui{color:#cf70e5}.project-card a.pr{color:#24e2be}.project-card a.gd{color:#5c89e3}.project-card a.ph{color:gray}.project-card a.ar{color:#de334e}.project-card a.wd{color:#f8863c}.project-card .info-container{padding-top:50px;position:relative;top:-25px}.project-card .info-container p{display:none}.project-card .info-container i{font-size:18pt}.work-card .info-container{margin:20px 25px 25px}.work-card .info-container h3{margin:0}.work-card .info-container.ux{color:#3edb6a}.work-card .info-container.ui{color:#cf70e5}.work-card .info-container.pr{color:#24e2be}.work-card .info-container.gd{color:#5c89e3}.work-card .info-container.ph{color:gray}.work-card .info-container.ar{color:#de334e}.work-card .info-container.wd{color:#f8863c}.info-container:hover h2{text-decoration:underline}@media all and (min-width:720px){.card,.card-sizer{width:46%;margin:0 2% 25px}}@media all and (min-width:1080px){.card,.card-sizer{width:31.33333%;margin:0 1% 25px}.card p{display:block!important}.card h2{font-size:1.4em}}
-/*# sourceMappingURL=../maps/cards.css.map */
+.card {
+  background: #fff;
+  box-shadow: 0 5px 5px rgba(191, 191, 191, 0.85);
+  font-size: 0.9em; }
+  .card h2 {
+    font-size: 1.2em; }
+
+.card.ng-enter, .card.ng-leave {
+  transition: all 0.4s ease;
+  opacity: 1; }
+
+.card.ng-enter {
+  opacity: 0; }
+
+.card.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.card.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.card-sizer, .card {
+  width: 96%;
+  float: left;
+  margin: 0 2% 25px 2%; }
+
+.info-container {
+  margin: 0 25px;
+  text-align: center;
+  border: 3px solid;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 25px; }
+  .info-container a {
+    color: inherit;
+    text-decoration: underline !important;
+    opacity: 0.5; }
+  .info-container a:hover {
+    opacity: 1; }
+
+.cover-image {
+  width: 100%; }
+  .cover-image img {
+    width: 100%; }
+
+.project-card .cover-image img {
+  margin-bottom: -25px; }
+.project-card a {
+  text-decoration: none; }
+  .project-card a.ux {
+    color: #3EDB6A; }
+  .project-card a.ui {
+    color: #CF70E5; }
+  .project-card a.pr {
+    color: #24E2BE; }
+  .project-card a.gd {
+    color: #5C89E3; }
+  .project-card a.ph {
+    color: gray; }
+  .project-card a.ar {
+    color: #DE334E; }
+  .project-card a.wd {
+    color: #F8863C; }
+.project-card .info-container {
+  padding-top: 50px;
+  position: relative;
+  top: -25px; }
+  .project-card .info-container p {
+    display: none; }
+  .project-card .info-container i {
+    font-size: 18pt; }
+
+.work-card a {
+  text-decoration: none; }
+  .work-card a.ux {
+    color: #3EDB6A; }
+  .work-card a.ui {
+    color: #CF70E5; }
+  .work-card a.pr {
+    color: #24E2BE; }
+  .work-card a.gd {
+    color: #5C89E3; }
+  .work-card a.ph {
+    color: gray; }
+  .work-card a.ar {
+    color: #DE334E; }
+  .work-card a.wd {
+    color: #F8863C; }
+.work-card .info-container {
+  margin: 20px 25px 25px 25px; }
+  .work-card .info-container h3 {
+    margin: 0; }
+
+.info-container:hover h2 {
+  text-decoration: underline; }
+
+@media all and (min-width: 720px) {
+  .card-sizer, .card {
+    width: 46%;
+    margin: 0 2% 25px 2%; } }
+@media all and (min-width: 1080px) {
+  .card-sizer, .card {
+    width: 31.33333%;
+    margin: 0 1% 25px 1%; }
+
+  .card {
+    transition: all 0.2s ease; }
+    .card p {
+      display: block !important; }
+    .card h2 {
+      font-size: 1.4em; }
+
+  .card:hover {
+    transform: scale(1.003);
+    box-shadow: 0 0 25px 5px rgba(191, 191, 191, 0.85); } }
+
+/*# sourceMappingURL=cards.css.map */

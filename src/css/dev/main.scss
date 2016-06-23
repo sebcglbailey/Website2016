@@ -514,4 +514,141 @@ h2 {
 	border-color: $black;
 }
 
+#project-type, #image-type {
+	margin: 50px auto 25px auto;
+	width: 90%;
+	max-width: 400px;
+	text-decoration: none;
+	color: inherit;
+	padding: 25px 50px;
+	font-size: 1em;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 5px;
+	border: 4px solid;
+	transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+	&.ux {
+		color: $green;
+	}
+	&.ui {
+		color: $purple;
+	}
+	&.pr {
+		color: $turquoise;
+	}
+	&.gd {
+		color: $blue;
+	}
+	&.ph {
+		color: $grey;
+	}
+	&.ar {
+		color: $red;
+	}
+	&.wd {
+		color: $orange;
+	}
+	a:hover {
+		color: $white;
+		&.ux {
+			background: $green;
+			border-color: $green;
+		}
+		&.ui {
+			background: $purple;
+			border-color: $purple;
+		}
+		&.pr {
+			background: $turquoise;
+			border-color: $turquoise;
+		}
+		&.gd {
+			background: $blue;
+			border-color: $blue;
+		}
+		&.ph {
+			background: $grey;
+			border-color: $grey;
+		}
+		&.wd {
+			background: $orange;
+			border-color: $orange;
+		}
+	}
+}
+
+#project-images, #work-image {
+	width: 100%;
+	position: relative;
+	display: flex;
+	.images {
+		flex: 1 1 85%;
+		max-width: 900px;
+		box-shadow: 0 10px 15px $lightBlack;
+		img {
+			width: 100%;
+			float: left;
+		}
+	}
+	.bg-colours {
+		flex: 1 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: -10;
+		.clear {
+			height: 100px;
+			width: 100%;
+		}
+		.colour {
+			width: 100%;
+			flex-grow: 1;
+		}
+	}
+	&.single-images {
+		img {
+			margin-bottom: 5px;
+		}
+		img:last-child {
+			margin: 0;
+		}
+	}
+	&.ux {
+		.colour {
+			background: $green;
+		}
+	}
+	&.ui {
+		.colour {
+			background: $purple;
+		}
+	}
+	&.pr {
+		.colour {
+			background: $turquoise;
+		}
+	}
+	&.gd {
+		.colour {
+			background: $blue;
+		}
+	}
+	&.wd {
+		.colour {
+			background: $orange;
+		}
+	}
+	&.ar {
+		.colour {
+			background: $red;
+		}
+	}
+	&.ph {
+		.colour {
+			background: $grey;
+		}
+	}
+}
+
 @import 'desktop-main.scss'
