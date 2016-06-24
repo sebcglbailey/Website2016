@@ -46,7 +46,24 @@
 			display: none;
 		}
 	}
+	#project-images, #work-image {
+		.bg-colours {
+			.clear {
+				height: 50px;
+			}
+		}
+	}
 	#project-type, #image-type {
 		font-size: 1.4em;
+	}
+}
+
+@media all and (min-width: 920px) {
+	#project-images, #work-image {
+		.bg-colours {
+			.clear {
+				height: 75px;
+			}
+		}
 	}
 }
