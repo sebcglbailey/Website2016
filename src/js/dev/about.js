@@ -109,12 +109,23 @@ var experience = [
 	['ex','experience'],
 	{
 		image: {
+			large: '/src/img/about/clearscore_lg.jpg',
+			medium: '/src/img/about/clearscore_md.jpg',
+			small: '/src/img/about/clearscore_sm.jpg'
+		},
+		company: 'ClearScore',
+		dates: 'August 2016 - Present',
+		title: 'UX Designer & Prototyper',
+		link: 'http://www.clearscore.com'
+	},
+	{
+		image: {
 			large: '/src/img/about/palringo_lg.jpg',
 			medium: '/src/img/about/palringo_md.jpg',
 			small: '/src/img/about/palringo_sm.jpg'
 		},
 		company: 'Palringo Ltd',
-		dates: 'March 2015 - Present',
+		dates: 'March 2015 - August 2016',
 		title: 'Graphic Designer, Web Designer',
 		link: 'http://www.palringo.com'
 	},
