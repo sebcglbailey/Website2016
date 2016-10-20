@@ -489,6 +489,18 @@ var projects = [
 				medium: '/src/img/projects/xgames/X-12_md.jpg',
 				small: '/src/img/projects/xgames/X-12_sm.jpg',
 				alt: 'Summer Icon Set'
+			},
+			{
+				large: '/src/img/projects/xgames/X-13_lg.jpg',
+				medium: '/src/img/projects/xgames/X-13_md.jpg',
+				small: '/src/img/projects/xgames/X-13_sm.jpg',
+				alt: 'AdobeXD Email Newsletter Featuring the project'
+			},
+			{
+				large: '/src/img/projects/xgames/X-14_lg.jpg',
+				medium: '/src/img/projects/xgames/X-14_md.jpg',
+				small: '/src/img/projects/xgames/X-14_sm.jpg',
+				alt: 'AdobeXD Website featuring the project'
 			}
 		],
 		layout: 'long-image'

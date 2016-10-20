@@ -46,6 +46,18 @@
 			</div>
 		</div>
 
+<!-- STILL TRYING TO FIGURE OUT HOW TO MAKE ng-repeat LIST HERE INSTEAD
+		<div id="filter">
+			<div ng-repeat="type in workType" class="filter {{type.sh}}" ng-class="{{type.sh}}Active">
+				<div ng-click='{{type.sh}}Active="clicked"; filter="{{type.sh}}"; length = (workList | filter: {type: "{{type.sh}}"}).length'>{{type.sh}}</div>
+				<div ng-click='{{type.sh}}Active=""; filter=""; length = workList.length'>
+					{{type.lh}}
+					<i class='icon-close'></i>
+				</div>
+			</div>
+		</div>
+-->
+
 	<div id="search">
 		<label><input ng-model="search" ng-change="length = (workList | filter: searchWork).length" placeholder="Know what you're looking for?"></label>
 	</div>
@@ -57,14 +69,16 @@
 		<h2 ng-show="length == 0">Oops! Looks like I haven't done anything to do with that! Try reducing your search...</h2>
 
 		<div masonry-brick ng-repeat="piece in workList | filter: { type: filter } | filter: searchWork | limitTo: limit" class="card work-card">
-			<div class="cover-image">
-				<img srcset="{{piece.image.xl}} 1280w, {{piece.image.large}} 900w, {{piece.image.medium}} 640w, {{piece.image.small}} 360w" sizes="(min-width: 720px) 46vw, (min-width: 1080px) 31vw, 96vw" src="{{piece.image.medium}}" alt="{{piece.title}}" />
-			</div>
-			<div class='info-container {{piece.type}}'>
-				<div class="work-title">
-					<h3 ng-bind-html="piece.title"></h3>
+			<a class='{{piece.type}}' ng-href='/image/{{piece.name}}' title='{{piece.title}}'>
+				<div class="cover-image">
+					<img srcset="/src/img/work/{{piece.image.xl}} 1280w, /src/img/work/{{piece.image.large}} 900w, /src/img/work/{{piece.image.medium}} 640w, /src/img/work/{{piece.image.small}} 360w" sizes="(min-width: 720px) 46vw, (min-width: 1080px) 31vw, 96vw" src="/src/img/work/{{piece.image.medium}}" alt="{{piece.title}}" />
 				</div>
-			</div>
+				<div class='info-container {{piece.type}}'>
+					<div class="work-title">
+						<h3 ng-bind-html="piece.title"></h3>
+					</div>
+				</div>
+			</a>
 		</div>
 
 	</div>

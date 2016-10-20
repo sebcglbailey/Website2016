@@ -6,7 +6,9 @@
                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 600, 400 ), false, '' );
                     $srcset = wp_get_attachment_image_srcset( get_post_thumbnail_id($post->ID) );
                 ?>
-                <img srcset="<?php echo $srcset; ?>" src='<?php echo $src[0]; ?>' sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" />
+                <a href="<?php the_permalink(); ?>">
+                    <img srcset="<?php echo $srcset; ?>" src='<?php echo $src[0]; ?>' sizes="(min-width: 640px) 50vw, (min-width: 1080px) 33vw, 100vw" />
+                </a>
         </div>
 
         <a href="<?php the_permalink(); ?>">

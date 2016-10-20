@@ -6,13 +6,17 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 			templateUrl: '_partials/home.html',
 			controller: 'homeController'
 		})
+		.when('/project/:projectName', {
+			templateUrl: '_partials/project.html',
+			controller: 'projectController'
+		})
 		.when('/work', {
 			templateUrl: '_partials/work.html',
 			controller: 'workController'
 		})
-		.when('/project/:projectName', {
-			templateUrl: '_partials/project.html',
-			controller: 'projectController'
+		.when('/image/:type/:imageTitle', {
+			templateUrl: '_partials/image.html',
+			controller: 'imageController'
 		})
 		.when('/about', {
 			templateUrl: '_partials/about.html',
@@ -103,6 +107,20 @@ app.controller('workController', ['$scope', 'Page', function($scope, Page) {
     	var search = ($scope.search).toLowerCase();
     	return (title + keywords).toLowerCase().indexOf(search) >= 0;
     };
+}]);
+app.controller('imageController', ['$scope', '$routeParams', '$http', 'Page', 'filterFilter', function($scope, $routeParams, $http, Page, filterFilter) {
+	$scope.workList = work;
+	$scope.workType = workType;
+	$scope.params = $routeParams;
+	$scope.i = filterFilter(work, {name: $scope.params.imageTitle, type: $scope.params.type})[0];
+	var typeAr = filterFilter(work, {type: $scope.params.type});
+	$scope.ar = typeAr.indexOf($scope.i);
+	Page.setTitle('Work');
+	$('meta[name="description"]').attr('content', workDescription);
+	$scope.$on('$viewContentLoaded', function(){
+     	contentLoaded();
+     	setTimeout(contentLoadedDelay, 510);
+    });
 }]);
 app.controller('aboutController', ['$scope', '$routeParams', 'Page', function($scope, $routeParams, Page) {
     $scope.skillList = skills;
