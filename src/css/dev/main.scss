@@ -58,6 +58,8 @@ h2 {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 25px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 	#logo-burger-wrapper {
 		width: 100%;
 		display: flex;

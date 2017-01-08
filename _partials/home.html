@@ -26,7 +26,7 @@
 
 				<div class='info-container'>
 					<h2>{{project.title}}</h2>
-					<p ng-repeat="p in project.description" ng-bind-html="p"></p>
+					<p ng-bind-html="p">{{project.description[0]}}</p>
 					<i class='icon-arrow-next'></i>
 				</div>
 			</a>

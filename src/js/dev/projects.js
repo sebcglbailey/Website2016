@@ -6,8 +6,8 @@ var projects = [
 		type: ['ph', 'Photography'],
 		title: 'China Photographs',
 		description: [
-		'A collection of photographs from a trip to Beijing and Chengdu, China in November 2014.',
-		' Photos include The Summer Palace, The Temple of Heaven, The Forbidden City, CCTV Tower, Chengdu Buddhist Temple, visiting the pandads in Chengdu, and the Great Wall of China.'
+			'A collection of photographs from a trip to Beijing and Chengdu, China in November 2014.',
+			' Photos include The Summer Palace, The Temple of Heaven, The Forbidden City, CCTV Tower, Chengdu Buddhist Temple, visiting the pandads in Chengdu, and the Great Wall of China.'
 		],
 		coverImage: {
 			xl: '/src/img/projects/china/cover_xl.jpg',
@@ -577,6 +577,117 @@ var projects = [
 				small: '/src/img/projects/palringo-webui/PW-09_sm.jpg',
 				alt: 'Group discovery. Palringo WebUI client can be found at: chat.palringo.com'
 			}
+		],
+		layout: 'long-image'
+	},
+
+	{
+		arNo: 6,
+		name: 'BreakPointFitness',
+		type: ['wd', 'Web Design'],
+		title: 'Break-Point Fitness UK Website',
+		description: [
+			'Break-Point UK is a high-end performance and fitness programme developed by the ex Special Forces team behind the Channel 4 show, "SAS: Who Dares Wins." They approached me to design and build their Fitness Portal, <a href="http://my.break-point.com" title="Break-Point UK Fitness Portal">my.break-point.com</a> with a vision to monetise on the already massive following that the TV show had, and give people the chance to train like the special forces do.',
+			'Due to a tight schedule, the frontend for the website was both designed and built within just 3 days, to be released only 1 week later on the day of the first show of the second season of "SAS: Who Dares Wins." Working closely with the team behind it all, just myself, and one back-end developer managed to get everything out without any hiccups. Continuous updates were made throughout the series, keeping people coming back to the website week after week, to watch the aftershow videos, and sign up for the paid service.'
+		],
+		coverImage: {
+			xl: '/src/img/projects/break-point/cover_xl.jpg',
+			large: '/src/img/projects/break-point/cover_lg.jpg',
+			medium: '/src/img/projects/break-point/cover_md.jpg',
+			small: '/src/img/projects/break-point/cover_sm.jpg',
+			xs: '/src/img/projects/break-point/cover_xs.jpg'
+		},
+		projectImages: [
+			{
+				large: '/src/img/projects/break-point/BP-01_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-01_md.jpg',
+				small: '/src/img/projects/break-point/BP-01_sm.jpg',
+				alt: 'Break-Point Fitness Portal Website Project header and mockups on Macbook and iPad'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-02_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-02_md.jpg',
+				small: '/src/img/projects/break-point/BP-02_sm.jpg',
+				alt: 'Portal image 1'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-03_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-03_md.jpg',
+				small: '/src/img/projects/break-point/BP-03_sm.jpg',
+				alt: 'Portal image 2'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-04_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-04_md.jpg',
+				small: '/src/img/projects/break-point/BP-04_sm.jpg',
+				alt: 'Portal image 3'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-05_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-05_md.jpg',
+				small: '/src/img/projects/break-point/BP-05_sm.jpg',
+				alt: 'Site footer'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-06_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-06_md.jpg',
+				small: '/src/img/projects/break-point/BP-06_sm.jpg',
+				alt: 'Sign up form'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-07_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-07_md.jpg',
+				small: '/src/img/projects/break-point/BP-07_sm.jpg',
+				alt: 'Mobile layouts image 1'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-08_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-08_md.jpg',
+				small: '/src/img/projects/break-point/BP-08_sm.jpg',
+				alt: 'Mobile layouts image 2'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-09_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-09_md.jpg',
+				small: '/src/img/projects/break-point/BP-09_sm.jpg',
+				alt: 'Mobile layouts image 3'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-10_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-10_md.jpg',
+				small: '/src/img/projects/break-point/BP-10_sm.jpg',
+				alt: 'Mobile layouts image 4'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-11_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-11_md.jpg',
+				small: '/src/img/projects/break-point/BP-11_sm.jpg',
+				alt: 'Mobile layouts image 5'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-12_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-12_md.jpg',
+				small: '/src/img/projects/break-point/BP-12_sm.jpg',
+				alt: 'Mobile layouts image 6'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-13_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-13_md.jpg',
+				small: '/src/img/projects/break-point/BP-13_sm.jpg',
+				alt: 'Mobile layouts image 7'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-14_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-14_md.jpg',
+				small: '/src/img/projects/break-point/BP-14_sm.jpg',
+				alt: 'Mobile layouts image 8 and mobile mockup'
+			},
+			{
+				large: '/src/img/projects/break-point/BP-15_lg.jpg',
+				medium: '/src/img/projects/break-point/BP-15_md.jpg',
+				small: '/src/img/projects/break-point/BP-15_sm.jpg',
+				alt: 'Break-Point Logo'
+			},
 		],
 		layout: 'long-image'
 	},
